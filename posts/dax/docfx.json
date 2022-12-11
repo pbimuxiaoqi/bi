@@ -1,0 +1,52 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.svg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**"
+        ]
+      }
+    ],
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {
+      "breadcrumb_path": "/dax/breadcrumb/toc.json",
+      "extendBreadcrumb": true,
+      "titleSuffix": "DAX",
+      "show_latex": true,
+      "contributors_to_exclude": [
+        "mikekinsman"
+        ]
+    },
+    "fileMetadata": {},
+    "template": [],
+    "dest": "dax-language",
+    "markdownEngineName": "markdig"
+  }
+}
