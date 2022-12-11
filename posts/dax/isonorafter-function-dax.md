@@ -19,7 +19,7 @@ Based on the sort order, the first parameter is compared with the second paramet
   
 ## Syntax  
   
-```DAX  
+```js  
 ISONORAFTER(<scalar_expression>, <scalar_expression>[, sort_order [, <scalar_expression>, <scalar_expression>[, sort_order]]…)  
 ```
   
@@ -54,7 +54,7 @@ For the following table named, Info:
 
 The following expression:
 
-```dax
+```js
 FILTER (
     Info,
     ISONORAFTER (

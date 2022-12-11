@@ -17,7 +17,7 @@ Returns the remainder after a number is divided by a divisor. The result always 
   
 ## Syntax  
   
-```dax
+```js
 MOD(<number>, <divisor>)  
 ```
   
@@ -42,7 +42,7 @@ A whole number.
 
 The following formula returns 1, the remainder of 3 divided by 2.  
   
-```dax
+```js
 = MOD(3,2)  
 ```
   
@@ -50,7 +50,7 @@ The following formula returns 1, the remainder of 3 divided by 2.
 
 The following formula returns -1, the remainder of 3 divided by 2. Note that the sign is always the same as the sign of the divisor.  
   
-```dax
+```js
 = MOD(-3,-2)  
 ```
   

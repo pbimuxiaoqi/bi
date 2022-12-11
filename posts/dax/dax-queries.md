@@ -26,7 +26,7 @@ At the most basic level, a DAX query is an **EVALUATE** statement containing a t
 
 #### EVALUATE Syntax
   
-```dax
+```js
 EVALUATE <table>  
 ```
 
@@ -38,7 +38,7 @@ EVALUATE <table>
 
 #### EVALUATE Example
 
-```dax
+```js
 EVALUATE
     'Internet Sales'
 ```
@@ -53,7 +53,7 @@ The optional **ORDER BY** keyword defines one or more expressions used to sort q
 
 #### ORDER BY Syntax
 
-```dax
+```js
 EVALUATE <table>  
 [ORDER BY {<expression> [{ASC | DESC}]}[, …]]  
 ```
@@ -68,7 +68,7 @@ EVALUATE <table>
 
 #### ORDER BY Example
 
-```dax
+```js
 EVALUATE
     'Internet Sales'
     
@@ -86,7 +86,7 @@ The optional **START AT** keyword is used inside an **ORDER BY** clause. It defi
 
 #### START AT Syntax
 
-```dax
+```js
 EVALUATE <table>  
 [ORDER BY {<expression> [{ASC | DESC}]}[, …]  
 [START AT {<value>|<parameter>} [, …]]]
@@ -105,7 +105,7 @@ START AT arguments have a one-to-one correspondence with the columns in the ORDE
 
 #### START AT Example
 
-```dax
+```js
 EVALUATE
     'Internet Sales'
     
@@ -124,7 +124,7 @@ The optional **DEFINE** keyword introduces one or more calculated entity definit
 
 #### DEFINE Syntax
 
-```dax
+```js
 [DEFINE 
     (
      (MEASURE <table name>[<measure name>] = <scalar expression>) | 
@@ -159,7 +159,7 @@ The optional **DEFINE** keyword introduces one or more calculated entity definit
 
 #### DEFINE Example
 
-```dax
+```js
 DEFINE
     MEASURE 'Internet Sales'[Internet Total Sales] =
         SUM ( 'Internet Sales'[Sales Amount] )

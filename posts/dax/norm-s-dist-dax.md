@@ -17,7 +17,7 @@ Returns the standard normal distribution (has a mean of zero and a standard devi
 
 ## Syntax  
   
-```dax
+```js
 NORM.S.DIST(Z, Cumulative)
 ```
   
@@ -38,7 +38,7 @@ The standard normal distribution (has a mean of zero and a standard deviation of
 
 ## Example  
   
-```dax
+```js
 EVALUATE { NORM.S.DIST(1.333333, TRUE) }
 ```
 

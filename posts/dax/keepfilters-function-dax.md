@@ -17,7 +17,7 @@ Modifies how filters are applied while evaluating a CALCULATE or CALCULATETABLE 
   
 ## Syntax  
   
-```dax
+```js
 KEEPFILTERS(<expression>)  
 ```
   
@@ -57,7 +57,7 @@ The fourth expression calculates Internet Sales for Washington and Oregon, while
   
 The next expression calculates Internet Sales for Washington and Oregon but uses KEEPFILTERS; the filter for Washington and British Columbia is part of the prior context.  
   
-```dax
+```js
 EVALUATE ROW(  
   "$$ in WA"  
     , CALCULATE('Internet Sales'[Internet Total Sales]  

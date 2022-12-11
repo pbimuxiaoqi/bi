@@ -17,7 +17,7 @@ Checks whether a value is an error, and returns TRUE or FALSE.
   
 ## Syntax  
   
-```dax
+```js
 ISERROR(<value>)  
 ```
   
@@ -41,7 +41,7 @@ A Boolean value of TRUE if the value is an error; otherwise FALSE.
 
 The following example calculates the ratio of total Internet sales to total reseller sales. The ISERROR function is used to check for errors, such as division by zero. If there is an error a blank is returned, otherwise the ratio is returned.  
   
-```dax
+```js
 = IF( ISERROR(  
        SUM('ResellerSales_USD'[SalesAmount_USD])  
        /SUM('InternetSales_USD'[SalesAmount_USD])  

@@ -17,7 +17,7 @@ Returns a table that contains a column of all dates from the previous month, bas
   
 ## Syntax  
   
-```dax
+```js
 PREVIOUSMONTH(<Dates>)  
 ```
   
@@ -48,7 +48,7 @@ A table containing a single column of date values.
 
 The following sample formula creates a measure that calculates the 'previous month sales' for Internet sales.  
 
-```dax
+```js
 = CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PREVIOUSMONTH('DateTime'[DateKey]))  
 ```
   

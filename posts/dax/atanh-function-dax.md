@@ -17,7 +17,7 @@ Returns the inverse hyperbolic tangent of a number. Number must be between -1 an
   
 ## Syntax  
   
-```dax
+```js
 ATANH(number)  
 ```
   

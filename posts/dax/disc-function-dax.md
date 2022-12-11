@@ -18,7 +18,7 @@ Returns the discount rate for a security.
 
 ## Syntax
 
-```dax
+```js
 DISC(<settlement>, <maturity>, <pr>, <redemption>[, <basis>])
 ```
 
@@ -87,7 +87,7 @@ The discount rate.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   DISC(DATE(2018,7,1), DATE(2048,1,1), 97.975, 100, 1)

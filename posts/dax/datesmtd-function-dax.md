@@ -17,7 +17,7 @@ Returns a table that contains a column of the dates for the month to date, in th
   
 ## Syntax  
   
-```dax
+```js
 DATESMTD(<dates>)  
 ```
   
@@ -50,7 +50,7 @@ The **dates** argument can be any of the following:
 
 The following sample formula creates a measure that calculates the 'Month To Date Total' for Internet Sales.  
   
-```dax
+```js
 = CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), DATESMTD(DateTime[DateKey]))  
 ```
   

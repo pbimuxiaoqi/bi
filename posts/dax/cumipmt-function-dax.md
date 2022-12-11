@@ -18,7 +18,7 @@ Returns the cumulative interest paid on a loan between start_period and end_peri
 
 ## Syntax
 
-```dax
+```js
 CUMIPMT(<rate>, <nper>, <pv>, <start_period>, <end_period>, <type>)
 ```
 
@@ -72,7 +72,7 @@ The cumulative interest paid in the specified period.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   CUMIPMT(0.09/12, 30*12, 125000, 13, 24, 1)
@@ -89,7 +89,7 @@ Returns the total interest paid in the second year of payments, periods 13 throu
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   CUMIPMT(0.09/12, 30*12, 125000, 1, 1, 0)

@@ -17,7 +17,7 @@ Introduces a statement that defines the starting value at which the query result
 
 ## Syntax
 
-```dax
+```js
 [START AT {<value>|<parameter>} [, …]]  
 ```
 

@@ -19,7 +19,7 @@ Your requirement can be achieved in two ways. You can use the [COUNT](../count-f
 
 The following measure definition presents an example. It calculates the number of **OrderDate** column values.
 
-```dax
+```js
 Sales Orders =
 COUNT(Sales[OrderDate])
 ```
@@ -28,7 +28,7 @@ Providing that the granularity of the **Sales** table is one row per sales order
 
 However, the following measure definition is a better solution.
 
-```dax
+```js
 Sales Orders =
 COUNTROWS(Sales)
 ```

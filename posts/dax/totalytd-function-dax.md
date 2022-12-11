@@ -17,7 +17,7 @@ Evaluates the year-to-date value of the **expression** in the current context.
   
 ## Syntax  
   
-```dax
+```js
 TOTALYTD(<expression>,<dates>[,<filter>][,<year_end_date>])  
 ```
   
@@ -47,7 +47,7 @@ A scalar value that represents the **expression** evaluated for the current year
   
 - The **year_end_date** parameter is a string literal of a date, in the same locale as the locale of the client where the workbook was created. The year portion of the date is not required and is ignored. For example, the following formula specifies a (fiscal) year_end_date of 6/30 in an EN-US locale workbook.  
   
-    ```dax
+    ```js
     = TOTALYTD(SUM(InternetSales_USD[SalesAmount_USD]),DateTime[DateKey], ALL('DateTime'), "6/30")  
     ```
 
@@ -59,7 +59,7 @@ A scalar value that represents the **expression** evaluated for the current year
 
 The following sample formula creates a measure that calculates the 'year running total' or 'year running sum' for Internet sales.  
   
-```dax
+```js
 = TOTALYTD(SUM(InternetSales_USD[SalesAmount_USD]),DateTime[DateKey])  
 ```
   

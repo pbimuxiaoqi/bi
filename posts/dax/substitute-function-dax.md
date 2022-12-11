@@ -17,7 +17,7 @@ Replaces existing text with new text in a text string.
   
 ## Syntax  
   
-```dax
+```js
 SUBSTITUTE(<text>, <old_text>, <new_text>, <instance_num>)  
 ```
   
@@ -46,7 +46,7 @@ A string of text.
 
 The following formula creates a copy of the column [Product Code] that substitutes the new product code **NW** for the old product code **PA** wherever it occurs in the column.
   
-```dax
+```js
 = SUBSTITUTE([Product Code], "NW", "PA")  
 ```
   

@@ -17,7 +17,7 @@ Concatenates the result of an expression evaluated for each row in a table.
   
 ## Syntax  
   
-```dax
+```js
 CONCATENATEX(<table>, <expression>[, <delimiter> [, <orderBy_expression> [, <order>]]...])  
 ```
   
@@ -61,7 +61,7 @@ Employees table
 
 The following formula:  
 
-```dax
+```js
 = CONCATENATEX(Employees, [FirstName] & " " & [LastName], ",")  
 ```
   

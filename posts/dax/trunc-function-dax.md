@@ -17,7 +17,7 @@ Truncates a number to an integer by removing the decimal, or fractional, part of
   
 ## Syntax  
   
-```dax
+```js
 TRUNC(<number>,<num_digits>)  
 ```
   
@@ -40,7 +40,7 @@ TRUNC and INT are similar in that both return integers. TRUNC removes the fracti
 
 The following formula returns 3, the integer part of pi.  
   
-```dax
+```js
 = TRUNC(PI())  
 ```
   
@@ -48,7 +48,7 @@ The following formula returns 3, the integer part of pi.
 
 The following formula returns -8, the integer part of -8.9.  
   
-```dax
+```js
 = TRUNC(-8.9)  
 ```
   

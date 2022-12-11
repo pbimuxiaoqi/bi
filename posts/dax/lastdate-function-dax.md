@@ -17,7 +17,7 @@ Returns the last date in the current context for the specified column of dates.
   
 ## Syntax  
   
-```dax
+```js
 LASTDATE(<dates>)  
 ```
   
@@ -50,7 +50,7 @@ A table containing a single column and single row with a date value.
 
 The following sample formula creates a measure that obtains the last date, for the current context, when a sale was made in the Internet sales channel.  
   
-```dax
+```js
 = LASTDATE('InternetSales_USD'[SaleDateKey])  
 ```
   

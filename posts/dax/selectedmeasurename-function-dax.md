@@ -17,7 +17,7 @@ Used by expressions for calculation items to determine the measure that is in co
   
 ## Syntax  
   
-```dax
+```js
 SELECTEDMEASURENAME()
 ```
   
@@ -39,7 +39,7 @@ A string value holding the name of the measure that is currently in context when
 
 The following calculation item expression checks if the current measure is Expense Ratio and conditionally applies calculation logic. Since the check is based on a string comparison, it is not subject to formula fixup and will not benefit from object renaming being automatically reflected. For a similar comparison that would benefit from formula fixup, please see the ISSLECTEDMEASURE function instead. 
   
-```dax
+```js
 IF (
     SELECTEDMEASURENAME = "Expense Ratio",
     SELECTEDMEASURE (),

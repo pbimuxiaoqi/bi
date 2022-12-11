@@ -17,7 +17,7 @@ Performs a join of the LeftTable with the RightTable by using the Left Outer Joi
   
 ## Syntax  
   
-```dax
+```js
 NATURALLEFTOUTERJOIN(<LeftTable>, <RightTable>)  
 ```
   

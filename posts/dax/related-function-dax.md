@@ -17,7 +17,7 @@ Returns a related value from another table.
   
 ## Syntax  
   
-```dax
+```js
 RELATED(<column>)  
 ```
   
@@ -47,7 +47,7 @@ In the following example, the measure Non USA Internet Sales is created to produ
   
 The first approach to filter the Internet Sales, in order to create the measure, could be to add a filter expression like the following:  
   
-```dax
+```js
 FILTER('InternetSales_USD'
 , 'InternetSales_USD'[SalesTerritoryKey]<>1 && 'InternetSales_USD'[SalesTerritoryKey]<>2 && 'InternetSales_USD'[SalesTerritoryKey]<>3 && 'InternetSales_USD'[SalesTerritoryKey]<>4 && 'InternetSales_USD'[SalesTerritoryKey]<>5)
 ```  
@@ -56,7 +56,7 @@ However, this approach is counterintuitive, prone to typing errors, and might no
   
 A better approach would be to use the existing relationship between InternetSales_USD and SalesTerritory and explicitly state that the country must be different from the United States. To do so, create a filter expression like the following:  
   
-```dax
+```js
 FILTER( 'InternetSales_USD', RELATED('SalesTerritory'[SalesTerritoryCountry])<>"United States")
 ```
   
@@ -65,7 +65,7 @@ This expression uses the RELATED function to lookup the country value in the Sal
 > [!NOTE]  
 > If the example does not work, you might need to create a relationship between the tables.  
   
-```dax
+```js
 = SUMX(FILTER( 'InternetSales_USD'  
             ,  RELATED('SalesTerritory'[SalesTerritoryCountry])  
                <>"United States"  

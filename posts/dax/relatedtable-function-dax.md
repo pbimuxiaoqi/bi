@@ -17,7 +17,7 @@ Evaluates a table expression in a context modified by the given filters.
   
 ## Syntax  
   
-```dax
+```js
 RELATEDTABLE(<tableName>)  
 ```
   
@@ -43,7 +43,7 @@ A table of values.
 
 The following example uses the RELATEDTABLE function to create a calculated column with the Internet Sales in the Product Category table:  
 
-```dax
+```js
 = SUMX( RELATEDTABLE('InternetSales_USD')  
      , [SalesAmount_USD])  
 ```

@@ -17,7 +17,7 @@ Returns the arcsine, or inverse sine, of a number. The arcsine is the angle whos
   
 ## Syntax  
   
-```dax
+```js
 ASIN(number)  
 ```
   

@@ -17,7 +17,7 @@ Returns the present value for a schedule of cash flows that is not necessarily p
   
 ## Syntax  
   
-```dax
+```js
 XNPV(<table>, <values>, <dates>, <rate>)  
 ```
   
@@ -54,7 +54,7 @@ Net present value.
 
 The following calculates the present value of the CashFlows table:  
   
-```dax
+```js
 = XNPV( CashFlows, [Payment], [Date], 0.09 )  
 ```
   

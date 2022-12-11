@@ -17,7 +17,7 @@ Converts degrees to radians.
   
 ## Syntax  
   
-```dax
+```js
 RADIANS(angle)  
 ```
   

@@ -17,7 +17,7 @@ Returns the current UTC date.
 
 ## Syntax  
   
-```dax
+```js
 UTCTODAY()  
 ```
   
@@ -35,7 +35,7 @@ A date.
 
 The following:
   
-```dax
+```js
 EVALUATE { FORMAT(UTCTODAY(), "General Date") }
 ```
 

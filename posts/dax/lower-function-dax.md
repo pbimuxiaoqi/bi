@@ -17,7 +17,7 @@ Converts all letters in a text string to lowercase.
   
 ## Syntax  
   
-```dax
+```js
 LOWER(<text>)  
 ```
   
@@ -39,7 +39,7 @@ Characters that are not letters are not changed. For example, the formula `= LOW
 
 The following formula gets each row in the column, [ProductCode], and converts the value to all lowercase. Numbers in the column are not affected.  
   
-```dax
+```js
 = LOWER('New Products'[ProductCode])  
 ```
   

@@ -17,7 +17,7 @@ Adds rows with empty values to a table returned by [SUMMARIZECOLUMNS](summarizec
   
 ## Syntax  
   
-```dax
+```js
 ADDMISSINGITEMS ( [<showAll_columnName> [, <showAll_columnName> [, … ] ] ], <table> [, <groupBy_columnName> [, [<filterTable>] [, <groupBy_columnName> [, [<filterTable>] [, … ] ] ] ] ] ] )
 ```
   
@@ -46,7 +46,7 @@ A table returned by [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md) will in
 
 Without ADDMISSINGITEMS, the following query:
 
-```dax
+```js
 SUMMARIZECOLUMNS( 
     'Sales'[CustomerId], 
     "Total Qty", SUM ( Sales[TotalQty] )
@@ -64,7 +64,7 @@ Returns,
 
 With ADDMISSINGITEMS, the following query:
 
-```dax
+```js
 EVALUATE
 ADDMISSINGITEMS (
     'Sales'[CustomerId],

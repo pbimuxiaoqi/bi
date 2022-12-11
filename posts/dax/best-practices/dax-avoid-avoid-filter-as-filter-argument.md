@@ -22,7 +22,7 @@ The [CALCULATE](../calculate-function-dax.md) and [CALCULATETABLE](../calculatet
 
 Consider the following measure definition, which calculates red product sales by using a table expression. It will replace any filters that might be applied to the **Product** table.
 
-```dax
+```js
 Red Sales =
 CALCULATE(
     [Sales],
@@ -34,7 +34,7 @@ The CALCULATE function accepts a table expression returned by the [FILTER](../fi
 
 Here's an improved measure definition, which uses a Boolean expression instead of the table expression. The [KEEPFILTERS](../keepfilters-function-dax.md) DAX function ensures any existing filters applied to the **Color** column are preserved, and not overwritten.
 
-```dax
+```js
 Red Sales =
 CALCULATE(
     [Sales],
@@ -55,7 +55,7 @@ It means that you'll need to use table expressions for more complex filter requi
 
 Consider now a different measure definition. The requirement is to calculate sales, but only for months that have achieved a profit.
 
-```dax
+```js
 Sales for Profitable Months =
 CALCULATE(
     [Sales],

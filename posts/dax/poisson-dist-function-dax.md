@@ -17,7 +17,7 @@ Returns the Poisson distribution. A common application of the Poisson distributi
   
 ## Syntax  
   
-```dax
+```js
 POISSON.DIST(x,mean,cumulative)  
 ```
   

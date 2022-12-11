@@ -17,7 +17,7 @@ Returns the variance of a sample population.
   
 ## Syntax  
   
-```dax
+```js
 VARX.S(<table>, <expression>)  
 ```
   
@@ -54,6 +54,6 @@ A number that represents the variance of a sample population.
 
 The following example shows the formula for a calculated column that estimates the variance of the unit price per product for a sample population, when the formula is used in the Product table.  
   
-```dax
+```js
 = VARX.S(InternetSales_USD, InternetSales_USD[UnitPrice_USD] – (InternetSales_USD[DiscountAmount_USD]/InternetSales_USD[OrderQuantity]))  
 ```

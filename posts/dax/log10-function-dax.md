@@ -17,7 +17,7 @@ Returns the base-10 logarithm of a number.
   
 ## Syntax  
   
-```dax
+```js
 LOG10(<number>)  
 ```
   
@@ -39,7 +39,7 @@ The LOG function lets you change the base of the logarithm, instead of using the
 
 The following formulas return the same result, 2:  
   
-```dax
+```js
 = LOG(100,10)  
 = LOG(100)  
 = LOG10(100)  

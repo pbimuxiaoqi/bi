@@ -17,7 +17,7 @@ Returns TRUE when the specified table or column is cross-filtered.
   
 ## Syntax  
   
-```dax
+```js
 ISCROSSFILTERED(<TableNameOrColumnName>)  
 ```
   

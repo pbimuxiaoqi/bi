@@ -17,7 +17,7 @@ Performs an inner join of a table with another table.
   
 ## Syntax  
   
-```dax
+```js
 NATURALINNERJOIN(<LeftTable>, <RightTable>)  
 ```
   

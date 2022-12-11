@@ -17,7 +17,7 @@ Repeats text a given number of times. Use REPT to fill a cell with a number of i
   
 ## Syntax  
   
-```dax
+```js
 REPT(<text>, <num_times>)  
 ```
   
@@ -44,7 +44,7 @@ A string containing the changes.
 
 The following example returns the string, 85, repeated three times.  
   
-```dax
+```js
 = REPT("85",3)  
 ```
   
@@ -52,7 +52,7 @@ The following example returns the string, 85, repeated three times.
   
 The following example returns the string in the column, [MyText], repeated for the number of times in the column, [MyNumber]. Because the formula extends for the entire column, the resulting string depends on the text and number value in each row.  
   
-```dax
+```js
 = REPT([MyText],[MyNumber])  
 ```
   

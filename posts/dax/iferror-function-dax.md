@@ -17,7 +17,7 @@ Evaluates an expression and returns a specified value if the expression returns 
   
 ## Syntax  
   
-```dax
+```js
 IFERROR(value, value_if_error)  
 ```
   
@@ -52,7 +52,7 @@ A scalar of the same type as **value**
 
 The following example returns 9999 if the expression 25/0 evaluates to an error. If the expression returns a value other than error, that value is passed to the invoking expression.  
   
-```dax
+```js
 = IFERROR(25/0,9999)  
 ```
   

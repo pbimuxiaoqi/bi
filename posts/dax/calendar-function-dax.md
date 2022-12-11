@@ -17,7 +17,7 @@ Returns a table with a single column named "Date" that contains a contiguous set
   
 ## Syntax  
   
-```dax
+```js
 CALENDAR(<start_date>, <end_date>)  
 ```
   
@@ -42,12 +42,12 @@ Returns a table with a single column named "Date" containing a contiguous set of
 
 The following formula returns a table with dates between January 1st, 2015 and December 31st, 2021.  
   
-```dax
+```js
 = CALENDAR (DATE (2015, 1, 1), DATE (2021, 12, 31))
 ```
   
 For a data model which includes actual sales data and future sales forecasts, the following expression returns a date table covering the range of dates in both the Sales and Forecast tables.  
   
-```dax
+```js
 = CALENDAR (MINX (Sales, [Date]), MAXX (Forecast, [Date]))
 ```  

@@ -18,7 +18,7 @@ Returns the interest payment for a given period for an investment based on perio
 
 ## Syntax
 
-```dax
+```js
 IPMT(<rate>, <per>, <nper>, <pv>[, <fv>[, <type>]])
 ```
 
@@ -70,7 +70,7 @@ The interest payment for the given period.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   IPMT(0.1/12, 1, 3*12, 8000)
@@ -87,7 +87,7 @@ Returns the monthly interest due in the first month for a loan with the terms sp
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   IPMT(0.1, 3, 3, 8000)

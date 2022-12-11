@@ -18,7 +18,7 @@ Returns the price per \\$100 face value of a security that pays periodic interes
 
 ## Syntax
 
-```dax
+```js
 PRICE(<settlement>, <maturity>, <rate>, <yld>, <redemption>, <frequency>[, <basis>])
 ```
 
@@ -107,7 +107,7 @@ The price per \\$100 face value.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   PRICE(DATE(2008,2,15), DATE(2017,11,15), 0.0575, 0.065, 100, 2, 0)

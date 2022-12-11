@@ -17,7 +17,7 @@ Returns the current date.
   
 ## Syntax  
   
-```dax
+```js
 TODAY()  
 ```
 
@@ -37,7 +37,7 @@ A date (**datetime**).
 
 If you know that someone was born in 1963, you might use the following formula to find that person's age as of this year's birthday:  
   
-```dax
+```js
 = YEAR(TODAY())-1963  
 ```
 

@@ -17,7 +17,7 @@ Returns the least common multiple of integers. The least common multiple is the 
   
 ## Syntax  
   
-```dax
+```js
 LCM(number1, [number2], ...)  
 ```
   

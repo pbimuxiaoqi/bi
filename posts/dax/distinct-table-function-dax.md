@@ -17,7 +17,7 @@ Returns a table by removing duplicate rows from another table or expression.
   
 ## Syntax  
   
-```dax
+```js
 DISTINCT(<table>)  
 ```
   
@@ -39,7 +39,7 @@ There is another version of the DISTINCT function, [DISTINCT (column)](distinct-
 
 The following query:
 
-```dax
+```js
 EVALUATE DISTINCT( { (1, "A"), (2, "B"), (1, "A") } )
 ```
 

@@ -18,7 +18,7 @@ Returns the number of combinations (with repetitions) for a given number of item
   
 ## Syntax  
   
-```dax
+```js
 COMBINA(number, number_chosen)  
 ```
   

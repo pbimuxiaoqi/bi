@@ -18,7 +18,7 @@ Converts a dollar price expressed as an integer part and a fraction part, such a
 
 ## Syntax
 
-```dax
+```js
 DOLLARDE(<fractional_dollar>, <fraction>)
 ```
 
@@ -48,7 +48,7 @@ The decimal value of *fractional_dollar*.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   DOLLARDE(1.02, 16)

@@ -18,7 +18,7 @@ The inverse of the normal cumulative distribution for the specified mean and sta
   
 ## Syntax  
   
-```dax
+```js
 NORM.INV(Probability, Mean, Standard_dev)
 ```
   
@@ -40,7 +40,7 @@ Returns the inverse of the normal cumulative distribution for the specified mean
 
 ## Example  
   
-```dax
+```js
 EVALUATE { NORM.INV(0.908789, 40, 1.5) }
 ```
 

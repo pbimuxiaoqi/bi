@@ -17,7 +17,7 @@ Returns the sum of an expression evaluated for each row in a table.
   
 ## Syntax  
   
-```dax
+```js
 SUMX(<table>, <expression>)  
 ```
   
@@ -46,7 +46,7 @@ A decimal number.
 
 The following example first filters the table, InternetSales, on the expression, 'InternetSales[SalesTerritoryID] = 5`, and then returns the sum of all values in the Freight column. In other words, the expression returns the sum of freight charges for only the specified sales area.  
   
-```dax
+```js
 = SUMX(FILTER(InternetSales, InternetSales[SalesTerritoryID]=5),[Freight])  
 ```
 

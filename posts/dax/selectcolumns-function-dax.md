@@ -17,7 +17,7 @@ Returns a table with selected columns from the table and new columns specified b
   
 ## Syntax  
   
-```dax
+```js
 SELECTCOLUMNS(<Table>, [<Name>], <Expression>, <Name>], …) 
 ```
   
@@ -51,7 +51,7 @@ IND     |   WB      |    10     |  900
 USA     |   CA      |    5     |   500
 USA     |   WA      |    10     |  900
 
-```dax
+```js
 SELECTCOLUMNS(Customer, "Country, State", [Country]&", "&[State])
 ```
 

@@ -17,7 +17,7 @@ Changes FALSE to TRUE, or TRUE to FALSE.
   
 ## Syntax  
   
-```dax
+```js
 NOT(<logical>)  
 ```
   
@@ -39,7 +39,7 @@ The formula checks the value in the column, [Orders], and returns "true" if the 
   
 Now create a new calculated column, **Calculated Column2**, and type the following formula.  
   
-```dax
+```js
 = NOT([CalculatedColumn1])  
 ```
 

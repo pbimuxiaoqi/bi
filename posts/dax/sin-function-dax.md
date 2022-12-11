@@ -17,7 +17,7 @@ Returns the sine of the given angle.
   
 ## Syntax  
   
-```dax
+```js
 SIN(number)  
 ```
   

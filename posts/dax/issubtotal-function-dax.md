@@ -17,13 +17,13 @@ Creates another column in a [SUMMARIZE](summarize-function-dax.md) expression th
 
 ## Syntax  
   
-```dax
+```js
 ISSUBTOTAL(<columnName>)
 ```
 
 With [SUMMARIZE](summarize-function-dax.md),
 
-```dax
+```js
 SUMMARIZE(<table>, <groupBy_columnName>[, <groupBy_columnName>]…[, ROLLUP(<groupBy_columnName>[,< groupBy_columnName>…])][, <name>, {<expression>|ISSUBTOTAL(<columnName>)}]…)  
 ```
   

@@ -18,7 +18,7 @@ Returns the depreciation for each accounting period. This function is provided f
 
 ## Syntax
 
-```dax
+```js
 AMORLINC(<cost>, <date_purchased>, <first_period>, <salvage>, <period>, <rate>[, <basis>])
 ```
 
@@ -78,7 +78,7 @@ The depreciation for each accounting period.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   AMORLINC(2400, DATE(2008,8,19), DATE(2008,12,31), 300, 1, 0.15, 1)

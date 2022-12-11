@@ -18,7 +18,7 @@ Checks whether one of the arguments is TRUE to return TRUE. The function returns
   
 ## Syntax  
   
-```dax
+```js
 OR(<logical1>,<logical2>)  
 ```
   
@@ -42,7 +42,7 @@ A Boolean value. The value is TRUE if any of the two arguments is TRUE; the valu
 
 The following example shows how to use the OR function to obtain the sales people that belong to the Circle of Excellence. The Circle of Excellence recognizes those who have achieved more than a million dollars in Touring Bikes sales or sales of over two and a half million dollars in 2007.  
 
-```dax
+```js
 IF(   OR(   CALCULATE(SUM('ResellerSales_USD'[SalesAmount_USD]), 'ProductSubcategory'[ProductSubcategoryName]="Touring Bikes") > 1000000  
          ,   CALCULATE(SUM('ResellerSales_USD'[SalesAmount_USD]), 'DateTime'[CalendarYear]=2007) > 2500000  
          )  

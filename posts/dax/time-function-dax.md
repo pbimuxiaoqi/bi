@@ -17,7 +17,7 @@ Converts hours, minutes, and seconds given as numbers to a time in **datetime** 
   
 ## Syntax  
   
-```dax
+```js
 TIME(hour, minute, second)  
 ```
   
@@ -49,11 +49,11 @@ A time (**datetime**) ranging from 00:00:00 (12:00:00 AM) to 23:59:59 (11:59:59 
 
 The following examples both return the time, 3:00 AM:  
   
-```dax
+```js
 = TIME(27,0,0)
 ```
 
-```dax
+```js
 = TIME(3,0,0)  
 ```
   
@@ -61,11 +61,11 @@ The following examples both return the time, 3:00 AM:
 
 The following examples both return the time, 12:30 PM:  
   
-```dax
+```js
 = TIME(0,750,0)
 ```
 
-```dax
+```js
 = TIME(12,30,0)  
 ```
   
@@ -73,7 +73,7 @@ The following examples both return the time, 12:30 PM:
 
 The following example creates a time based on the values in the columns, `intHours`, `intMinutes`, `intSeconds`:  
   
-```dax
+```js
 = TIME([intHours],[intMinutes],[intSeconds])  
 ```
   

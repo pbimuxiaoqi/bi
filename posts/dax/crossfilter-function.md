@@ -17,7 +17,7 @@ Specifies the cross-filtering direction to be used in a calculation for a relati
   
 ## Syntax  
   
-```dax
+```js
 CROSSFILTER(<columnName1>, <columnName2>, <direction>)  
 ```
   
@@ -67,7 +67,7 @@ There are  two ways to get the count of products by year:
   
 When using DAX, we can use the CROSSFILTER function to change how the cross-filter direction behaves between two columns defined by a relationship. In this case, the DAX expression looks like this:  
   
-```dax
+```js
 BiDi:= CALCULATE([Distinct Count of ProductKey], CROSSFILTER(FactInternetSales[ProductKey], DimProduct[ProductKey] , Both))
 ```
 

@@ -18,7 +18,7 @@ Returns an equivalent interest rate for the growth of an investment.
 
 ## Syntax
 
-```dax
+```js
 RRI(<nper>, <pv>, <fv>)
 ```
 
@@ -55,7 +55,7 @@ The equivalent interest rate.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   RRI(4*12, 10000, 21000)

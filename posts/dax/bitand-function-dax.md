@@ -17,7 +17,7 @@ Returns a bitwise AND of two numbers.
   
 ## Syntax  
   
-```dax
+```js
 BITAND(<number>, <number>)
 ```
 
@@ -39,7 +39,7 @@ A bitwise AND of two numbers.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE { BITAND(13, 11) }
 ```
 

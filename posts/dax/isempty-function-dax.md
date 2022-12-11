@@ -17,7 +17,7 @@ Checks if a table is empty.
   
 ## Syntax  
   
-```dax
+```js
 ISEMPTY(<table_expression>)  
 ```
   
@@ -47,7 +47,7 @@ For the below table named 'Info':
 |USA|CA|5|500|  
 |USA|WA|10|900|  
   
-```dax
+```js
 EVALUATE
 ROW("Any countries with count > 25?", NOT(ISEMPTY(FILTER(Info, [County]>25))))  
 ```

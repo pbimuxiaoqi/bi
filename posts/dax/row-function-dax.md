@@ -17,7 +17,7 @@ Returns a table with a single row containing values that result from the express
   
 ## Syntax  
   
-```dax
+```js
 ROW(<name>, <expression>[[,<name>, <expression>]…])  
 ```
   
@@ -42,7 +42,7 @@ A single row table
 
 The following example returns a single row table with the total sales for internet and resellers channels.  
   
-```dax
+```js
 ROW("Internet Total Sales (USD)", SUM(InternetSales_USD[SalesAmount_USD]),  
          "Resellers Total Sales (USD)", SUM(ResellerSales_USD[SalesAmount_USD]))  
 ```

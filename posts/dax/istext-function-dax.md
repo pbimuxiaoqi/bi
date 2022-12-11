@@ -17,7 +17,7 @@ Checks if a value is text, and returns TRUE or FALSE.
   
 ## Syntax  
   
-```dax
+```js
 ISTEXT(<value>)  
 ```
   
@@ -39,7 +39,7 @@ TRUE if the value is text; otherwise FALSE.
 
 The following examples show the behavior of the ISTEXT function.  
   
-```dax
+```js
 //RETURNS: Is Text  
 = IF(ISTEXT("text"), "Is Text", "Is Non-Text")  
   

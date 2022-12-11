@@ -17,7 +17,7 @@ Returns the value when the context for columnName has been filtered down to one 
   
 ## Syntax  
   
-```dax
+```js
 SELECTEDVALUE(<columnName>[, <alternateResult>])  
 ```
   
@@ -44,7 +44,7 @@ The value when the context for columnName has been filtered down to one distinct
   
 The following DAX query:
 
-```dax
+```js
 DEFINE
  MEASURE DimProduct[Selected Color] = SELECTEDVALUE(DimProduct[Color], "No Single Selection")
 EVALUATE

@@ -17,7 +17,7 @@ Returns the rows of the first table in the expression which do not appear in the
   
 ## Syntax  
   
-```dax
+```js
 EXCEPT(<table_expression1>, <table_expression2>  
 ```
   

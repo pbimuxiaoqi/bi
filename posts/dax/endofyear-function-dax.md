@@ -17,7 +17,7 @@ Returns the last date of the year in the current context for the specified colum
   
 ## Syntax  
   
-```dax
+```js
 ENDOFYEAR(<dates> [,<year_end_date>])  
 ```
   
@@ -49,7 +49,7 @@ A table containing a single column and single row with a date value.
 
 The following sample formula creates a measure that returns the end of the fiscal year that ends on June 30, for the current context.  
 
-```dax
+```js
 = ENDOFYEAR(DateTime[DateKey],"06/30/2004")  
 ```
   

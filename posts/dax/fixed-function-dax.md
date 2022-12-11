@@ -17,7 +17,7 @@ Rounds a number to the specified number of decimals and returns the result as te
   
 ## Syntax  
   
-```dax
+```js
 FIXED(<number>, <decimals>, <no_commas>)  
 ```
   
@@ -51,7 +51,7 @@ The following formula used in a calculated column gets the numeric value for the
 
 [!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
   
-```dax
+```js
 = FIXED([List Price],2,1)  
 ```
 

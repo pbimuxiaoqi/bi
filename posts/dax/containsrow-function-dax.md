@@ -17,7 +17,7 @@ Returns TRUE if there exists at least one row where all columns have specified v
 
 ## Syntax
 
-```dax
+```js
 CONTAINSROW(<Table>, <Value> [, <Value> [, …] ] ) 
 ```
   
@@ -36,7 +36,7 @@ TRUE or FALSE.
 
 - Except syntax, the **IN** operator and CONTAINSROW function are functionally equivalent.
   
-    ```dax
+    ```js
     <scalarExpr> IN <tableExpr> 
     ( <scalarExpr1>, <scalarExpr2>, … ) IN <tableExpr>
     ```
@@ -54,7 +54,7 @@ TRUE or FALSE.
 
 The following DAX queries:
 
-```dax
+```js
 EVALUATE
 FILTER (
     ALL ( Product[Color] ),
@@ -70,7 +70,7 @@ ORDER BY [Color]
 
 and
 
-```dax
+```js
 EVALUATE
 FILTER (
     ALL ( Product[Color] ),
@@ -98,7 +98,7 @@ Yellow  |
 
 The following equivalent DAX queries:
 
-```dax
+```js
 EVALUATE
 FILTER (
     ALL ( Product[Color] ),
@@ -114,7 +114,7 @@ ORDER BY [Color]
 
 and
 
-```dax
+```js
 EVALUATE
 FILTER (
     ALL ( Product[Color] ),

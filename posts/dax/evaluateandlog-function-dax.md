@@ -17,7 +17,7 @@ Returns the value of the first argument and logs it in a DAX Evaluation Log prof
   
 ## Syntax  
   
-```dax
+```js
 EVALUATEANDLOG(<Value>, [Label], [MaxRows])
 ```
   
@@ -61,7 +61,7 @@ The JSON structure logged in a DAX Evaluation Log profiler event includes:
 
 The following DAX query:
 
-```dax
+```js
 evaluate
 SUMMARIZE(
     EVALUATEANDLOG(FILTER(Sales, [ProductKey] = 528)),
@@ -103,7 +103,7 @@ Returns the following DAX Evaluation Log event:
 
 The following DAX query with a scalar argument and varying attributes:
 
-```dax
+```js
 evaluate
 SELECTCOLUMNS(
     TOPN(5, Customer),

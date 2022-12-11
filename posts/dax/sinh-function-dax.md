@@ -17,7 +17,7 @@ Returns the hyperbolic sine of a number.
   
 ## Syntax  
   
-```dax
+```js
 SINH(number)  
 ```
   
@@ -43,7 +43,7 @@ Returns the hyperbolic sine of a number.
 
 Probability of obtaining a result of less than 1.03 seconds.
 
-```dax
+```js
 = 2.868*SINH(0.0342\*1.03)
 ```
 

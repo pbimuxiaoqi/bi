@@ -17,7 +17,7 @@ Returns the result of a number raised to a power.
   
 ## Syntax  
   
-```dax
+```js
 POWER(<number>, <power>)  
 ```
   
@@ -36,7 +36,7 @@ A decimal number.
 
 The following example returns 25.  
   
-```dax
+```js
 = POWER(5,2)  
 ```
   

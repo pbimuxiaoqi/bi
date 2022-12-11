@@ -17,7 +17,7 @@ Joins two or more text strings into one text string. The primary purpose of this
   
 ## Syntax  
   
-```dax
+```js
 COMBINEVALUES(<delimiter>, <expression>, <expression>[, <expression>]…)
 ```
   
@@ -36,25 +36,25 @@ A concatenated string.
 
 - The COMBINEVALUES function assumes, but does not validate, that when the input values are different, the output strings are also different. Based on this assumption, when COMBINEVALUES is used to create calculated columns in order to build a relationship that joins multiple columns from two DirectQuery tables, an optimized join condition is generated at query time. For example, if users want to create a relationship between Table1(Column1, Column2) and Table2(Column1, Column2), they can create two calculated columns, one on each table, as:  
 
-    ```dax
+    ```js
     Table1[CalcColumn] = COMBINEVALUES(",", Table1[Column1], Table1[Column2])
     ```
 
     and
 
-    ```dax
+    ```js
     Table2[CalcColumn] = COMBINEVALUES(",", Table2[Column1], Table2[Column2])
     ```
 
     And then create a relationship between `Table1[CalcColumn]` and `Table2[CalcColumn]`. Unlike other DAX functions and operators, which are translated literally to the corresponding SQL operators and functions, the above relationship generates a SQL join predicate as:
 
-    ```dax
+    ```js
     (Table1.Column1 = Table2.Column1 OR Table1.Column1 IS NULL AND Table2.Column1 IS NULL)
     ```
 
     and
 
-    ```dax
+    ```js
     (Table1.Column2 = Table2.Column2 OR Table1.Column2 IS NULL AND Table2.Column2 IS NULL)
     ```  
 
@@ -66,7 +66,7 @@ A concatenated string.
 
 The following DAX query:
   
-```dax
+```js
 EVALUATE
 DISTINCT (
     SELECTCOLUMNS ( Date, "Month", COMBINEVALUES ( ", ", [MonthName], [CalendarYear] ) )

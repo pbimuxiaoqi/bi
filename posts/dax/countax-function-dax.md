@@ -17,7 +17,7 @@ The COUNTAX function counts non-blank results when evaluating the result of an e
   
 ## Syntax  
   
-```dax
+```js
 COUNTAX(<table>,<expression>)  
 ```
   
@@ -44,7 +44,7 @@ A whole number.
 
 The following example counts the number of nonblank rows in the column, Phone, using the table that results from filtering the Reseller table on [Status] = **Active**.  
   
-```dax
+```js
 = COUNTAX(FILTER('Reseller',[Status]="Active"),[Phone])  
 ```
   

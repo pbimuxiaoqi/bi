@@ -19,7 +19,7 @@ To return the percentile of numbers in a column, use [PERCENTILE.EXC function](p
   
 ## Syntax  
   
-```dax
+```js
 PERCENTILEX.EXC(<table>, <expression>, k)  
 ```
   

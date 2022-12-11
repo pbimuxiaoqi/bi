@@ -19,7 +19,7 @@ The chi-squared distribution is commonly used to study variation in the percenta
   
 ## Syntax  
   
-```dax
+```js
 CHISQ.DIST(<x>, <deg_freedom>, <cumulative>)
 ```
   
@@ -51,7 +51,7 @@ The chi-squared distribution.
   
 The following DAX query,
   
-```dax
+```js
 EVALUATE { CHISQ.DIST(2, 2, TRUE) }
 ```
 

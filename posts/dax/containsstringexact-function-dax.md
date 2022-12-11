@@ -17,7 +17,7 @@ Returns TRUE or FALSE indicating whether one string contains another string.
   
 ## Syntax  
   
-```dax
+```js
 CONTAINSSTRINGEXACT(<within_text>, <find_text>)
 ```
   
@@ -40,7 +40,7 @@ CONTAINSSTRINGEXACT is case-sensitive.
 
 DAX query
 
-```DAX
+```js
 EVALUATE
     ROW(
         "Case 1", CONTAINSSTRINGEXACT("abcd", "bc"), 

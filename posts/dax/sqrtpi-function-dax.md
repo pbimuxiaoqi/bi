@@ -17,7 +17,7 @@ Returns the square root of (number * pi).
   
 ## Syntax  
   
-```dax
+```js
 SQRTPI(number)  
 ```
   

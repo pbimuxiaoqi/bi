@@ -17,7 +17,7 @@ Introduces a measure definition in a DEFINE statement of a [DAX query](dax-queri
 
 ## Syntax
 
-```dax
+```js
 [DEFINE 
     (
       MEASURE <table name>[<measure name>] = <scalar expression>

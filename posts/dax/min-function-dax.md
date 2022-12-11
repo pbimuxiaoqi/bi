@@ -17,11 +17,11 @@ Returns the smallest value in a column, or between two scalar expressions.
   
 ## Syntax  
   
-```dax
+```js
 MIN(<column>)  
 ```
 
-```dax
+```js
 MIN(<expression1>, <expression2>)
 ```
 
@@ -52,7 +52,7 @@ The smallest value.
 
 The following example returns the smallest value from the calculated column, ResellerMargin.  
   
-```dax
+```js
 = MIN([ResellerMargin])  
 ```
   
@@ -60,7 +60,7 @@ The following example returns the smallest value from the calculated column, Res
 
 The following example returns the smallest value from a column that contains dates and times, TransactionDate. This formula therefore returns the date that is earliest.  
   
-```dax
+```js
 = MIN([TransactionDate])  
 ```
 
@@ -68,7 +68,7 @@ The following example returns the smallest value from a column that contains dat
 
 The following example returns the smallest value from the result of two scalar expressions.  
   
-```dax
+```js
 = Min([TotalSales], [TotalPurchases])
 ```
 

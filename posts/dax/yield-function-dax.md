@@ -18,7 +18,7 @@ Returns the yield on a security that pays periodic interest. Use YIELD to calcul
 
 ## Syntax
 
-```dax
+```js
 YIELD(<settlement>, <maturity>, <rate>, <pr>, <redemption>, <frequency>[, <basis>])
 ```
 
@@ -95,7 +95,7 @@ The yield on the security.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   YIELD(DATE(2008,2,15), DATE(2016,11,15), 0.0575, 95.04287, 100, 2,0)

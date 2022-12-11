@@ -17,7 +17,7 @@ Converts an expression of one data type to another.
   
 ## Syntax  
   
-```dax
+```js
 CONVERT(<Expression>, <Datatype>)  
 ```
   
@@ -46,7 +46,7 @@ Returns the value of \<Expression>, translated to \<Datatype>.
 
 DAX query
 
-```dax
+```js
 EVALUATE { CONVERT(DATE(1900, 1, 1), INTEGER) }  
 ```
 

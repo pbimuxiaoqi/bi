@@ -17,7 +17,7 @@ Returns the smallest value that results from evaluating an expression for each r
 
 ## Syntax
 
-```dax
+```js
 MINX(<table>, < expression>)  
 ```
   
@@ -44,7 +44,7 @@ A smallest value.
 
 The following example filters the table, InternetSales, and returns only rows for a specific sales territory. The formula then finds the minimum value in the column, Freight.  
   
-```dax
+```js
 = MINX( FILTER(InternetSales, [SalesTerritoryKey] = 5),[Freight])  
 ```
   
@@ -52,7 +52,7 @@ The following example filters the table, InternetSales, and returns only rows fo
 
 The following example uses the same filtered table as in the previous example, but instead of merely looking up values in the column for each row of the filtered table, the function calculates the sum of two columns, Freight and TaxAmt, and returns the smallest value resulting from that calculation.  
   
-```dax
+```js
 = MINX( FILTER(InternetSales, InternetSales[SalesTerritoryKey] = 5), InternetSales[Freight] + InternetSales[TaxAmt])  
 ```
 

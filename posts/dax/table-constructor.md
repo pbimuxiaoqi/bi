@@ -17,7 +17,7 @@ Returns a table of one or more columns.
   
 ## Syntax  
   
-```dax
+```js
 { <scalarExpr1>, <scalarExpr2>, … } 
 { ( <scalarExpr1>, <scalarExpr2>, … ), ( <scalarExpr1>, <scalarExpr2>, … ), … }
 ```
@@ -44,13 +44,13 @@ A table of one or more columns. When there is only one column, the name of the c
 
 The following DAX queries:
 
-```dax
+```js
 EVALUATE { 1, 2, 3 }
 ```
 
 and
 
-```dax
+```js
 EVALUATE { (1), (2), (3) }
 ```
 
@@ -66,7 +66,7 @@ Return the following table of a single column:
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
     {
         (1.5, DATE(2017, 1, 1), CURRENCY(199.99), "A"),
@@ -87,7 +87,7 @@ Returns,
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE { 1, DATE(2017, 1, 1), TRUE, "A" }
 ```
 

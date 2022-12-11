@@ -17,13 +17,13 @@ Modifies the behavior of the [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md
   
 ## Syntax  
   
-```dax
+```js
 IGNORE(<expression>)
 ```
 
 With SUMMARIZECOLUMNS,
   
-```dax
+```js
 SUMMARIZECOLUMNS(<groupBy_columnName>[, < groupBy_columnName >]…, [<filterTable>]…[, <name>, IGNORE(…)]…)
 ```  
   

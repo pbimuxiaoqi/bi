@@ -17,7 +17,7 @@ Introduces a statement that defines sort order of query results returned by an E
 
 ## Syntax  
   
-```dax
+```js
 [ORDER BY {<expression> [{ASC | DESC}]}[, …]]  
 ```
   

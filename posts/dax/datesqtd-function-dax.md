@@ -17,7 +17,7 @@ Returns a table that contains a column of the dates for the quarter to date, in 
   
 ## Syntax  
   
-```dax
+```js
 DATESQTD(<dates>)  
 ```
   
@@ -50,7 +50,7 @@ The **dates** argument can be any of the following:
 
 The following sample formula creates a measure that calculates the 'Quarterly Running Total' of Internet Sales.  
   
-```dax
+```js
 = CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), DATESQTD(DateTime[DateKey]))  
 ```
   

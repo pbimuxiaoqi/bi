@@ -17,7 +17,7 @@ Rounds a number down, toward zero.
   
 ## Syntax  
   
-```dax
+```js
 ROUNDDOWN(<number>, <num_digits>)  
 ```
   
@@ -46,7 +46,7 @@ A decimal number.
 
 The following example rounds 3.14159 down to three decimal places. The expected result is 3.141.  
   
-```dax
+```js
 = ROUNDDOWN(3.14159,3)  
 ```
   
@@ -54,7 +54,7 @@ The following example rounds 3.14159 down to three decimal places. The expected 
 
 The following example rounds the value of 31415.92654 down to 2 decimal places to the left of the decimal. The expected result is 31400.  
   
-```dax
+```js
 = ROUNDDOWN(31415.92654, -2)  
 ```
   

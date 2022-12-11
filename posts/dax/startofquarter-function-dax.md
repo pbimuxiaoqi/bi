@@ -17,7 +17,7 @@ Returns the first date of the quarter in the current context for the specified c
   
 ## Syntax  
   
-```dax
+```js
 STARTOFQUARTER(<dates>)  
 ```
   
@@ -46,7 +46,7 @@ A table containing a single column and single row with a date value.
 
 The following sample formula creates a measure that returns the start of the quarter, for the current context.  
   
-```dax
+```js
 = STARTOFQUARTER(DateTime[DateKey])  
 ```
   

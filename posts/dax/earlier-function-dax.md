@@ -21,7 +21,7 @@ EARLIER is mostly used in the context of calculated columns.
   
 ## Syntax  
   
-```dax
+```js
 EARLIER(<column>, <number>)  
 ```
   
@@ -105,7 +105,7 @@ One way to obtain a rank value for a given value in a row is to count the number
   
 A new calculated column, **SubCategorySalesRanking**, is created by using the following formula.  
   
-```dax
+```js
 = COUNTROWS(FILTER(ProductSubcategory, EARLIER(ProductSubcategory[TotalSubcategorySales])<ProductSubcategory[TotalSubcategorySales]))+1  
 ```
 

@@ -17,7 +17,7 @@ Returns the number of whole workdays between two dates (inclusive). Parameters s
 
 ## Syntax
 
-```dax
+```js
 NETWORKDAYS(<start_date>, <end_date>[, <weekend>, <holidays>])
 ```
 
@@ -48,7 +48,7 @@ An integer number of whole workdays.
 
 The following expression:
 
-```dax
+```js
    = NETWORKDAYS (
         DATE ( 2022, 5, 28 ),
         DATE ( 2022, 5, 30 ),

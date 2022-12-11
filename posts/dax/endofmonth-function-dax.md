@@ -17,7 +17,7 @@ Returns the last date of the month in the current context for the specified colu
   
 ## Syntax  
   
-```dax
+```js
 ENDOFMONTH(<dates>)  
 ```
   
@@ -46,7 +46,7 @@ A table containing a single column and single row with a date value.
 
 The following sample formula creates a measure that returns the end of the month, for the current context.  
 
-```dax
+```js
 = ENDOFMONTH(DateTime[DateKey])  
 ```
   

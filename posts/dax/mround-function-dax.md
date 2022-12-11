@@ -17,7 +17,7 @@ Returns a number rounded to the desired multiple.
   
 ## Syntax  
   
-```dax
+```js
 MROUND(<number>, <multiple>)  
 ```
   
@@ -40,7 +40,7 @@ MROUND rounds up, away from zero, if the remainder of dividing **number** by the
 
 The following expression rounds 1.3 to the nearest multiple of .2. The expected result is 1.4.  
   
-```dax
+```js
 = MROUND(1.3,0.2)  
 ```
   
@@ -48,7 +48,7 @@ The following expression rounds 1.3 to the nearest multiple of .2. The expected 
   
 The following expression rounds -10 to the nearest multiple of -3. The expected result is -9.  
   
-```dax
+```js
 = MROUND(-10,-3)  
 ```
   
@@ -56,7 +56,7 @@ The following expression rounds -10 to the nearest multiple of -3. The expected 
 
 The following expression returns an error, because the numbers have different signs.
   
-```dax
+```js
 = MROUND(5,-2)  
 ```
   

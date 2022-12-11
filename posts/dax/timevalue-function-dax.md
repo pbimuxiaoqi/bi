@@ -17,7 +17,7 @@ Converts a time in text format to a time in datetime format.
   
 ## Syntax  
   
-```dax
+```js
 TIMEVALUE(time_text)  
 ```
   
@@ -41,7 +41,7 @@ A date (**datetime**).
   
 ## Example  
   
-```dax
+```js
 = TIMEVALUE("20:45:30")  
 ```
   

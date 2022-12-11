@@ -19,7 +19,7 @@ The ALLSELECTED function gets the context that represents all rows and columns i
   
 ## Syntax  
   
-```dax
+```js
 ALLSELECTED([<tableName> | <columnName>[, <columnName>[, <columnName>[,…]]]] )
 ```
   
@@ -46,7 +46,7 @@ The context of the query without any column and row filters.
 
 The following example shows how to generate different levels of visual totals in a table report using DAX expressions. In the report two (2) previous filters have been applied to the Reseller Sales data; one on Sales Territory Group = *Europe* and the other on Promotion Type = *Volume Discount*. Once filters have been applied, visual totals can be calculated for the entire report, for All Years, or for All Product Categories. Also, for illustration purposes the grand total for All Reseller Sales is obtained too, removing all filters in the report. Evaluating the following DAX expression results in a table with all the information needed to build a table with Visual Totals.  
   
-```dax
+```js
 define  
 measure 'Reseller Sales'[Reseller Sales Amount]=sum('Reseller Sales'[Sales Amount])  
 measure 'Reseller Sales'[Reseller Grand Total]=calculate(sum('Reseller Sales'[Sales Amount]), ALL('Reseller Sales'))  

@@ -17,7 +17,7 @@ Returns the two-tailed Student's t-distribution.
   
 ## Syntax  
   
-```dax
+```js
 T.DIST.2T(X,Deg_freedom)
 ```
   
@@ -38,7 +38,7 @@ The two-tailed Student's t-distribution.
 
 ## Example  
   
-```dax
+```js
 EVALUATE { T.DIST.2T(1.959999998, 60) }
 ```
 

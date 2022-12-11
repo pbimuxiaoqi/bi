@@ -17,7 +17,7 @@ Performs division and returns only the integer portion of the division result. U
   
 ## Syntax  
   
-```dax
+```js
 QUOTIENT(<numerator>, <denominator>)  
 ```
   
@@ -42,11 +42,11 @@ A whole number.
 
 The following formulas return the same result, 2.  
   
-```dax
+```js
 = QUOTIENT(5,2)
 ```
 
-```dax
+```js
 = QUOTIENT(10/2,2)  
 ```
   

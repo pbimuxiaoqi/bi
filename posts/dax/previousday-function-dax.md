@@ -16,7 +16,7 @@ Returns a table that contains a column of all dates representing the day that is
   
 ## Syntax  
   
-```dax
+```js
 PREVIOUSDAY(<dates>)  
 ```
   
@@ -47,7 +47,7 @@ A table containing a single column of date values.
 
 The following sample formula creates a measure that calculates the 'previous day sales' for Internet sales.  
   
-```dax
+```js
 = CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PREVIOUSDAY('DateTime'[DateKey]))  
 ```
   

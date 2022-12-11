@@ -17,7 +17,7 @@ Returns TRUE or FALSE indicating whether one string contains another string.
   
 ## Syntax  
   
-```dax
+```js
 CONTAINSSTRING(<within_text>, <find_text>) 
 ```
   
@@ -42,7 +42,7 @@ TRUE if find_text is a substring of within_text; otherwise FALSE.
 
 DAX query
 
-```DAX
+```js
 EVALUATE
     ROW(
         "Case 1", CONTAINSSTRING("abcd", "bc"), 

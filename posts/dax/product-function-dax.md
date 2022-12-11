@@ -17,7 +17,7 @@ Returns the product of the numbers in a column.
   
 ## Syntax  
   
-```dax
+```js
 PRODUCT(<column>)  
 ```
   
@@ -45,7 +45,7 @@ A decimal number.
 
 The following computes the product of the AdjustedRates column in an Annuity table:  
   
-```dax
+```js
 = PRODUCT( Annuity[AdjustedRates] )  
 ```
   

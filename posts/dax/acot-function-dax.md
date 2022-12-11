@@ -17,7 +17,7 @@ Returns the principal value of the arccotangent, or inverse cotangent of a numbe
   
 ## Syntax  
   
-```dax
+```js
 ACOT(number)  
 ```
   

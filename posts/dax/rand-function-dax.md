@@ -17,7 +17,7 @@ Returns a random number greater than or equal to 0 and less than 1, evenly distr
   
 ## Syntax  
   
-```dax
+```js
 RAND()  
 ```
   
@@ -39,28 +39,28 @@ A decimal number.
 
 To generate a random real number between two other numbers, use:  
   
-```dax
+```js
 = RAND()*(b-a)+a
 
 ```
 
 To generate a random number greater than 0 and less than 1:
 
-```dax
+```js
 = RAND()
 
 ```
 
 To generate a random number greater than 0 and less than 100
 
-```dax
+```js
 = RAND()*100
 
 ```
 
 To generate a random whole number greater than 0 and less than 100
 
-```dax
+```js
 INT(RAND()*100)
 
 ```

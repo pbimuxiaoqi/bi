@@ -17,7 +17,7 @@ Returns the value of Pi, 3.14159265358979, accurate to 15 digits.
   
 ## Syntax  
   
-```dax
+```js
 PI()  
 ```
   
@@ -33,7 +33,7 @@ Pi is a mathematical constant. In DAX, Pi is represented as a real number accura
 
 The following formula calculates the area of a circle given the radius in the column, `[Radius]`.  
   
-```dax
+```js
 = PI()*([Radius]*2)  
 ```
   

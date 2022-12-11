@@ -17,7 +17,7 @@ Returns a number shifted left by the specified number of bits.
   
 ## Syntax  
   
-```dax
+```js
 BITLSHIFT(<Number>, <Shift_Amount>) 
 ```
 
@@ -45,7 +45,7 @@ An integer value.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE 
     { BITLSHIFT(2, 3) }
 ```
@@ -56,7 +56,7 @@ Returns 16.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE 
     { BITLSHIFT(128, -1) }
 ```
@@ -67,7 +67,7 @@ Returns 64.
 
 The following DAX query:
 
-```dax
+```js
 Define 
     Measure Sales[LeftShift] = BITLSHIFT(SELECTEDVALUE(Sales[Amount]), 3)
 

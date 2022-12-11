@@ -17,7 +17,7 @@ Returns number rounded up to the nearest even integer. You can use this function
   
 ## Syntax  
   
-```dax
+```js
 EVEN(number)  
 ```
   

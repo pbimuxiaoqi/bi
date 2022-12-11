@@ -17,7 +17,7 @@ Returns the standard deviation of a sample population.
   
 ## Syntax  
   
-```dax
+```js
 STDEV.S(<ColumnName>)  
 ```
   
@@ -53,6 +53,6 @@ A number that represents the standard deviation of a sample population.
 
 The following example shows the formula for a measure that calculates the standard deviation of the column, SalesAmount_USD, when the table InternetSales_USD is the sample population.  
   
-```dax
+```js
 = STDEV.S(InternetSales_USD[SalesAmount_USD])  
 ```

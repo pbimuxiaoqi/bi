@@ -17,7 +17,7 @@ Returns a table with a single column named "Date" that contains a contiguous set
   
 ## Syntax  
   
-```dax
+```js
 CALENDARAUTO([fiscal_year_end_month])  
 ```
   

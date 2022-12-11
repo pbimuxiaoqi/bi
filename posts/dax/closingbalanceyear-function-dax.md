@@ -17,7 +17,7 @@ Evaluates the **expression** at the last date of the year in the current context
   
 ## Syntax  
   
-```dax
+```js
 CLOSINGBALANCEYEAR(<expression>,<dates>[,<filter>][,<year_end_date>])  
 ```
   
@@ -58,7 +58,7 @@ A scalar value that represents the **expression** evaluated at the last date of 
 
 The following sample formula creates a measure that calculates the 'Year End Inventory Value' of the product inventory.  
   
-```dax
+```js
 = CLOSINGBALANCEYEAR(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]),DateTime[DateKey])  
 ```
   

@@ -18,7 +18,7 @@ Returns the nominal annual interest rate, given the effective rate and the numbe
 
 ## Syntax
 
-```dax
+```js
 NOMINAL(<effect_rate>, <npery>)
 ```
 
@@ -56,7 +56,7 @@ The nominal annual interest rate.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   NOMINAL(0.053543, 4)

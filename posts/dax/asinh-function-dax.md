@@ -17,7 +17,7 @@ Returns the inverse hyperbolic sine of a number. The inverse hyperbolic sine is 
   
 ## Syntax  
   
-```dax
+```js
 ASINH(number)  
 ```
   

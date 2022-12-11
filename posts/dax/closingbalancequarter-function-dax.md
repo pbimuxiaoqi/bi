@@ -17,7 +17,7 @@ Evaluates the **expression** at the last date of the quarter in the current cont
   
 ## Syntax  
   
-```dax
+```js
 CLOSINGBALANCEQUARTER(<expression>,<dates>[,<filter>])  
 ```
   
@@ -55,7 +55,7 @@ A scalar value that represents the **expression** evaluated at the last date of 
 
 The following sample formula creates a measure that calculates the 'Quarter End Inventory Value' of the product inventory.  
   
-```dax
+```js
 = CLOSINGBALANCEQUARTER(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]),DateTime[DateKey])  
 ```
   

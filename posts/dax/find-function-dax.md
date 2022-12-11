@@ -17,7 +17,7 @@ Returns the starting position of one text string within another text string. FIN
   
 ## Syntax  
   
-```dax
+```js
 FIND(<find_text>, <within_text>[, [<start_num>][, <NotFoundValue>]])  
 ```
   
@@ -50,7 +50,7 @@ Keep in mind, FIND is case-sensitive. In this example, if "bike" were used in th
 
 [!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
   
-```dax
+```js
 EVALUATE
 CALCULATETABLE (
     ADDCOLUMNS (

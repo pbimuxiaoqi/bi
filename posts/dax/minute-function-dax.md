@@ -17,7 +17,7 @@ Returns the minute as a number from 0 to 59, given a date and time value.
   
 ## Syntax  
   
-```dax
+```js
 MINUTE(<datetime>)  
 ```
   
@@ -41,7 +41,7 @@ An integer number from 0 to 59.
 
 The following example returns the minute from the value stored in the **TransactionTime** column of the **Orders** table.  
   
-```dax
+```js
 = MINUTE(Orders[TransactionTime])  
 ```
   
@@ -49,7 +49,7 @@ The following example returns the minute from the value stored in the **Transact
 
 The following example returns 45, which is the number of minutes in the time 1:45 PM.  
   
-```dax
+```js
 = MINUTE("March 23, 2008 1:45 PM")  
 ```
   

@@ -17,7 +17,7 @@ Returns the number of interval boundaries between two dates.
   
 ## Syntax  
   
-```dax
+```js
 DATEDIFF(<Date1>, <Date2>, <Interval>)  
 ```
   
@@ -44,7 +44,7 @@ A negative result is returned if Date1 is larger than Date2.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 VAR StartDate =  DATE ( 2019, 07, 01 )
 VAR EndDate =    DATE ( 2021, 12, 31 )

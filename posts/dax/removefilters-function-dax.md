@@ -17,7 +17,7 @@ Clear filters from the specified tables or columns.
   
 ## Syntax  
   
-```dax
+```js
 REMOVEFILTERS([<table> | <column>[, <column>[, <column>[,…]]]])
 ```
   
@@ -42,7 +42,7 @@ N/A. See remarks.
 
 DAX query
 
-```dax
+```js
 DEFINE
 MEASURE FactInternetSales[TotalSales] = SUM(FactInternetSales[SalesAmount])
 MEASURE FactInternetSales[%Sales] = DIVIDE([TotalSales], CALCULATE([TotalSales],REMOVEFILTERS()))
@@ -70,7 +70,7 @@ Returns
 
 DAX query
 
-```dax
+```js
 DEFINE
 MEASURE FactInternetSales[TotalSales] = SUM(FactInternetSales[SalesAmount])
 MEASURE FactInternetSales[%Sales] = DIVIDE([TotalSales], CALCULATE([TotalSales],REMOVEFILTERS(DimProductSubcategory[EnglishProductSubcategoryName])))

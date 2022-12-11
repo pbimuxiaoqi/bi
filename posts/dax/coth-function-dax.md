@@ -17,7 +17,7 @@ Returns the hyperbolic cotangent of a hyperbolic angle.
   
 ## Syntax  
   
-```dax
+```js
 COTH (<number>)
 ```
   
@@ -51,7 +51,7 @@ The hyperbolic cotangent of the given angle.
   
 The following DAX query,
   
-```dax
+```js
 EVALUATE { COTH(2) }
 ```
 

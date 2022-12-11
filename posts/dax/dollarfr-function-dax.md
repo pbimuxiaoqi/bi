@@ -18,7 +18,7 @@ Converts a dollar price expressed as a decimal number into a dollar price expres
 
 ## Syntax
 
-```dax
+```js
 DOLLARFR(<decimal_dollar>, <fraction>)
 ```
 
@@ -46,7 +46,7 @@ The fractional value of *decimal_dollar*, expressed as an integer part and a fra
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   DOLLARFR(1.125, 16)

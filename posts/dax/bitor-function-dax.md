@@ -17,7 +17,7 @@ Returns a bitwise OR of two numbers.
   
 ## Syntax  
   
-```dax
+```js
 BITOR(<number>, <number>)
 ```
 
@@ -39,7 +39,7 @@ A bitwise OR of two numbers.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE 
     { BITOR(9, 10) }
 ```

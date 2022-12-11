@@ -18,7 +18,7 @@ To return the median of an expresssion evaluated for each row in a table, use [M
   
 ## Syntax  
   
-```dax
+```js
 MEDIAN(<column>)  
 ```
   
@@ -44,7 +44,7 @@ A decimal number.
 
 The following computes the median of a column named Age in a table named Customers:  
   
-```dax
+```js
 = MEDIAN( Customers[Age] )  
 ```
   

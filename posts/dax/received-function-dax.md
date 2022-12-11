@@ -18,7 +18,7 @@ Returns the amount received at maturity for a fully invested security.
 
 ## Syntax
 
-```dax
+```js
 RECEIVED(<settlement>, <maturity>, <investment>, <discount>[, <basis>])
 ```
 
@@ -86,7 +86,7 @@ The following DAX query:
 | 5.75%          | Percent discount rate   |
 | 2              | Actual/360 basis        |
 
-```dax
+```js
 EVALUATE
 {
   RECEIVED(DATE(2008,2,15), DATE(2008,5,15), 1000000.00, 0.0575, 2)

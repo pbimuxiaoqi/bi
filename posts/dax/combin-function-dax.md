@@ -18,7 +18,7 @@ Returns the number of combinations for a given number of items. Use COMBIN to de
   
 ## Syntax  
   
-```dax
+```js
 COMBIN(number, number_chosen)  
 ```
   

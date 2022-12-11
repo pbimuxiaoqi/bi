@@ -18,7 +18,7 @@ Returns the modified Macauley duration for a security with an assumed par value 
 
 ## Syntax
 
-```dax
+```js
 MDURATION(<settlement>, <maturity>, <coupon>, <yld>, <frequency>[, <basis>])
 ```
 
@@ -84,7 +84,7 @@ The modified Macauley duration.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   MDURATION(DATE(2008,1,1), DATE(2016,1,1), 0.08, 0.09, 2, 1)

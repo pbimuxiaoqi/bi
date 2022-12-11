@@ -17,7 +17,7 @@ Returns the month as a number from 1 (January) to 12 (December).
   
 ## Syntax  
   
-```dax
+```js
 MONTH(<datetime>)  
 ```
   
@@ -45,7 +45,7 @@ An integer number from 1 to 12.
 
 The following expression returns 3, which is the integer corresponding to March, the month in the **date** argument.  
   
-```dax
+```js
 = MONTH("March 3, 2008 3:45 PM")  
 ```
   
@@ -53,7 +53,7 @@ The following expression returns 3, which is the integer corresponding to March,
 
 The following expression returns the month from the date in the **TransactionDate** column of the **Orders** table.  
   
-```dax
+```js
 = MONTH(Orders[TransactionDate])  
 ```
   

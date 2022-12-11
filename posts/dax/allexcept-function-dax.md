@@ -17,7 +17,7 @@ Removes all context filters in the table except filters that have been applied t
   
 ## Syntax  
   
-```dax
+```js
 ALLEXCEPT(<table>,<column>[,<column>[,…]])  
 ```
   
@@ -52,7 +52,7 @@ A table with all filters removed except for the filters on the specified columns
   
 The following measure formula sums SalesAmount_USD and uses the ALLEXCEPT function to remove any context filters on the DateTime table except if the filter has been applied to the CalendarYear column.  
   
-```dax
+```js
 = CALCULATE(SUM(ResellerSales_USD[SalesAmount_USD]), ALLEXCEPT(DateTime, DateTime[CalendarYear]))  
 ```
 

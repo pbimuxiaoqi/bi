@@ -18,7 +18,7 @@ Returns the annual yield for a discounted security.
 
 ## Syntax
 
-```dax
+```js
 YIELDDISC(<settlement>, <maturity>, <pr>, <redemption>[, <basis>])
 ```
 
@@ -77,7 +77,7 @@ The annual yield.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   YIELDDISC(DATE(2008,2,16), DATE(2008,3,1), 99.795, 100, 2)

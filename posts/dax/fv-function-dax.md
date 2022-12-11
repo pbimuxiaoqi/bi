@@ -18,7 +18,7 @@ Calculates the future value of an investment based on a constant interest rate. 
 
 ## Syntax
 
-```dax
+```js
 FV(<rate>, <nper>, <pmt>[, <pv>[, <type>]])
 ```
 
@@ -70,7 +70,7 @@ The future value of an investment.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   FV(0.06/12, 10, -200, -500, 1)

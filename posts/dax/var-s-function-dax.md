@@ -17,7 +17,7 @@ Returns the variance of a sample population.
   
 ## Syntax  
   
-```dax
+```js
 VAR.S(<columnName>)  
 ```
   
@@ -53,6 +53,6 @@ A number with the variance of a sample population.
 
 The following example shows the formula for a measure that calculates the variance of the SalesAmount_USD column from the InternetSales_USD for a sample population.  
   
-```dax
+```js
 = VAR.S(InternetSales_USD[SalesAmount_USD])  
 ```

@@ -18,7 +18,7 @@ Returns the number of days from the beginning of a coupon period until its settl
 
 ## Syntax
 
-```dax
+```js
 COUPDAYBS(<settlement>, <maturity>, <frequency>[, <basis>])
 ```
 
@@ -74,7 +74,7 @@ The number of days from the beginning of a coupon period until its settlement da
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   COUPDAYBS(DATE(2011,1,25), DATE(2011,11,15), 2, 1)

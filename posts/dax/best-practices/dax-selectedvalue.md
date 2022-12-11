@@ -17,7 +17,7 @@ As a data modeler, sometimes you might need to write a DAX expression that tests
 
 In earlier versions of DAX, this requirement was safely achieved by using a pattern involving three DAX functions; [IF](../if-function-dax.md), [HASONEVALUE](../hasonevalue-function-dax.md) and [VALUES](../values-function-dax.md). The following measure definition presents an example. It calculates the sales tax amount, but only for sales made to Australian customers.
 
-```dax
+```js
 Australian Sales Tax =
 IF(
     HASONEVALUE(Customer[Country-Region]),
@@ -38,7 +38,7 @@ It's recommended that you use the [SELECTEDVALUE](../selectedvalue-function.md) 
 
 Using the SELECTEDVALUE function, the example measure definition is now rewritten.
 
-```dax
+```js
 Australian Sales Tax =
 IF(
     SELECTEDVALUE(Customer[Country-Region]) = "Australia",

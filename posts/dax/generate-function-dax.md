@@ -17,7 +17,7 @@ Returns a table with the Cartesian product between each row in *table1* and the 
   
 ## Syntax  
   
-```dax
+```js
 GENERATE(<table1>, <table2>)  
 ```
   
@@ -61,7 +61,7 @@ In the following example the user wants a summary table of the sales by Region a
   
 The following formula produces the above table:  
   
-```dax
+```js
 GENERATE(  
 SUMMARIZE(SalesTerritory, SalesTerritory[SalesTerritoryGroup])  
 ,SUMMARIZE(ProductCategory   

@@ -18,7 +18,7 @@ Returns the annual yield of a security that pays interest at maturity.
 
 ## Syntax
 
-```dax
+```js
 YIELDMAT(<settlement>, <maturity>, <issue>, <rate>, <pr>[, <basis>])
 ```
 
@@ -79,7 +79,7 @@ The annual yield.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   YIELDMAT(DATE(2008,3,15), DATE(2008,11,3), DATE(2007,11,8), 0.0625, 100.0123, 0)

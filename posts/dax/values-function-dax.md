@@ -19,7 +19,7 @@ When the input parameter is a column name, returns a one-column table that conta
   
 ## Syntax  
   
-```dax
+```js
 VALUES(<TableNameOrColumnName>)  
 ```
   
@@ -64,7 +64,7 @@ If you use the DISTINCT function to return a list of dates, only two dates would
 
 The following formula counts the number of unique invoices (sales orders), and produces the following results when used in a report that includes the Product Category Names:  
 
-```dax
+```js
 = COUNTROWS(VALUES('InternetSales_USD'[SalesOrderNumber]))  
 ```
 

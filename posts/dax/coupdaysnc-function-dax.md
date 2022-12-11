@@ -18,7 +18,7 @@ Returns the number of days from the settlement date to the next coupon date.
 
 ## Syntax
 
-```dax
+```js
 COUPDAYSNC(<settlement>, <maturity>, <frequency>[, <basis>])
 ```
 
@@ -74,7 +74,7 @@ The number of days from the settlement date to the next coupon date.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   COUPDAYSNC(DATE(2011,1,25), DATE(2011,11,15), 2, 1)

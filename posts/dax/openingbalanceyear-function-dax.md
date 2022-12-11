@@ -17,7 +17,7 @@ Evaluates the **expression** at the first date of the year in the current contex
   
 ## Syntax  
   
-```dax
+```js
 OPENINGBALANCEYEAR(<expression>,<dates>[,<filter>][,<year_end_date>])  
 ```
   
@@ -53,7 +53,7 @@ A scalar value that represents the **expression** evaluated at the first date of
 
 The following sample formula creates a measure that calculates the 'Year Start Inventory Value' of the product inventory.  
   
-```dax
+```js
 = OPENINGBALANCEYEAR(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]),DateTime[DateKey])  
 ```
   

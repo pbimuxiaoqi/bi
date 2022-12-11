@@ -17,7 +17,7 @@ Rounds a number up, to the nearest integer or to the nearest multiple of signifi
   
 ## Syntax  
   
-```dax
+```js
 CEILING(<number>, <significance>)  
 ```
   
@@ -51,7 +51,7 @@ A number rounded as specified.
 
 The following formula returns 4.45. This might be useful if you want to avoid using smaller units in your pricing. If an existing product is priced at $4.42, you can use CEILING to round prices up to the nearest unit of five cents.  
   
-```dax
+```js
 = CEILING(4.42,0.05)  
 ```
   
@@ -59,7 +59,7 @@ The following formula returns 4.45. This might be useful if you want to avoid us
 
 The following formula returns similar results as the previous example, but uses numeric values stored in the column, **ProductPrice**.  
   
-```dax
+```js
 = CEILING([ProductPrice],0.05)  
 ```
   

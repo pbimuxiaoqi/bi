@@ -17,7 +17,7 @@ Calculates the fraction of the year represented by the number of whole days betw
   
 ## Syntax  
   
-```dax
+```js
 YEARFRAC(<start_date>, <end_date>, <basis>)  
 ```
   
@@ -45,7 +45,7 @@ A decimal number. The internal data type is a signed IEEE 64-bit (8-byte) double
 
 The following example returns the fraction of a year represented by the difference between the dates in the two columns, `TransactionDate` and `ShippingDate`:  
   
-```dax
+```js
 = YEARFRAC(Orders[TransactionDate],Orders[ShippingDate])  
 ```
   
@@ -53,7 +53,7 @@ The following example returns the fraction of a year represented by the differen
 
 The following example returns the fraction of a year represented by the difference between the dates, January 1 and March 1:  
   
-```dax
+```js
 = YEARFRAC("Jan 1 2007","Mar 1 2007")  
 ```
 

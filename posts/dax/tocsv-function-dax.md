@@ -17,7 +17,7 @@ Returns a table as a string in CSV format.
   
 ## Syntax  
   
-```dax
+```js
 TOCSV(<Table>, [MaxRows], [Delimiter], [IncludeHeaders])
 ```
   
@@ -38,7 +38,7 @@ A string with CSV representation of the table.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {TOCSV(DimSalesTerritory)}
 

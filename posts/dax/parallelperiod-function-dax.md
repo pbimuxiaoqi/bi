@@ -17,7 +17,7 @@ Returns a table that contains a column of dates that represents a period paralle
   
 ## Syntax  
   
-```dax
+```js
 PARALLELPERIOD(<dates>,<number_of_intervals>,<interval>)  
 ```
   
@@ -58,7 +58,7 @@ A table containing a single column of date values.
 
 The following sample formula creates a measure that calculates the previous year sales for Internet sales.  
   
-```dax
+```js
 = CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PARALLELPERIOD(DateTime[DateKey],-1,year))  
 ```
   

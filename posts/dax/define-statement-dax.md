@@ -17,7 +17,7 @@ Introduces a statement with one or more entity definitions that can be applied t
 
 ## Syntax  
   
-```dax
+```js
 [DEFINE 
     (
      (MEASURE <table name>[<measure name>] = <scalar expression>) | 

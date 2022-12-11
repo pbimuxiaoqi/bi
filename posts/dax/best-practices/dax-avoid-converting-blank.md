@@ -17,7 +17,7 @@ As a data modeler, when writing measure expressions you might come across cases 
 
 Consider the following measure definition that explicitly converts BLANK results to zero.
 
-```dax
+```js
 Sales (No Blank) =
 IF(
     ISBLANK([Sales]),
@@ -28,7 +28,7 @@ IF(
 
 Consider another measure definition that also converts BLANK results to zero.
 
-```dax
+```js
 Profit Margin =
 DIVIDE([Profit], [Sales], 0)
 ```
@@ -52,7 +52,7 @@ The table visual displays an overwhelming number of rows. (There are in fact 18,
 
 Let's see what happens when the **Profit Margin** measure definition is improved. It now returns a value only when the **Sales** measure isn't BLANK (or zero).
 
-```dax
+```js
 Profit Margin =
 DIVIDE([Profit], [Sales])
 ```

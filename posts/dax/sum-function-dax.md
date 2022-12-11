@@ -17,7 +17,7 @@ Adds all the numbers in a column.
   
 ## Syntax  
   
-```dax
+```js
 SUM(<column>)  
 ```
   
@@ -39,7 +39,7 @@ If you want to filter the values that you are summing, you can use the SUMX func
 
 The following example adds all the numbers that are contained in the column, Amt, from the table, Sales.  
   
-```dax
+```js
 = SUM(Sales[Amt])  
 ```
   

@@ -18,7 +18,7 @@ Returns the price per \\$100 face value of a security having an odd (short or lo
 
 ## Syntax
 
-```dax
+```js
 ODDFPRICE(<settlement>, <maturity>, <issue>, <first_coupon>, <rate>, <yld>, <redemption>, <frequency>[, <basis>])
 ```
 
@@ -116,7 +116,7 @@ The price per \\$100 face value.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   ODDFPRICE(DATE(2008,11,11), DATE(2021,3,1), DATE(2008,10,15), DATE(2009,3,1), 0.0785, 0.0625, 100.00, 2, 1)

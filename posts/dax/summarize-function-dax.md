@@ -17,7 +17,7 @@ Returns a summary table for the requested totals over a set of groups.
   
 ## Syntax  
   
-```dax
+```js
 SUMMARIZE (<table>, <groupBy_columnName>[, <groupBy_columnName>]…[, <name>, <expression>]…)
 ```
   
@@ -50,7 +50,7 @@ A table with the selected columns for the *groupBy_columnName* arguments and the
 
 The following example returns a summary of the reseller sales grouped around the calendar year and the product category name, this result table allows you to do analysis over the reseller sales by year and product category.  
   
-```dax
+```js
 SUMMARIZE(ResellerSales_USD  
       , DateTime[CalendarYear]  
       , ProductCategory[ProductCategoryName]  
@@ -88,7 +88,7 @@ The addition of the [ROLLUP](rollup-function-dax.md) syntax modifies the behavio
 
 The following example adds rollup rows to the Group-By columns of the SUMMARIZE function call:  
   
-```dax
+```js
 SUMMARIZE(ResellerSales_USD  
       , ROLLUP( DateTime[CalendarYear], ProductCategory[ProductCategoryName])  
       , "Sales Amount (USD)", SUM(ResellerSales_USD[SalesAmount_USD])  
@@ -130,7 +130,7 @@ The addition of [ROLLUPGROUP](rollupgroup-function-dax.md) inside a [ROLLUP](rol
 
 The following example shows only the grand total of all years and categories without the subtotal of each year with all categories:  
   
-```dax
+```js
 SUMMARIZE(ResellerSales_USD  
       , ROLLUP(ROLLUPGROUP( DateTime[CalendarYear], ProductCategory[ProductCategoryName]))  
       , "Sales Amount (USD)", SUM(ResellerSales_USD[SalesAmount_USD])  
@@ -168,7 +168,7 @@ With [ISSUBTOTAL](issubtotal-function-dax.md), you can create another column in 
 
 The following sample generates an [ISSUBTOTAL](issubtotal-function-dax.md) column for each of the [ROLLUP](rollup-function-dax.md) columns in the given SUMMARIZE function call:  
   
-```dax
+```js
 SUMMARIZE(ResellerSales_USD  
       , ROLLUP( DateTime[CalendarYear], ProductCategory[ProductCategoryName])  
       , "Sales Amount (USD)", SUM(ResellerSales_USD[SalesAmount_USD])  

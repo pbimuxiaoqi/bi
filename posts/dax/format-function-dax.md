@@ -17,7 +17,7 @@ Converts a value to text according to the specified format.
 
 ## Syntax
 
-```dax
+```js
 FORMAT(<value>, <format_string>[, <locale_name>])
 ```
 
@@ -52,7 +52,7 @@ A string containing **value** formatted as defined by **format_string**.
 
 #### Format strings
 
-```dax
+```js
 = FORMAT( 12345.67, "General Number")  
 = FORMAT( 12345.67, "Currency")  
 = FORMAT( 12345.67, "Fixed")  
@@ -77,7 +77,7 @@ Returns:
 
 #### Datetime with optional locale_name
 
-```dax
+```js
 = FORMAT( dt"2020-12-15T12:30:59", BLANK(), "en-US" ) 
 = FORMAT( dt"2020-12-15T12:30:59", BLANK(), "en-GB" ) 
 = FORMAT( dt"2020-12-15T12:30:59", "mm/dd/yyyy", "en-GB" )
@@ -117,13 +117,13 @@ A custom format expression for numbers can have from one to three sections separ
 |Two sections|The first section applies to positive values and zeros, the second to negative values.|
 |Three sections|The first section applies to positive values, the second to negative values, and the third to zeros.|
 
-```dax
+```js
 "$#,##0;($#,##0)"
 ```
 
 If you include semicolons with nothing between them, the missing section is defined using the format of the positive value. For example, the following format displays positive and negative values using the format in the first section and displays "Zero" if the value is zero.
 
-```dax
+```js
 "$#,##0"
 ```
 

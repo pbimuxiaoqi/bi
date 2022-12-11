@@ -17,7 +17,7 @@ Determines the sign of a number, the result of a calculation, or a value in a co
   
 ## Syntax  
   
-```dax
+```js
 SIGN(<number>)  
 ```
   
@@ -41,7 +41,7 @@ A whole number. The possible Return values are 1, 0, and -1.
 
 The following formula returns the sign of the result of the expression that calculates sale price minus cost.  
   
-```dax
+```js
 = SIGN( ([Sale Price] - [Cost]) )  
 ```
   

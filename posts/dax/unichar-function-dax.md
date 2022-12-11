@@ -17,7 +17,7 @@ Returns the Unicode character referenced by the numeric value.
   
 ## Syntax  
   
-```dax
+```js
 UNICHAR(number)  
 ```
   
@@ -47,18 +47,18 @@ A character represented by the Unicode number.
 
 The following example returns the character represented by the Unicode number 66 (uppercase A).  
 
-```dax
+```js
 = UNICHAR(65)
 ```
 
 The following example returns the character represented by the Unicode number 32 (space character).
 
-```dax
+```js
 = UNICHAR(32)
 ```
 
 The following example returns the character represented by the Unicode number 9733 (&#9733; character).
 
-```dax
+```js
 = UNICHAR(9733)
 ```

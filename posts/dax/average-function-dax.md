@@ -17,7 +17,7 @@ Returns the average (arithmetic mean) of all the numbers in a column.
   
 ## Syntax  
   
-```dax
+```js
 AVERAGE(<column>)  
 ```
   
@@ -50,7 +50,7 @@ Returns a decimal number that represents the arithmetic mean of the numbers in t
 
 The following formula returns the average of the values in the column, ExtendedSalesAmount, in the table, InternetSales.  
   
-```dax
+```js
 = AVERAGE(InternetSales[ExtendedSalesAmount])  
 ```
   

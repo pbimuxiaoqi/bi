@@ -17,7 +17,7 @@ Returns the user principal name.
   
 ## Syntax  
   
-```dax
+```js
 USERPRINCIPALNAME()  
 ```
   

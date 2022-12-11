@@ -17,7 +17,7 @@ Returns the content of the **CustomData** property in the connection string.
   
 ## Syntax  
   
-```dax
+```js
 CUSTOMDATA()  
 ```
   
@@ -35,6 +35,6 @@ Blank, if **CustomData** property was not defined at connection time.
 
 The following DAX formula verifies if the CustomData property was set to **"OK"**.  
   
-```dax
+```js
 = IF(CUSTOMDATA()="OK", "Correct Custom data in connection string", "No custom data in connection string property or unexpected value")  
 ```

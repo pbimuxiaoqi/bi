@@ -17,7 +17,7 @@ Converts a date in text format to a date in datetime format.
   
 ## Syntax  
   
-```dax
+```js
 DATEVALUE(date_text)  
 ```
   
@@ -51,7 +51,7 @@ The following example returns a different **datetime** value depending on the mo
   
 - In date/time settings where the month precedes the day, the example returns a **datetime** value corresponding to August 1st of 2009.  
   
-```dax
+```js
 = DATEVALUE("8/1/2009")  
 ```
   

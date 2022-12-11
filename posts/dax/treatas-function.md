@@ -17,7 +17,7 @@ Applies the result of a table expression as filters to columns from an unrelated
   
 ## Syntax  
   
-```dax
+```js
 TREATAS(table_expression, <column>[, <column>[, <column>[,…]]]} )  
 ```
   
@@ -46,7 +46,7 @@ A table that contains all the rows in column(s) that are also in table_expressio
 
 In the following example, the model contains two unrelated product tables. If a user applies a filter to DimProduct1[ProductCategory] selecting Bikes, Seats, Tires, the same filter, Bikes, Seats, Tires is applied to DimProduct2[ProductCategory].
 
-```dax
+```js
 CALCULATE(
 SUM(Sales[Amount]), 
 TREATAS(VALUES(DimProduct1[ProductCategory]), DimProduct2[ProductCategory])

@@ -19,7 +19,7 @@ To return the geometric mean of the numbers in a column, use [GEOMEAN function](
   
 ## Syntax  
   
-```dax
+```js
 GEOMEANX(<table>, <expression>)  
 ```
   
@@ -46,7 +46,7 @@ A decimal number.
 
 The following computes the geometric mean of the ReturnPct column in the Investments table:  
   
-```dax
+```js
 = GEOMEANX( Investments, Investments[ReturnPct] + 1 )  
 ```
   

@@ -18,7 +18,7 @@ Calculates the present value of a loan or an investment, based on a constant int
 
 ## Syntax
 
-```dax
+```js
 PV(<rate>, <nper>, <pmt>[, <fv>[, <type>]])
 ```
 
@@ -89,7 +89,7 @@ The present value of a loan or investment.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   PV(0.08/12, 12*20, 500.00, 0, 0)

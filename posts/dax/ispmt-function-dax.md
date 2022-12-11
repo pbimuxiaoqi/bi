@@ -18,7 +18,7 @@ Calculates the interest paid (or received) for the specified period of a loan (o
 
 ## Syntax
 
-```dax
+```js
 ISPMT(<rate>, <per>, <nper>, <pv>)
 ```
 
@@ -72,7 +72,7 @@ To illustrate when to use ISPMT, the amortization table below uses an even-princ
 
 The following DAX query:
 
-```dax
+```js
 DEFINE
 VAR NumPaymentPeriods = 4
 VAR PaymentPeriods = GENERATESERIES(0, NumPaymentPeriods-1)

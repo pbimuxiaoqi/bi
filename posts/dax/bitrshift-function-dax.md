@@ -17,7 +17,7 @@ Returns a number shifted right by the specified number of bits.
   
 ## Syntax  
   
-```dax
+```js
 BITRSHIFT(<Number>, <Shift_Amount>) 
 ```
 
@@ -45,7 +45,7 @@ An integer value.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE 
     { BITRSHIFT(16, 3) }
 ```
@@ -56,7 +56,7 @@ Returns 2.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE 
     { BITRSHIFT(1024, -3) }
 ```
@@ -67,7 +67,7 @@ Returns 8192.
 
 The following DAX query:
 
-```dax
+```js
 Define 
     Measure Sales[RightShift] = BITRSHIFT(SELECTEDVALUE(Sales[Amount]), 3)
 

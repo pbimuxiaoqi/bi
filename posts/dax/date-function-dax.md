@@ -17,7 +17,7 @@ Returns the specified date in **datetime** format.
   
 ## Syntax  
   
-```dax
+```js
 DATE(<year>, <month>, <day>)  
 ```
   
@@ -49,7 +49,7 @@ Returns the specified date (**datetime)**.
 
 The following formula returns the date July 8, 2009:  
   
-```dax
+```js
 = DATE(2009,7,8)  
 ```
   
@@ -57,7 +57,7 @@ The following formula returns the date July 8, 2009:
 
 If the value that you enter for the **year** argument is between 0 (zero) and 1899 (inclusive), that value is added to 1900 to calculate the year. The following formula returns January 2, 1908: (1900+08).  
   
-```dax
+```js
 = DATE(08,1,2)  
 ```
   
@@ -65,7 +65,7 @@ If the value that you enter for the **year** argument is between 0 (zero) and 18
 
 If **year** is between 1900 and 9999 (inclusive), that value is used as the year. The following formula returns January 2, 2008:  
   
-```dax
+```js
 = DATE(2008,1,2)  
 ```
   
@@ -73,7 +73,7 @@ If **year** is between 1900 and 9999 (inclusive), that value is used as the year
 
 If **month** is greater than 12, **month** adds that number of months to the first month in the year specified. The following formula returns the date February 2, 2009:  
   
-```dax
+```js
 = DATE(2008,14,2)  
 ```
   
@@ -81,7 +81,7 @@ If **month** is greater than 12, **month** adds that number of months to the fir
 
 If **day** is greater than the number of days in the month specified, **day** adds that number of days to the first day in the month. The following formula returns the date February 4, 2008:  
 
-```dax
+```js
 = DATE(2008,1,35)  
 ```
 

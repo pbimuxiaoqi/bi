@@ -17,7 +17,7 @@ Returns the natural logarithm of a number. Natural logarithms are based on the c
   
 ## Syntax  
   
-```dax
+```js
 LN(<number>)  
 ```
   
@@ -39,7 +39,7 @@ LN is the inverse of the EXP function.
 
 The following example returns the natural logarithm of the number in the column, `[Values]`.  
   
-```dax
+```js
 = LN([Values])  
 ```
   

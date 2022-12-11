@@ -17,7 +17,7 @@ Evaluates the value of the **expression** for the dates in the quarter to date, 
   
 ## Syntax  
   
-```dax
+```js
 TOTALQTD(<expression>,<dates>[,<filter>])  
 ```
   
@@ -50,7 +50,7 @@ A scalar value that represents the **expression** evaluated for all dates in the
 
 The following sample formula creates a measure that calculates the 'quarter running total' or 'quarter running sum' for Internet sales.  
   
-```dax
+```js
 = TOTALQTD(SUM(InternetSales_USD[SalesAmount_USD]),DateTime[DateKey])  
 ```
   

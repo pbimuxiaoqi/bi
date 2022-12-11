@@ -17,7 +17,7 @@ REPLACE replaces part of a text string, based on the number of characters you sp
   
 ## Syntax  
   
-```dax
+```js
 REPLACE(<old_text>, <start_num>, <num_chars>, <new_text>)  
 ```
   
@@ -44,7 +44,7 @@ A text string.
 
 The following formula creates a new calculated column that replaces the first two characters of the product code in column, [ProductCode], with a new two-letter code, OB.  
   
-```dax
+```js
 = REPLACE('New Products'[Product Code],1,2,"OB")  
 ```
   

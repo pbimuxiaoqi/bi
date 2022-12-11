@@ -17,7 +17,7 @@ Returns a random number in the range between two numbers you specify.
   
 ## Syntax  
   
-```dax
+```js
 RANDBETWEEN(<bottom>,<top>)  
 ```
   
@@ -40,7 +40,7 @@ A whole number.
 
 The following formula returns a random number between 1 and 10.  
   
-```dax
+```js
 = RANDBETWEEN(1,10)  
 ```
   

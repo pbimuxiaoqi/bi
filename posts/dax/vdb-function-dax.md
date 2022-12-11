@@ -18,7 +18,7 @@ Returns the depreciation of an asset for any period you specify, including parti
 
 ## Syntax
 
-```dax
+```js
 VDB(<cost>, <salvage>, <life>, <start_period>, <end_period>[, <factor>[, <no_switch>]])
 ```
 
@@ -63,7 +63,7 @@ The depreciation over the specified period.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   VDB(2400, 300, 10*365, 0, 1)
@@ -80,7 +80,7 @@ Returns an asset's first day's depreciation using a factor of 2.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   VDB(2400, 300, 10*12, 6, 18, 3)
@@ -97,7 +97,7 @@ Returns an asset's depreciation between the 6$^{th}$ month and the 18$^{th}$ mon
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   VDB(2400, 300, 10, 0, 0.875, 1.5)

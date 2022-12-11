@@ -18,7 +18,7 @@ Returns the price per \\$100 face value of a security having an odd (short or lo
 
 ## Syntax
 
-```dax
+```js
 ODDLPRICE(<settlement>, <maturity>, <last_interest>, <rate>, <yld>, <redemption>, <frequency>[, <basis>])
 ```
 
@@ -85,7 +85,7 @@ The following DAX query:
 | 2                | Frequency is semiannual  |
 | 0                | 30/360 basis             |
 
-```dax
+```js
 EVALUATE
 {
   ODDLPRICE(DATE(2008,2,7), DATE(2008,6,15), DATE(2007,10,15), 0.0375, 0.0405, 100, 2, 0)

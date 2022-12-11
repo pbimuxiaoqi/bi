@@ -17,7 +17,7 @@ Rounds a number down to the nearest integer.
   
 ## Syntax  
   
-```dax
+```js
 INT(<number>)  
 ```
   
@@ -39,7 +39,7 @@ TRUNC and INT are similar in that both return integers. TRUNC removes the fracti
 
 The following expression rounds the value to 1. If you use the ROUND function, the result would be 2.  
   
-```dax
+```js
 = INT(1.5)  
 ```
   

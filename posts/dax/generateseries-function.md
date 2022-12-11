@@ -17,7 +17,7 @@ Returns a single column table containing the values of an arithmetic series, tha
   
 ## Syntax  
   
-```dax
+```js
 GENERATESERIES(<startValue>, <endValue>[, <incrementValue>])
 ```
   
@@ -47,7 +47,7 @@ A single column table containing the values of an arithmetic series. The name of
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE GENERATESERIES(1, 5)
 ```
 
@@ -65,7 +65,7 @@ Returns the following table with a single column:
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE GENERATESERIES(1.2, 2.4, 0.4)
 ```
 
@@ -82,7 +82,7 @@ Returns the following table with a single column:
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE GENERATESERIES(CURRENCY(10), CURRENCY(12.4), CURRENCY(0.5))
 ```
 

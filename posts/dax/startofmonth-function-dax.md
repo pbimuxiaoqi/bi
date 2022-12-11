@@ -16,7 +16,7 @@ Returns the first date of the month in the current context for the specified col
   
 ## Syntax  
   
-```dax
+```js
 STARTOFMONTH(<dates>)  
 ```
   
@@ -45,7 +45,7 @@ A table containing a single column and single row with a date value.
 
 The following sample formula creates a measure that returns the start of the month, for the current context.  
   
-```dax
+```js
 = STARTOFMONTH(DateTime[DateKey])  
 ```
   

@@ -17,7 +17,7 @@ Returns the ranking of a number in a list of numbers.
   
 ## Syntax  
   
-```dax
+```js
 RANK.EQ(<value>, <columnName>[, <order>])  
 ```
   
@@ -54,7 +54,7 @@ A number indicating the rank of *value* among the numbers in *columnName*.
 
 The following example creates a calculated column that ranks the values in SalesAmount_USD, from the *InternetSales_USD* table, against all numbers in the same column.  
   
-```dax
+```js
 = RANK.EQ(InternetSales_USD[SalesAmount_USD], InternetSales_USD[SalesAmount_USD])  
 ```
   
@@ -62,6 +62,6 @@ The following example creates a calculated column that ranks the values in Sales
 
 The following example ranks a subset of values against a given sample. Assume that you have a table of local students with their performance in a specific national test and, also, you have the entire set of scores in that national test. The following calculated column will give you the national ranking for each of the local students.  
   
-```dax
+```js
 = RANK.EQ(Students[Test_Score], NationalScores[Test_Score])  
 ```

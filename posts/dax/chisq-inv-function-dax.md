@@ -19,7 +19,7 @@ The chi-squared distribution is commonly used to study variation in the percenta
   
 ## Syntax  
   
-```dax
+```js
 CHISQ.INV(probability,deg_freedom)  
 ```
   

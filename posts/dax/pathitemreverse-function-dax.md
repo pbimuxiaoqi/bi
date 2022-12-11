@@ -17,7 +17,7 @@ Returns the item at the specified *position* from a string resulting from evalua
   
 ## Syntax  
   
-```dax
+```js
 PATHITEMREVERSE(<path>, <position>[, <type>])  
 ```
   
@@ -56,6 +56,6 @@ The n-position ascendant in the given path, counting from current to the oldest.
 
 The following example takes an employee ID column as the input to a PATH function, and reverses the list of grandparent elements that are returned. The position specified is 3 and the return type is 1; therefore, the PATHITEMREVERSE function returns an integer representing the manager two levels up from the employee.  
   
-```dax
+```js
 = PATHITEMREVERSE(PATH(Employee[EmployeeKey], Employee[ParentEmployeeKey]), 3, 1)  
 ```

@@ -17,7 +17,7 @@ Returns the normal distribution for the specified mean and standard deviation.
 
 ## Syntax  
   
-```dax
+```js
 NORM.DIST(X, Mean, Standard_dev, Cumulative)  
 ```
   
@@ -40,7 +40,7 @@ The normal distribution for the specified mean and standard deviation.
 
 ## Example  
   
-```dax
+```js
 EVALUATE { NORM.DIST(42, 40, 1.5, TRUE) }
 ```
 

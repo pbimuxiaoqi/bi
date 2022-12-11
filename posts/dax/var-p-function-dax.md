@@ -17,7 +17,7 @@ Returns the variance of the entire population.
   
 ## Syntax  
   
-```dax
+```js
 VAR.P(<columnName>)  
 ```
   
@@ -53,6 +53,6 @@ A number with the variance of the entire population.
 
 The following example shows the formula for a measure that estimates the variance of the SalesAmount_USD column from the InternetSales_USD table, for the entire population.  
   
-```dax
+```js
 = VAR.P(InternetSales_USD[SalesAmount_USD])  
 ```

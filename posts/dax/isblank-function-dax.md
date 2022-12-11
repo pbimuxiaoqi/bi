@@ -17,7 +17,7 @@ Checks whether a value is blank, and returns TRUE or FALSE.
   
 ## Syntax  
   
-```dax
+```js
 ISBLANK(<value>)  
 ```
   
@@ -39,7 +39,7 @@ To learn more about best practices when working with BLANKS, see [Avoid converti
 
 This formula computes the increase or decrease ratio in sales compared to the previous year. The example uses the IF function to check the value for the previous year's sales in order to avoid a divide by zero error.  
 
-```dax
+```js
 //Sales to Previous Year Ratio  
   
 = IF( ISBLANK('CalculatedMeasures'[PreviousYearTotalSales])  

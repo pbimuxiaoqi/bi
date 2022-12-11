@@ -17,7 +17,7 @@ Returns the domain name and username from the credentials given to the system at
   
 ## Syntax  
   
-```dax
+```js
 USERNAME()  
 ```
   
@@ -33,6 +33,6 @@ The username from the credentials given to the system at connection time
 
 The following formula verifies if the user login is part of the UsersTable.  
   
-```dax
+```js
 = IF(CONTAINS(UsersTable,UsersTable[login], USERNAME()), "Allowed", BLANK())  
 ```

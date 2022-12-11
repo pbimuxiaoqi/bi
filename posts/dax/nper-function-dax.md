@@ -18,7 +18,7 @@ Returns the number of periods for an investment based on periodic, constant paym
 
 ## Syntax
 
-```dax
+```js
 NPER(<rate>, <pmt>, <pv>[, <fv>[, <type>]])
 ```
 
@@ -61,7 +61,7 @@ The number of periods for an investment.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   NPER(0.12/12, -100, -1000, 10000, 1)

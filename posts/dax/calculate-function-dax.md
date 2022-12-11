@@ -22,7 +22,7 @@ Evaluates an expression in a modified filter context.
 
 ## Syntax
 
-```dax
+```js
 CALCULATE(<expression>[, <filter1> [, <filter2> [, …]]])
 ```
 
@@ -55,7 +55,7 @@ Beginning with the September 2021 release of Power BI Desktop, the following als
 
 - They cannot use functions that scan or return a table unless they are passed as arguments to aggregation functions.
 - They *can* contain an aggregation function that returns a scalar value. For example,
-    ```dax
+    ```js
     Total sales on the last selected date =
     CALCULATE (
         SUM ( Sales[Sales Amount] ),
@@ -101,7 +101,7 @@ The following **Sales** table measure definition produces a revenue result, but 
 
 [!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
 
-```dax
+```js
 Blue Revenue =
 CALCULATE(
     SUM(Sales[Sales Amount]),
@@ -127,7 +127,7 @@ The following **Sales** table measure definition produces a ratio of sales over 
 |Reseller|$80,450,596.98|73.26%|
 |**Total**|**$109,809,274.20**|**100.00%**|
 
-```dax
+```js
 Revenue % Total Channel =
 DIVIDE(
     SUM(Sales[Sales Amount]),
@@ -142,7 +142,7 @@ The [DIVIDE](divide-function-dax.md) function divides an expression that sums of
 
 The following **Customer** table calculated column definition classifies customers into a loyalty class.  It's a very simple scenario: When the revenue produced by the customer is less than $2500, they're classified as _Low_; otherwise they're _High_.
 
-```dax
+```js
 Customer Segment =
 IF(
     CALCULATE(SUM(Sales[Sales Amount]), ALLEXCEPT(Customer, Customer[CustomerKey])) < 2500,

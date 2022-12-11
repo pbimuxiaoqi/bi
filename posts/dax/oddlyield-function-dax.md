@@ -18,7 +18,7 @@ Returns the yield of a security that has an odd (short or long) last period.
 
 ## Syntax
 
-```dax
+```js
 ODDLYIELD(<settlement>, <maturity>, <last_interest>, <rate>, <pr>, <redemption>, <frequency>[, <basis>])
 ```
 
@@ -96,7 +96,7 @@ The following DAX query:
 | 2          | Frequency is semiannual  |
 | 0          | 30/360 basis             |
 
-```dax
+```js
 EVALUATE
 {
   ODDLYIELD(DATE(2008,4,20), DATE(2008,6,15), DATE(2007,12,24), 0.0375, 99.875, 100, 2, 0)

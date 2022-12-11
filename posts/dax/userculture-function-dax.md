@@ -19,7 +19,7 @@ Returns the locale \(language code-country code) for the current user, determine
   
 ## Syntax  
   
-```dax
+```js
 USERCULTURE()
 ```
   
@@ -47,7 +47,7 @@ Locale as a string.
 
 For the following expression,
 
-```dax
+```js
 FORMAT(TODAY(), "dddd", USERCULTURE())
 ```
 

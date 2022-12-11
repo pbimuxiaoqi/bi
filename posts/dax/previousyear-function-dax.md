@@ -17,7 +17,7 @@ Returns a table that contains a column of all dates from the previous year, give
   
 ## Syntax  
   
-```dax
+```js
 PREVIOUSYEAR(<dates>[,<year_end_date>])  
 ```
   
@@ -51,7 +51,7 @@ A table containing a single column of date values.
 
 The following sample formula creates a measure that calculates the previous year sales for Internet sales.  
   
-```dax
+```js
 = CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), PREVIOUSYEAR('DateTime'[DateKey]))  
 ```
   

@@ -23,13 +23,13 @@ In general, DAX will not force using a _fully qualified_ reference to a column. 
 
 Here's an example of a calculated column definition using only column name references. The **Sales** and **Cost** columns both belong to a table named **Orders**.
 
-```dax
+```js
 Profit = [Sales] - [Cost]
 ```
 
 The same definition can be rewritten with fully qualified column references.
 
-```dax
+```js
 Profit = Orders[Sales] - Orders[Cost]
 ```
 

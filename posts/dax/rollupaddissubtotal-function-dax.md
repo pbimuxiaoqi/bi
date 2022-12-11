@@ -17,7 +17,7 @@ Modifies the behavior of the [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md
   
 ## Syntax  
   
-```dax
+```js
 ROLLUPADDISSUBTOTAL ( [<grandtotalFilter>], <groupBy_columnName>, <name> [, [<groupLevelFilter>] [, <groupBy_columnName>, <name> [, [<groupLevelFilter>] [, … ] ] ] ] )
 ```
   

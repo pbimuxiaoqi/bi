@@ -18,7 +18,7 @@ Returns the effective annual interest rate, given the nominal annual interest ra
 
 ## Syntax
 
-```dax
+```js
 EFFECT(<nominal_rate>, <npery>)
 ```
 
@@ -56,7 +56,7 @@ The effective annual interest rate.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   EFFECT(0.0525, 4)

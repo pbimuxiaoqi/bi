@@ -17,7 +17,7 @@ Returns a sample of N rows from the specified table.
   
 ## Syntax  
   
-```dax
+```js
 SAMPLE(<n_value>, <table>, <orderBy_expression>, [<order>[, <orderBy_expression>, [<order>]]…])  
 ```
   

@@ -17,7 +17,7 @@ Returns the current UTC date and time.
   
 ## Syntax  
   
-```dax
+```js
 UTCNOW()  
 ```
   
@@ -33,7 +33,7 @@ The result of the UTCNOW function changes only when the formula is refreshed. It
 
 The following:
   
-```dax
+```js
 EVALUATE { FORMAT(UTCNOW(), "General Date") }
 ```
 

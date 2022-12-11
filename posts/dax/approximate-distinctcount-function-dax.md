@@ -17,7 +17,7 @@ Returns the *approximate* number of rows that contain distinct values in a colum
   
 ## Syntax  
   
-```dax
+```js
 APPROXIMATEDISTINCTCOUNT(<columnName>)
 ```
   

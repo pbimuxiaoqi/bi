@@ -17,7 +17,7 @@ Returns a table as a string using JSON format.
 
 ## Syntax  
   
-```dax
+```js
 TOJSON(<Table>, [MaxRows])
 ```
   
@@ -36,7 +36,7 @@ A string with JSON representation of the table. The representation contains colu
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {TOJSON(DimSalesTerritory)}
 ```

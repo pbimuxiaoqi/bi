@@ -17,7 +17,7 @@ Returns the first date of the year in the current context for the specified colu
   
 ## Syntax  
   
-```dax
+```js
 STARTOFYEAR(<dates>)  
 ```
   
@@ -47,7 +47,7 @@ A table containing a single column and single row with a date value.
 
 The following sample formula creates a measure that returns the start of the year, for the current context.  
   
-```dax
+```js
 = STARTOFYEAR(DateTime[DateKey])  
 ```
   

@@ -17,7 +17,7 @@ Returns the number of permutations for a given number of objects that can be sel
   
 ## Syntax  
   
-```dax
+```js
 PERMUT(number, number_chosen)  
 ```
   
@@ -52,7 +52,7 @@ Returns the number of permutations for a given number of objects that can be sel
 
 In the following formula, permutations possible for a group of 3 objects where 2 are chosen:
 
-```dax
+```js
 = PERMUT(3,2)
 ```
 

@@ -17,7 +17,7 @@ Counts the number of rows in the specified column that contain non-blank values.
   
 ## Syntax  
   
-```dax
+```js
 COUNTA(<column>)  
 ```
   
@@ -42,7 +42,7 @@ A whole number.
 
 The following example returns all rows in the `Reseller` table that have any kind of value in the column that stores phone numbers. 
   
-```dax
+```js
 = COUNTA(Reseller[Phone])  
 ```
   

@@ -16,7 +16,7 @@ From the parent table of a relationship, returns all rows but the blank row, or 
   
 ## Syntax  
   
-```dax
+```js
 ALLNOBLANKROW( {<table> | <column>[, <column>[, <column>[,…]]]} )
 ```
   
@@ -81,7 +81,7 @@ Step 3: Count rows using ALL and ALLNOBLANK
   
 Add the following two measures to the datetime table, to count the table rows: **Countrows ALLNOBLANK of datetime**, **Countrows ALL of datetime**. The formulas that you can use to define these measures are:  
 
-```dax
+```js
 // Countrows ALLNOBLANK of datetime  
 = COUNTROWS(ALLNOBLANKROW('DateTime'))  
   

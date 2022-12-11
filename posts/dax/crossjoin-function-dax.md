@@ -17,7 +17,7 @@ Returns a table that contains the Cartesian product of all rows from all tables 
   
 ## Syntax  
   
-```dax
+```js
 CROSSJOIN(<table>, <table>[, <table>]…)  
 ```
   
@@ -60,7 +60,7 @@ The table **Stationery** contains fonts and presentation:
   
 The expression to generate the cross join is presented below:  
   
-```dax
+```js
 CROSSJOIN( Colors, Stationery)  
 ```
 

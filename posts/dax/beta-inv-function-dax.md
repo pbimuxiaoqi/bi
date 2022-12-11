@@ -19,7 +19,7 @@ If probability = BETA.DIST(x,...TRUE), then BETA.INV(probability,...) = x. The b
   
 ## Syntax  
   
-```dax
+```js
 BETA.INV(probability,alpha,beta,[A],[B])  
 ```
   

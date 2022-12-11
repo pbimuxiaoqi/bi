@@ -18,7 +18,7 @@ Returns the price per \\$100 face value of a discounted security.
 
 ## Syntax
 
-```dax
+```js
 PRICEDISC(<settlement>, <maturity>, <discount>, <redemption>[, <basis>])
 ```
 
@@ -86,7 +86,7 @@ The price per \\$100 face value.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   PRICEDISC(DATE(2008,2,16), DATE(2008,3,1), 0.0525, 100, 2)

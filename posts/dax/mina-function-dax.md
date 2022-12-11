@@ -17,7 +17,7 @@ Returns the smallest value in a column.
   
 ## Syntax  
   
-```dax
+```js
 MINA(<column>)  
 ```
   
@@ -46,7 +46,7 @@ The smallest value.
 
 The following expression returns the minimum freight charge from the table, InternetSales.  
   
-```dax
+```js
 = MINA(InternetSales[Freight])  
 ```
   
@@ -54,7 +54,7 @@ The following expression returns the minimum freight charge from the table, Inte
 
 The following expression returns the minimum value in the column, PostalCode. Because the data type of the column is text, the function does not find any values, and the formula returns zero (0).  
   
-```dax
+```js
 = MINA([PostalCode])  
 ```
   

@@ -19,7 +19,7 @@ To return the percentile number of an expression evaluated for each row in a tab
   
 ## Syntax  
   
-```dax
+```js
 PERCENTILE.EXC(<column>, <k>)  
 ```
   

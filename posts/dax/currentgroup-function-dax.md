@@ -17,7 +17,7 @@ Returns a set of rows from the table argument of a [GROUPBY](groupby-function-da
 
 ## Syntax  
   
-```dax
+```js
 CURRENTGROUP ( )
 ```
   

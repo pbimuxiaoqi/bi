@@ -17,7 +17,7 @@ Returns the beta distribution. The beta distribution is commonly used to study v
   
 ## Syntax  
   
-```dax
+```js
 BETA.DIST(x,alpha,beta,cumulative,[A],[B])  
 ```
   

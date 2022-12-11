@@ -17,7 +17,7 @@ Returns the number of characters in a text string.
   
 ## Syntax  
   
-```dax
+```js
 LEN(<text>)  
 ```
   
@@ -43,6 +43,6 @@ A whole number indicating the number of characters in the text string.
 
 The following formula sums the lengths of addresses in the columns, [AddressLine1] and [AddressLine2].  
   
-```dax
+```js
 = LEN([AddressLine1])+LEN([AddressLin2])  
 ```

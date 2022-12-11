@@ -18,7 +18,7 @@ Returns the straight-line depreciation of an asset for one period.
 
 ## Syntax
 
-```dax
+```js
 SLN(<cost>, <salvage>, <life>)
 ```
 
@@ -51,7 +51,7 @@ The straight-line depreciation for one period.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   SLN(30000, 7500, 10)

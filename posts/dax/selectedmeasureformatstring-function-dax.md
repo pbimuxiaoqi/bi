@@ -17,7 +17,7 @@ Used by expressions for calculation items to retrieve the format string of the m
   
 ## Syntax  
   
-```dax
+```js
 SELECTEDMEASUREFORMATSTRING()
 ```
   
@@ -39,7 +39,7 @@ A string holding the format string of the measure that is currently in context w
 
 The following expression is evaluated by the Format String Expression property for a calculation item. If there is a single currency in filter context, the format string is retrieved from the DimCurrency[FormatString] column; otherwise the format string of the measure in context is used.
   
-```dax
+```js
 SELECTEDVALUE( DimCurrency[FormatString], SELECTEDMEASUREFORMATSTRING() )
 ```
   

@@ -17,7 +17,7 @@ Raises an error with an error message.
   
 ## Syntax  
   
-```dax
+```js
 ERROR(<text>)  
 ```
   
@@ -41,7 +41,7 @@ None
 
 The following DAX query:
 
-```dax
+```js
 DEFINE
 MEASURE DimProduct[Measure] =
         IF(
@@ -59,7 +59,7 @@ Fails and raises and error message containing "red color encountered".
 
 The following DAX query:
 
-```dax
+```js
 DEFINE
 MEASURE DimProduct[Measure] =
         IF(

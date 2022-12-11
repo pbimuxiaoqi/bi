@@ -17,7 +17,7 @@ Performs division and returns alternate result or BLANK() on division by 0.
   
 ## Syntax  
   
-```dax
+```js
 DIVIDE(<numerator>, <denominator> [,<alternateresult>])  
 ```
   
@@ -43,7 +43,7 @@ DIVIDE(<numerator>, <denominator> [,<alternateresult>])
 
 The following example returns 2.5.  
   
-```dax
+```js
 = DIVIDE(5,2)  
 ```
   
@@ -51,7 +51,7 @@ The following example returns 2.5.
 
 The following example returns BLANK.  
   
-```dax
+```js
 = DIVIDE(5,0)  
 ```
   
@@ -59,7 +59,7 @@ The following example returns BLANK.
 
 The following example returns 1.  
   
-```dax
+```js
 = DIVIDE(5,0,1)  
 ```
   

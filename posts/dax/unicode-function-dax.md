@@ -17,7 +17,7 @@ Returns the number (code point) corresponding to the first character of the text
   
 ## Syntax  
   
-```dax
+```js
 UNICODE( <Text> )  
 ```
   

@@ -17,7 +17,7 @@ Checks a condition, and returns one value when TRUE, otherwise it returns a seco
 
 ## Syntax
 
-```dax
+```js
 IF.EAGER(<logical_test>, <value_if_true>[, <value_if_false>])
 ```
 
@@ -41,7 +41,7 @@ Either **value_if_true**, **value_if_false**, or BLANK.
 
 - IF.EAGER has the same functional behavior as the IF function, but performance may differ due to differences in execution plans. `IF.EAGER(<logical_test>, <value_if_true>, <value_if_false>)` has the same execution plan as the following DAX expression:
 
-    ```dax
+    ```js
     
     VAR _value_if_true = <value_if_true>
     VAR _value_if_false = <value_if_false>

@@ -18,7 +18,7 @@ Returns the yield of a security that has an odd (short or long) first period.
 
 ## Syntax
 
-```dax
+```js
 ODDFYIELD(<settlement>, <maturity>, <issue>, <first_coupon>, <rate>, <pr>, <redemption>, <frequency>[, <basis>])
 ```
 
@@ -89,7 +89,7 @@ The security's yield.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   ODDFYIELD(DATE(2008,11,11), DATE(2021,3,1), DATE(2008,10,15), DATE(2009,3,1), 0.0575, 84.50, 100, 2, 0)

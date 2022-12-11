@@ -173,7 +173,7 @@ Beginning with the August 2021 version of Power BI Desktop, DAX date and datetim
 
 For example, the following expression uses DATE and TIME functions to filter on OrderDate:
 
-```dax
+```js
 EVALUATE
 FILTER (
         FactInternetSales,
@@ -183,7 +183,7 @@ FILTER (
 
 The same filter expression can be specified as a literal:
 
-```dax
+```js
 EVALUATE
 FILTER (
         FactInternetSales,

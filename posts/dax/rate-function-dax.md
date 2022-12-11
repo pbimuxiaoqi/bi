@@ -18,7 +18,7 @@ Returns the interest rate per period of an annuity. RATE is calculated by iterat
 
 ## Syntax
 
-```dax
+```js
 RATE(<nper>, <pmt>, <pv>[, <fv>[, <type>[, <guess>]]])
 ```
 
@@ -68,7 +68,7 @@ The interest rate per period.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   RATE(4*12, -200, 8000)
@@ -85,7 +85,7 @@ Returns the monthly rate of the loan using the terms specified above.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   RATE(4*12, -200, 8000) * 12

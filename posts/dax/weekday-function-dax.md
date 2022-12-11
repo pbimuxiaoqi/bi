@@ -17,7 +17,7 @@ Returns a number from 1 to 7 identifying the day of the week of a date. By defau
   
 ## Syntax  
   
-```dax
+```js
 WEEKDAY(<date>, <return_type>)  
 ```
   
@@ -44,7 +44,7 @@ An integer number from 1 to 7.
 
 The following example gets the date from the [HireDate] column, adds 1, and displays the weekday corresponding to that date. Because the **return_type** argument has been omitted, the default format is used, in which 1 is Sunday and 7 is Saturday. If the result is 4, the day would be Wednesday.  
   
-```dax
+```js
 = WEEKDAY([HireDate]+1)  
 ```
   

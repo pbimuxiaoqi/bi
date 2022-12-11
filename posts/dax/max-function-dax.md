@@ -17,11 +17,11 @@ Returns the largest value in a column, or between two scalar expressions.
   
 ## Syntax  
   
-```dax
+```js
 MAX(<column>)  
 ```
 
-```dax
+```js
 MAX(<expression1>, <expression2>)
 ```
   
@@ -46,7 +46,7 @@ The largest value.
 
 The following example returns the largest value found in the ExtendedAmount column of the InternetSales table.  
   
-```dax
+```js
 = MAX(InternetSales[ExtendedAmount])  
 ```
 
@@ -54,7 +54,7 @@ The following example returns the largest value found in the ExtendedAmount colu
 
 The following example returns the largest value between the result of two expressions.  
   
-```dax
+```js
 = Max([TotalSales], [TotalPurchases])
 ```
 

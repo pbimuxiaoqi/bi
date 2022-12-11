@@ -36,21 +36,21 @@ It's better to avoid using the ISERROR and IFERROR functions. Instead, apply def
 
 The following measure expression tests whether an error would be raised. It returns BLANK in this instance (which is the case when you do not provide the IF function with a value-if-false expression).
 
-```dax
+```js
 Profit Margin
 = IF(ISERROR([Profit] / [Sales]))
 ```
 
 This next version of the measure expression has been improved by using the IFERROR function in place of the IF and ISERROR functions.
 
-```dax
+```js
 Profit Margin
 = IFERROR([Profit] / [Sales], BLANK())
 ```
 
 However, this final version of the measure expression achieves the same outcome, yet more efficiently and elegantly.
 
-```dax
+```js
 Profit Margin
 = DIVIDE([Profit], [Sales])
 ```

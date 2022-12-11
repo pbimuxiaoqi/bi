@@ -19,7 +19,7 @@ To return the geometric mean of an expression evaluated for each row in a table,
   
 ## Syntax  
   
-```dax
+```js
 GEOMEAN(<column>)  
 ```
   
@@ -45,7 +45,7 @@ A decimal number.
 
 The following computes the geometric mean of the Return column in the Investment table:  
   
-```dax
+```js
 = GEOMEAN( Investment[Return] )  
 ```
   

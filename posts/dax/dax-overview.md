@@ -30,7 +30,7 @@ When you define a formula for a measure in the formula bar, a Tooltip feature sh
 
 Regardless of the client, a separate query is run for each cell in the results. That is to say, each combination of row and column headers in a PivotTable, or each selection of slicers and filters in a Power BI report, generates a different subset of data over which the measure is calculated. For example, using this very simple measure formula:  
 
-```dax
+```js
 Total Sales = SUM([Sales Amount])
 ```
 
@@ -47,7 +47,7 @@ To learn more, see:
 
  A calculated column is a column that you add to an existing table (in the model designer) and then create a DAX formula that defines the column's values. When a calculated column contains a valid DAX formula, values are calculated for each row as soon as the formula is entered. Values are then stored in the in-memory data model. For example, in a Date table, when the formula is entered into the formula bar:
 
-```dax
+```js
 = [Calendar Year] & " Q" & [Calendar Quarter]
 ```
 
@@ -74,7 +74,7 @@ To learn more, see:
 
 With row-level security, a DAX formula must evaluate to a Boolean TRUE/FALSE condition, defining which rows can be returned by the results of a query by members of a particular role. For example, for members of the Sales role, the Customers table with the following DAX formula:
 
-```dax
+```js
 = Customers[Country] = "USA"
 ```
 
@@ -94,7 +94,7 @@ DAX queries can be created and run in SQL Server Management Studio (SSMS) and op
 
 A DAX query is a statement, similar to a SELECT statement in T-SQL. The most basic type of DAX query is an *evaluate* statement. For example,
 
-```dax
+```js
 EVALUATE
  ( FILTER ( 'DimProduct', [SafetyStockLevel] < 200 ) )
 ORDER BY [EnglishProductName] ASC
@@ -140,7 +140,7 @@ Whether the formula you create is simple or complex, you can use the following s
   
  In this example, let's look at a formula in a measure named **Days in Current Quarter**:  
   
-```dax
+```js
 Days in Current Quarter = COUNTROWS( DATESBETWEEN( 'Date'[Date], STARTOFQUARTER( LASTDATE('Date'[Date])), ENDOFQUARTER('Date'[Date])))
 ```  
   
@@ -247,7 +247,7 @@ These functions return a table or manipulate existing tables. For example, by us
 
 You can create variables within an expression by using [VAR](var-dax.md). VAR is technically not a function, it's a keyword to store the result of an expression as a named variable. That variable can then be passed as an argument to other measure expressions. For example:
 
-```dax
+```js
 VAR
     TotalQty = SUM ( Sales[Quantity] )
 
@@ -304,7 +304,7 @@ Row context also follows any relationships that have been defined between tables
   
 For example, the following formula uses the RELATED function to fetch a tax value from a related table, based on the region that the order was shipped to. The tax value is determined by using the value for region in the current table, looking up the region in the related table, and then getting the tax rate for that region from the related table.  
   
-```dax  
+```js  
 = [Freight] + RELATED('Region'[TaxRate])  
 ```  
   
@@ -318,7 +318,7 @@ For example, suppose your model contains a **Products** table and a **Sales** ta
   
 With DAX you can build a single formula that returns the correct value, and the results are automatically updated any time a user adds data to the tables.  
   
-```dax  
+```js  
 = MAXX(FILTER(Sales,[ProdKey] = EARLIER([ProdKey])),Sales[OrderQty])  
 ```  
   
@@ -383,7 +383,7 @@ For detailed information about operators used in DAX formulas, see [DAX operator
 
 You can refer to any table and column by using its name. For example, the following formula illustrates how to refer to columns from two tables by using the *fully qualified* name:  
   
-```dax  
+```js  
 
 = SUM('New Sales'[Amount]) + SUM('Past Sales'[Amount])  
 

@@ -17,7 +17,7 @@ Returns a table that contains a column of dates, shifted either forward or backw
   
 ## Syntax  
   
-```dax
+```js
 DATEADD(<dates>,<number_of_intervals>,<interval>)  
 ```
   
@@ -60,7 +60,7 @@ The **dates** argument can be any of the following:
   
 The following formula calculates dates that are one year before the dates in the current context.  
 
-```dax
+```js
 = DATEADD(DateTime[DateKey],-1,year)  
 ```
   

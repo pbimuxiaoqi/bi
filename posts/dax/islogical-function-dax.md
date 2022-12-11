@@ -17,7 +17,7 @@ Checks whether a value is a logical value, (TRUE or FALSE), and returns TRUE or 
   
 ## Syntax  
   
-```dax
+```js
 ISLOGICAL(<value>)  
 ```
   
@@ -39,7 +39,7 @@ TRUE if the value is a logical value; FALSE if any value other than TRUE OR FALS
 
 The following three samples show the behavior of ISLOGICAL.  
   
-```dax
+```js
 //RETURNS: Is Boolean type or Logical  
 = IF(ISLOGICAL(true), "Is Boolean type or Logical", "Is different type")  
   

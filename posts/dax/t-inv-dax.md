@@ -17,7 +17,7 @@ Returns the left-tailed inverse of the Student's t-distribution.
 
 ## Syntax  
   
-```dax
+```js
 T.INV(Probability,Deg_freedom)
 ```
   
@@ -38,7 +38,7 @@ The left-tailed inverse of the Student's t-distribution.
 
 ## Example  
   
-```dax
+```js
 EVALUATE { T.INV(0.75, 2) }
 ```
 

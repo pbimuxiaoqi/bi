@@ -17,7 +17,7 @@ Returns a blank.
   
 ## Syntax  
   
-```dax
+```js
 BLANK()  
 ```
   
@@ -35,7 +35,7 @@ A blank.
 
 The following example illustrates how you can work with blanks in formulas. The formula calculates the ratio of sales between the Resellers and the Internet channels. However, before attempting to calculate the ratio the denominator should be checked for zero values. If the denominator is zero then a blank value should be returned; otherwise, the ratio is calculated.  
   
-```dax
+```js
 = IF( SUM(InternetSales_USD[SalesAmount_USD])= 0   , BLANK()   , SUM(ResellerSales_USD[SalesAmount_USD])/SUM(InternetSales_USD[SalesAmount_USD])   )  
 ```
 

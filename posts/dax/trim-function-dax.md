@@ -17,7 +17,7 @@ Removes all spaces from text except for single spaces between words.
   
 ## Syntax  
   
-```dax
+```js
 TRIM(<text>)  
 ```
   
@@ -41,7 +41,7 @@ The string with spaces removed.
 
 The following formula creates a new string that does not have trailing white space.  
   
-```dax
+```js
 = TRIM("A column with trailing spaces.   ")  
 ```
 
@@ -49,7 +49,7 @@ When you create the formula, the formula is propagated through the row just as y
   
 You can verify that the formula produces the correct result by checking the length of the calculated column created by the previous formula, as follows:  
   
-```dax
+```js
 = LEN([Calculated Column 1])  
 ```
   

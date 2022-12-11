@@ -17,7 +17,7 @@ Clear all filters which are applied to a table.
   
 ## Syntax  
   
-```dax
+```js
 ALLCROSSFILTERED(<table>)
 ```
   
@@ -39,7 +39,7 @@ N/A. See remarks.
 
 ## Example  
 
-```dax
+```js
 DEFINE
 MEASURE FactInternetSales[TotalQuantity1] =
     CALCULATE(SUM(FactInternetSales[OrderQuantity]), ALLCROSSFILTERED(FactInternetSales))

@@ -17,7 +17,7 @@ Introduces a statement containing a table expression required in a [DAX query](d
 
 ## Syntax  
   
-```dax
+```js
 EVALUATE <table>  
 ```
   
@@ -39,7 +39,7 @@ The result of a table expression.
 
 ## Example
 
-```dax
+```js
 EVALUATE
     'Internet Sales'
 ```

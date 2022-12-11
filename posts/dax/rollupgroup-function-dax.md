@@ -17,7 +17,7 @@ Modifies the behavior of the [SUMMARIZE](summarize-function-dax.md) and [SUMMARI
   
 ## Syntax  
   
-```dax
+```js
 ROLLUPGROUP ( <groupBy_columnName> [, <groupBy_columnName> [, … ] ] )
 ```
   

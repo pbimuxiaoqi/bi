@@ -17,7 +17,7 @@ Evaluates the **expression** at the first date of the quarter, in the current co
   
 ## Syntax  
   
-```dax
+```js
 OPENINGBALANCEQUARTER(<expression>,<dates>[,<filter>])  
 ```
   
@@ -50,7 +50,7 @@ A scalar value that represents the **expression** evaluated at the first date of
 
 The following sample formula creates a measure that calculates the 'Quarter Start Inventory Value' of the product inventory.  
   
-```dax
+```js
 = OPENINGBALANCEQUARTER(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]),DateTime[DateKey])  
 ```
   

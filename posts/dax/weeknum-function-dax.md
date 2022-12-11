@@ -22,7 +22,7 @@ There are two *systems* used for this function:
   
 ## Syntax  
   
-```dax
+```js
 WEEKNUM(<date>[, <return_type>])  
 ```
   
@@ -61,7 +61,7 @@ An integer number.
 
 The following example returns the week number for February 14, 2010. This calculation assumes weeks begin on Monday.
 
-```dax
+```js
 = WEEKNUM("Feb 14, 2010", 2) 
 ```
 
@@ -69,7 +69,7 @@ The following example returns the week number for February 14, 2010. This calcul
 
 The following example returns the week number of the date stored in the column, **HireDate**, from the table, **Employees**. This calculation assumes weeks begin on Sunday.
 
-```dax
+```js
 = WEEKNUM('Employees'[HireDate])
 ```
 

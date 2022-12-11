@@ -17,7 +17,7 @@ Returns the tangent of the given angle.
   
 ## Syntax  
   
-```dax
+```js
 TAN(number)  
 ```
   

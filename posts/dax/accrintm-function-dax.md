@@ -18,7 +18,7 @@ Returns the accrued interest for a security that pays interest at maturity.
 
 ## Syntax
 
-```dax
+```js
 ACCRINTM(<issue>, <maturity>, <rate>, <par>[, <basis>])
 ```
 
@@ -84,7 +84,7 @@ The accrued interest.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   ACCRINTM(DATE(2008,4,1), DATE(2008,6,15), 0.1, 1000, 3)

@@ -17,7 +17,7 @@ Returns all the rows in a table, or all the values in a column, ignoring any fil
   
 ## Syntax  
   
-```dax
+```js
 ALL( [<table> | <column>[, <column>[, <column>[,…]]]] )  
 ```
   
@@ -69,7 +69,7 @@ The following table shows the results when a new measure, **All Reseller Sales R
   
 **Formula**
   
-```dax
+```js
 = SUMX(ResellerSales_USD, ResellerSales_USD[SalesAmount_USD])/SUMX(ALL(ResellerSales_USD), ResellerSales_USD[SalesAmount_USD])  
 ```
 
@@ -99,7 +99,7 @@ The following table shows the results when a new measure, **Reseller Sales Year*
 
 **Formula**
 
-```dax
+```js
 = SUMX(ResellerSales_USD, ResellerSales_USD[SalesAmount_USD])/CALCULATE( SUM( ResellerSales_USD[SalesAmount_USD]), ALL(DateTime[CalendarYear]))  
 ```
 
@@ -127,7 +127,7 @@ The following table shows the results when a new measure, **Reseller Sales Categ
   
 **Formula**
   
-```dax
+```js
 = SUMX(ResellerSales_USD, ResellerSales_USD[SalesAmount_USD])/CALCULATE( SUM( ResellerSales_USD[SalesAmount_USD]), ALL(ProductCategory[ProductCategoryName]))  
 ```
 

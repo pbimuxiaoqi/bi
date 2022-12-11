@@ -17,7 +17,7 @@ Returns the number of the character at which a specific character or text string
   
 ## Syntax  
   
-```dax
+```js
 SEARCH(<find_text>, <within_text>[, [<start_num>][, <NotFoundValue>]])  
 ```
   
@@ -54,7 +54,7 @@ SEARCH is case-insensitive. In this example, if "cycle" or "Cycle" is used in th
 
 [!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
   
-```dax
+```js
 EVALUATE
 CALCULATETABLE (
     ADDCOLUMNS (

@@ -17,7 +17,7 @@ Returns TRUE when the specified table or column is being filtered directly.
   
 ## Syntax  
   
-```dax
+```js
 ISFILTERED(<TableNameOrColumnName>)  
 ```
   

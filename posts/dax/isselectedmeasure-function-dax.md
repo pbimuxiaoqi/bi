@@ -17,7 +17,7 @@ Used by expressions for calculation items to determine the measure that is in co
 
 ## Syntax  
   
-```dax
+```js
 ISSELECTEDMEASURE( M1, M2, ... )  
 ```
   
@@ -41,7 +41,7 @@ A Boolean indicating whether the measure that is currently in context is one of 
 
 The following calculation item expression checks if the current measure is one of those specified in the list of parameters. If the measures are renamed, formula fixup will reflect the name changes in the expression.
   
-```dax
+```js
 IF (
     ISSELECTEDMEASURE ( [Expense Ratio 1], [Expense Ratio 2] ),
     SELECTEDMEASURE (),

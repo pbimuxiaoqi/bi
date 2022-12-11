@@ -17,7 +17,7 @@ Creates a union (join) table from a pair of tables.
   
 ## Syntax  
   
-```dax
+```js
 UNION(<table_expression1>, <table_expression2> [,<table_expression>]…)  
 ```
   
@@ -53,7 +53,7 @@ A table that contains all the rows from each of the two table expressions.
 
 The following expression creates a union by combining the USAInventory table and the INDInventory table into a single table:  
 
-```dax
+```js
 UNION(UsaInventory, IndInventory)
 ```
 

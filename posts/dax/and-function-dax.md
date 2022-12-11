@@ -17,7 +17,7 @@ Checks whether both arguments are TRUE, and returns TRUE if both arguments are T
   
 ## Syntax  
   
-```dax
+```js
 AND(<logical1>,<logical2>)  
 ```
   
@@ -39,7 +39,7 @@ The **AND** function in DAX accepts only two (2) arguments. If you need to perfo
 
 The following formula shows the syntax of the AND function.  
   
-```dax
+```js
 = IF(AND(10 > 9, -10 < -1), "All true", "One or more false"  
 ```
 
@@ -49,7 +49,7 @@ Because both conditions, passed as arguments, to the AND function are true, the 
 
 The following sample uses the AND function with nested formulas to compare two sets of calculations at the same time. For each product category, the formula determines if the current year sales and previous year sales of the Internet channel are larger than the Reseller channel for the same periods. If both conditions are true, for each category the formula returns the value, "Internet hit".  
 
-```dax
+```js
 = IF( AND(  SUM( 'InternetSales_USD'[SalesAmount_USD])  
            >SUM('ResellerSales_USD'[SalesAmount_USD])  
           , CALCULATE(SUM('InternetSales_USD'[SalesAmount_USD]), PREVIOUSYEAR('DateTime'[DateKey] ))   

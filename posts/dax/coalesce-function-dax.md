@@ -17,7 +17,7 @@ Returns the first expression that does not evaluate to BLANK. If all expressions
   
 ## Syntax  
   
-```dax
+```js
 COALESCE(<expression>, <expression>[, <expression>]…)
 ```
   
@@ -39,7 +39,7 @@ Input expressions may be of different data types.
   
   The following DAX query:
 
-```dax
+```js
 EVALUATE { COALESCE(BLANK(), 10, DATE(2008, 3, 3)) }
 ```
 
@@ -49,7 +49,7 @@ EVALUATE { COALESCE(BLANK(), 10, DATE(2008, 3, 3)) }
   
   The following DAX expression:
 
-```dax
+```js
 = COALESCE(SUM(FactInternetSales[SalesAmount]), 0)
 ```
 

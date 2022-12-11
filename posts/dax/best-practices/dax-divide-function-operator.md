@@ -17,7 +17,7 @@ As a data modeler, when you write a DAX expression to divide a numerator by a de
 
 When using the DIVIDE function, you must pass in numerator and denominator expressions. Optionally, you can pass in a value that represents an _alternate result_.
 
-```dax
+```js
 DIVIDE(<numerator>, <denominator> [,<alternateresult>])
 ```
 
@@ -29,7 +29,7 @@ The DIVIDE function is convenient because it saves your expression from having t
 
 The following measure expression produces a safe division, but it involves using four DAX functions.
 
-```dax
+```js
 Profit Margin =
 IF(
     OR(
@@ -43,7 +43,7 @@ IF(
 
 This measure expression achieves the same outcome, yet more efficiently and elegantly.
 
-```dax
+```js
 Profit Margin =
 DIVIDE([Profit], [Sales])
 ```

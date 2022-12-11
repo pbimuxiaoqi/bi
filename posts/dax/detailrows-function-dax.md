@@ -17,7 +17,7 @@ Evaluates a Detail Rows Expression defined for a measure and returns the data.
 
 ## Syntax  
   
-```dax
+```js
 DETAILROWS([Measure])  
 ```
   

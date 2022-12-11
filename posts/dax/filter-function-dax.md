@@ -17,7 +17,7 @@ Returns a table that represents a subset of another table or expression.
   
 ## Syntax  
   
-```dax
+```js
 FILTER(<table>,<filter>)  
 ```
   
@@ -48,7 +48,7 @@ The following example creates a report of Internet sales outside the United Stat
   
 In this example, the expression:
 
-```dax
+```js
 FILTER('InternetSales_USD', RELATED('SalesTerritory'[SalesTerritoryCountry])<>"United States")
 ```
 
@@ -82,7 +82,7 @@ The final report table shows the results when you create a PivotTable by using t
 |2008|$228,159.45|$5,386,558.19|$102,675.04|$5,717,392.68|  
 |Grand Total|$384,639.63|$16,107,890.23|$172,817.81|$16,665,347.67|  
   
-```dax
+```js
 SUMX(FILTER('InternetSales_USD', RELATED('SalesTerritory'[SalesTerritoryCountry])<>"United States")  
      ,'InternetSales_USD'[SalesAmount_USD])  
 ```

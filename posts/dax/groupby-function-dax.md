@@ -17,7 +17,7 @@ The GROUPBY function is similar to the [SUMMARIZE](summarize-function-dax.md) fu
   
 ## Syntax  
   
-```dax
+```js
 GROUPBY (<table> [, <groupBy_columnName> [, <groupBy_columnName> [, …]]] [, <name>, <expression> [, <name>, <expression> [, …]]])
 ```
   
@@ -66,7 +66,7 @@ A table with the selected columns for the groupBy_columnName arguments and the e
 
 The following example first calculates the total sales grouped by country and product category over physical tables by using the [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md) function. It then uses the GROUPBY function to scan the intermediate result from the first step to find the maximum sales in each country across the product categories.
   
-```dax
+```js
 DEFINE  
 VAR SalesByCountryAndCategory =  
 SUMMARIZECOLUMNS(  

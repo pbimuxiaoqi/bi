@@ -17,7 +17,7 @@ Returns the logical value FALSE.
   
 ## Syntax  
   
-```dax
+```js
 FALSE()  
 ```
   
@@ -33,7 +33,7 @@ The word FALSE is also interpreted as the logical value FALSE.
 
 The formula returns the logical value FALSE when the value in the column, 'InternetSales_USD'[SalesAmount_USD], is less than or equal to 200000.  
   
-```dax
+```js
 = IF(SUM('InternetSales_USD'[SalesAmount_USD]) >200000, TRUE(), false())  
 ```
 

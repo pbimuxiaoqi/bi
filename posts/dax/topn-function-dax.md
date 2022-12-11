@@ -17,7 +17,7 @@ Returns the top N rows of the specified table.
   
 ## Syntax  
   
-```dax
+```js
 TOPN(<N_Value>, <Table>, <OrderBy_Expression>, [<Order>[, <OrderBy_Expression>, [<Order>]]…])  
 ```
   
@@ -48,7 +48,7 @@ A table with the top N rows of *Table* or an empty table if *N_Value* is 0 (zero
 
 The following measure formula returns the top 10 sold products by sales amount.  
   
-```dax
+```js
 = SUMX(
     TOPN(10, 
         SUMMARIZE(Product, [ProductKey], "TotalSales", 

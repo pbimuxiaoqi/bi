@@ -17,7 +17,7 @@ Compares two text strings and returns TRUE if they are exactly the same, otherwi
   
 ## Syntax  
   
-```dax
+```js
 EXACT(<text1>,<text2>)  
 ```
   
@@ -38,7 +38,7 @@ The following formula used in a calculated column in the Product table checks th
 
 [!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
 
-```dax
+```js
 = EXACT([Product], [Model])  
 ```
   

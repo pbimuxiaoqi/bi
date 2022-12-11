@@ -17,7 +17,7 @@ Returns true when the specified column is the level in a hierarchy of levels.
   
 ## Syntax  
   
-```dax
+```js
 ISINSCOPE(<columnName>)
 ```
   
@@ -37,7 +37,7 @@ TRUE when the specified column is the level in a hierarchy of levels.
 
 ## Example  
 
-```dax
+```js
 DEFINE
 MEASURE FactInternetSales[% of Parent] =
   SWITCH (TRUE(),

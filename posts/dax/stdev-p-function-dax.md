@@ -17,7 +17,7 @@ Returns the standard deviation of the entire population.
   
 ## Syntax  
   
-```dax
+```js
 STDEV.P(<ColumnName>)  
 ```
   
@@ -51,6 +51,6 @@ A number representing the standard deviation of the entire population.
 
 The following example shows the formula for a measure that calculates the standard deviation of the column, SalesAmount_USD, when the table InternetSales_USD is the entire population.  
   
-```dax
+```js
 = STDEV.P(InternetSales_USD[SalesAmount_USD])  
 ```

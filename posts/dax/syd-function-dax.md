@@ -18,7 +18,7 @@ Returns the sum-of-years' digits depreciation of an asset for a specified period
 
 ## Syntax
 
-```dax
+```js
 SYD(<cost>, <salvage>, <life>, <per>)
 ```
 
@@ -59,7 +59,7 @@ The sum-of-years' digits depreciation for the specified period.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   SYD(30000.00, 7500.00, 10, 1)
@@ -76,7 +76,7 @@ Returns an asset's sum-of-years' digits depreciation allowance for the first yea
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   SYD(30000.00, 7500.00, 10, 10)

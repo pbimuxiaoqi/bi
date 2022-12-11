@@ -17,7 +17,7 @@ Evaluates the **expression** at the first date of the month in the current conte
   
 ## Syntax  
   
-```dax
+```js
 OPENINGBALANCEMONTH(<expression>,<dates>[,<filter>])  
 ```
   
@@ -50,7 +50,7 @@ A scalar value that represents the **expression** evaluated at the first date of
 
 The following sample formula creates a measure that calculates the 'Month Start Inventory Value' of the product inventory.  
   
-```dax
+```js
 = OPENINGBALANCEMONTH(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]),DateTime[DateKey])  
 ```
   

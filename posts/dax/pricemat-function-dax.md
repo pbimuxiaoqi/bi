@@ -18,7 +18,7 @@ Returns the price per \\$100 face value of a security that pays interest at matu
 
 ## Syntax
 
-```dax
+```js
 PRICEMAT(<settlement>, <maturity>, <issue>, <rate>, <yld>[, <basis>])
 ```
 
@@ -90,7 +90,7 @@ The following DAX query:
 | 6.10%      | Percent yield             |
 | 0          | 30/360 basis              |
 
-```dax
+```js
 EVALUATE
 {
   PRICEMAT(DATE(2008,2,15), DATE(2008,4,13), DATE(2007,11,11), 0.061, 0.061, 0)

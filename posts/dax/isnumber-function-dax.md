@@ -17,7 +17,7 @@ Checks whether a value is a number, and returns TRUE or FALSE.
   
 ## Syntax  
   
-```dax
+```js
 ISNUMBER(<value>)  
 ```
   
@@ -39,7 +39,7 @@ TRUE if the value is numeric; otherwise FALSE.
 
 The following three samples show the behavior of ISNUMBER.  
   
-```dax
+```js
 //RETURNS: Is number  
 = IF(ISNUMBER(0), "Is number", "Is Not number")  
   

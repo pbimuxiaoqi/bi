@@ -18,7 +18,7 @@ Returns the number of periods required by an investment to reach a specified val
 
 ## Syntax
 
-```dax
+```js
 PDURATION(<rate>, <pv>, <fv>)
 ```
 
@@ -51,7 +51,7 @@ The number of periods.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   PDURATION(0.025, 2000, 2200)
@@ -68,7 +68,7 @@ Returns the number of years required for an investment of \\$2000, earning 2.5% 
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   PDURATION(0.025/12, 1000, 1200)

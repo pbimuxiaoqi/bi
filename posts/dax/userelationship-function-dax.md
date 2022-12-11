@@ -17,7 +17,7 @@ Specifies the relationship to be used in a specific calculation as the one that 
   
 ## Syntax  
   
-```dax
+```js
 USERELATIONSHIP(<columnName1>,<columnName2>)  
 ```
   
@@ -58,7 +58,7 @@ The following sample shows how to override the default, active, relationship bet
   
 To calculate the sum of internet sales and allow slicing by ShippingDate instead of the traditional OrderDate, create measure, [InternetSales by ShippingDate] using the following expression:  
   
-```dax
+```js
 = CALCULATE(SUM(InternetSales[SalesAmount]), USERELATIONSHIP(InternetSales[ShippingDate], DateTime[Date]))  
 ```
 

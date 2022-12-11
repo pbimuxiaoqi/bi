@@ -18,7 +18,7 @@ Returns the previous coupon date before the settlement date.
 
 ## Syntax
 
-```dax
+```js
 COUPPCD(<settlement>, <maturity>, <frequency>[, <basis>])
 ```
 
@@ -74,7 +74,7 @@ The previous coupon date before the settlement date.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   COUPPCD(DATE(2011,1,25), DATE(2011,11,15), 2, 1)

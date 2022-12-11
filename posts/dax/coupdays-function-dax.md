@@ -18,7 +18,7 @@ Returns the number of days in the coupon period that contains the settlement dat
 
 ## Syntax
 
-```dax
+```js
 COUPDAYS(<settlement>, <maturity>, <frequency>[, <basis>])
 ```
 
@@ -74,7 +74,7 @@ The number of days in the coupon period that contains the settlement date.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   COUPDAYS(DATE(2011,1,25), DATE(2011,11,15), 2, 1)

@@ -17,7 +17,7 @@ Returns a table that contains a column of dates shifted one year back in time fr
   
 ## Syntax  
   
-```dax
+```js
 SAMEPERIODLASTYEAR(<dates>)  
 ```
   
@@ -48,7 +48,7 @@ A single-column table of date values.
 
 The following sample formula creates a measure that calculates the previous year sales of Reseller sales.  
 
-```dax
+```js
 = CALCULATE(SUM(ResellerSales_USD[SalesAmount_USD]), SAMEPERIODLASTYEAR(DateTime[DateKey]))  
 ```
   

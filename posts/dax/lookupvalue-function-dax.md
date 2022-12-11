@@ -17,7 +17,7 @@ Returns the value for the row that meets all criteria specified by one or more s
 
 ## Syntax
 
-```dax
+```js
 LOOKUPVALUE(
     <result_columnName>,
     <search_columnName>,
@@ -60,13 +60,13 @@ If multiple rows match the search values and in all cases **result_column** valu
 
 The following calculated column defined in the **Sales** table uses the LOOKUPVALUE function to return channel values from the **Sales Order** table.
 
-```dax
+```js
 CHANNEL = LOOKUPVALUE('Sales Order'[Channel],'Sales Order'[SalesOrderLineKey],[SalesOrderLineKey])
 ```
 
 However, in this case, because there is a relationship between the **Sales Order** and **Sales** tables, it's more efficient to use the [RELATED](related-function-dax.md) function.
 
-```dax
+```js
 CHANNEL = RELATED('Sales Order'[Channel])
 ```
 

@@ -17,7 +17,7 @@ Returns the hour as a number from 0 (12:00 A.M.) to 23 (11:00 P.M.).
   
 ## Syntax  
   
-```dax
+```js
 HOUR(<datetime>)  
 ```
   
@@ -41,7 +41,7 @@ An integer number from 0 to 23.
 
 The following example returns the hour from the **TransactionTime** column of a table named **Orders**.  
   
-```dax
+```js
 = HOUR('Orders'[TransactionTime])  
 ```
   
@@ -49,7 +49,7 @@ The following example returns the hour from the **TransactionTime** column of a 
 
 The following example returns 15, meaning the hour corresponding to 3 PM in a 24-hour clock. The text value is automatically parsed and converted to a date/time value.  
   
-```dax
+```js
 = HOUR("March 3, 2008 3:00 PM")  
 ```
   

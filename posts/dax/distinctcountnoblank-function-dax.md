@@ -17,7 +17,7 @@ Counts the number of distinct values in a column.
   
 ## Syntax  
   
-```dax
+```js
 DISTINCTCOUNTNOBLANK (<column>)  
 ```
   
@@ -41,13 +41,13 @@ The number of distinct values in *column*.
 
 The following example shows how to count the number of distinct sales orders in the column ResellerSales_USD[SalesOrderNumber].  
   
-```dax
+```js
 = DISTINCTCOUNT(ResellerSales_USD[SalesOrderNumber])  
 ```
 
 DAX query
 
-```DAX
+```js
 EVALUATE
     ROW(
         "DistinctCountNoBlank", DISTINCTCOUNTNOBLANK(DimProduct[EndDate]),

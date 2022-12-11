@@ -17,7 +17,7 @@ Returns the largest value in a column.
   
 ## Syntax  
   
-```dax
+```js
 MAXA(<column>)  
 ```
   
@@ -49,7 +49,7 @@ The largest value.
 
 The following example returns the greatest value from a calculated column, named **ResellerMargin**, that computes the difference between list price and reseller price.  
   
-```dax
+```js
 = MAXA([ResellerMargin])  
 ```
   
@@ -57,7 +57,7 @@ The following example returns the greatest value from a calculated column, named
 
 The following example returns the largest value from a column that contains dates and times. Therefore, this formula gets the most recent transaction date.  
   
-```dax
+```js
 = MAXA([TransactionDate])  
 ```
   

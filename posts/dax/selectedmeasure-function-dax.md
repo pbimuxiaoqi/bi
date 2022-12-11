@@ -17,7 +17,7 @@ Used by expressions for calculation items to reference the measure that is in co
   
 ## Syntax  
   
-```dax
+```js
 SELECTEDMEASURE()
 ```
   
@@ -39,7 +39,7 @@ A reference to the measure that is currently in context when the calculation ite
 
 The following calculation item expression calculates the year-to-date for whatever the measure is in context.
   
-```dax
+```js
 CALCULATE(SELECTEDMEASURE(), DATESYTD(DimDate[Date]))
 ```
   

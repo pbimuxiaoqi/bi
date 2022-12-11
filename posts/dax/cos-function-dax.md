@@ -17,7 +17,7 @@ Returns the cosine of the given angle.
   
 ## Syntax  
   
-```dax
+```js
 COS(number)  
 ```
   

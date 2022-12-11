@@ -18,7 +18,7 @@ Calculates the payment for a loan based on constant payments and a constant inte
 
 ## Syntax
 
-```dax
+```js
 PMT(<rate>, <nper>, <pv>[, <fv>[, <type>]])
 ```
 
@@ -72,7 +72,7 @@ The amount of a single loan payment.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   PMT(0.08/12, 10, 10000, 0, 1)
@@ -97,7 +97,7 @@ Returns the monthly payment amount, paid at the beginning of the month, for a lo
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   PMT(0.06/12, 18*12, 0, 50000)

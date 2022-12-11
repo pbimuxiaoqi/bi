@@ -17,7 +17,7 @@ Returns the specified number of characters from the start of a text string.
   
 ## Syntax  
   
-```dax
+```js
 LEFT(<text>, <num_chars>)  
 ```
   
@@ -42,7 +42,7 @@ A text string.
 
 The following example returns the first five characters of the company name in the column [ResellerName] and the first five letters of the geographical code in the column [GeographyKey] and concatenates them, to create an identifier.  
   
-```dax
+```js
 = CONCATENATE(LEFT('Reseller'[ResellerName],LEFT(GeographyKey,3))  
 ```
 

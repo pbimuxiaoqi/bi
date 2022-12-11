@@ -17,7 +17,7 @@ Returns the cotangent of an angle specified in radians.
   
 ## Syntax  
   
-```dax
+```js
 COT (<number>)
 ```
   
@@ -43,7 +43,7 @@ The cotangent of the given angle.
   
 The following DAX query,
   
-```dax
+```js
 EVALUATE { COT(30) }
 ```
 

@@ -19,7 +19,7 @@ This function is suited to pass as a filter to the [CALCULATE](calculate-functio
 
 ## Syntax
 
-```dax
+```js
 DATESINPERIOD(<dates>, <start_date>, <number_of_intervals>, <interval>)
 ```
 
@@ -56,7 +56,7 @@ Notice the formula uses the [MAX](max-function-dax.md) function. This function r
 
 [!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
 
-```dax
+```js
 Revenue PY =
 CALCULATE(
     SUM(Sales[Sales Amount]),

@@ -17,7 +17,7 @@ Counts the number of rows in the specified column that contain non-blank values.
   
 ## Syntax  
   
-```dax
+```js
 COUNT(<column>)  
 ```
   
@@ -53,7 +53,7 @@ A whole number.
 
 The following example shows how to count the number of values in the column, ShipDate.  
   
-```dax
+```js
 = COUNT([ShipDate])  
 ```
 

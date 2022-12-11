@@ -17,7 +17,7 @@ Counts the number of blank cells in a column.
   
 ## Syntax  
   
-```dax
+```js
 COUNTBLANK(<column>)  
 ```
   
@@ -45,7 +45,7 @@ A whole number. If no rows are found that meet the condition, blanks are returne
 
 The following example shows how to count the number of rows in the table Reseller that have blank values for BankName.  
   
-```dax
+```js
 = COUNTBLANK(Reseller[BankName])  
 ```
 

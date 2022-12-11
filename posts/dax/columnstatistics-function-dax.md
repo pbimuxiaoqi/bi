@@ -17,7 +17,7 @@ Returns a table of statistics regarding every column in every table in the model
 
 ## Syntax
 
-```dax
+```js
 COLUMNSTATISTICS ()
 ```
 
@@ -49,7 +49,7 @@ A table of statistics. Each row of this table represents a different column in t
 
 The following DAX query:
 
-```dax
+```js
 DEFINE
     TABLE FilteredProduct =
         FILTER (

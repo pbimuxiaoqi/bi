@@ -17,7 +17,7 @@ Returns a bitwise XOR of two numbers.
   
 ## Syntax  
   
-```dax
+```js
 BITXOR(<number>, <number>)
 ```
 
@@ -39,7 +39,7 @@ A bitwise XOR of two numbers.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE { BITXOR(9, 10) }
 ```
 

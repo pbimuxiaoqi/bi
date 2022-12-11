@@ -17,7 +17,7 @@ The COUNTROWS function counts the number of rows in the specified table, or in a
   
 ## Syntax  
   
-```dax
+```js
 COUNTROWS([<table>])  
 ```
   
@@ -45,7 +45,7 @@ A whole number.
 
 The following example shows how to count the number of rows in the table Orders. The expected result is 52761.  
   
-```dax
+```js
 = COUNTROWS('Orders')  
 ```
   
@@ -55,7 +55,7 @@ The following example demonstrates how to use COUNTROWS with a row context. In t
   
 The formula gets the value of ResellerKey and then counts the number of rows in the related table that have the same reseller ID. The result is output in the column, **CalculatedColumn1**.  
   
-```dax
+```js
 = COUNTROWS(RELATEDTABLE(ResellerSales))  
 ```
 

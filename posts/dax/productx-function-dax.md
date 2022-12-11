@@ -17,7 +17,7 @@ Returns the product of an expression evaluated for each row in a table.
   
 ## Syntax  
   
-```dax
+```js
 PRODUCTX(<table>, <expression>)  
 ```
   
@@ -46,7 +46,7 @@ A decimal number.
 
 The following computes the future value of an investment:  
   
-```dax
+```js
 = [PresentValue] * PRODUCTX( AnnuityPeriods, 1+[FixedInterestRate] )  
 ```
   

@@ -17,7 +17,7 @@ Returns the Student's left-tailed t-distribution.
   
 ## Syntax  
   
-```dax
+```js
 T.DIST(X,Deg_freedom,Cumulative)
 ```
   
@@ -39,7 +39,7 @@ The Student's left-tailed t-distribution.
 
 ## Example  
   
-```dax
+```js
 EVALUATE { T.DIST(60, 1, TRUE) }
 ```
 

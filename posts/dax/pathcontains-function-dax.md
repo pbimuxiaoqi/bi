@@ -17,7 +17,7 @@ Returns **TRUE** if the specified *item* exists within the specified *path*.
   
 ## Syntax  
   
-```dax
+```js
 PATHCONTAINS(<path>, <item>)  
 ```
   
@@ -42,6 +42,6 @@ A value of **TRUE** if *item* exists in *path*; otherwise **FALSE**.
 
 The following example creates a calculated column that takes a manager ID and checks a set of employees. If the manager ID is among the list of managers returned by the PATH function, the PATHCONTAINS function returns true; otherwise it returns false.  
   
-```dax
+```js
 = PATHCONTAINS(PATH(Employee[EmployeeKey], Employee[ParentEmployeeKey]), "23")  
 ```

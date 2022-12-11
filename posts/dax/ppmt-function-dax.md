@@ -18,7 +18,7 @@ Returns the payment on the principal for a given period for an investment based 
 
 ## Syntax
 
-```dax
+```js
 PPMT(<rate>, <per>, <nper>, <pv>[, <fv>[, <type>]])
 ```
 
@@ -68,7 +68,7 @@ The payment on the principal for a given period.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   PPMT(0.1/12, 1, 2*12, 2000.00)
@@ -91,7 +91,7 @@ Returns the principal payment made in the first month for a loan with the terms 
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   PPMT(0.08, 10, 10, 200000.00)

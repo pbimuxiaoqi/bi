@@ -17,13 +17,13 @@ Modifies the behavior of the [SUMMARIZE](summarize-function-dax.md) function by 
   
 ## Syntax
 
-```dax
+```js
 ROLLUP ( <groupBy_columnName> [, <groupBy_columnName> [, … ] ] )
 ```
 
 With SUMMARIZE,
 
-```dax
+```js
 SUMMARIZE(<table>, <groupBy_columnName>[, <groupBy_columnName>]…[, ROLLUP(<groupBy_columnName>[,< groupBy_columnName>…])][, <name>, <expression>]…)  
 ```
   

@@ -17,7 +17,7 @@ Returns the internal rate of return for a schedule of cash flows that is not nec
   
 ## Syntax  
   
-```dax
+```js
 XIRR(<table>, <values>, <dates>, [, <guess>[, <alternateResult>]])  
 ```
   
@@ -59,7 +59,7 @@ Internal rate of return for the given inputs. If the calculation fails to return
 
 The following formula calculates the internal rate of return of the CashFlows table:  
   
-```dax
+```js
 = XIRR( CashFlows, [Payment], [Date] )  
 ```
   

@@ -17,7 +17,7 @@ Pairs rollup groups with the column added by [ROLLUPADDISSUBTOTAL](rollupaddissu
   
 ## Syntax  
   
-```dax
+```js
 ROLLUPISSUBTOTAL ( [<grandTotalFilter>], <groupBy_columnName>, <isSubtotal_columnName> [, [<groupLevelFilter>] [, <groupBy_columnName>, <isSubtotal_columnName> [, [<groupLevelFilter>] [, … ] ] ] ] )
 ```
   

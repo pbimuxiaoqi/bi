@@ -17,7 +17,7 @@ Returns the standard deviation of the entire population.
   
 ## Syntax  
   
-```dax
+```js
 STDEVX.P(<table>, <expression>)  
 ```
   
@@ -52,6 +52,6 @@ A number that represents the standard deviation of the entire population.
 
 The following example shows the formula for a calculated column that calculates the standard deviation of the unit price per product, when the formula is used in the *Product* table.  
   
-```dax
+```js
 = STDEVX.P(RELATEDTABLE(InternetSales_USD), InternetSales_USD[UnitPrice_USD] – (InternetSales_USD[DiscountAmount_USD]/InternetSales_USD[OrderQuantity]))  
 ```

@@ -17,7 +17,7 @@ Returns the first value in the column, **column**, filtered by the current conte
   
 ## Syntax  
   
-```dax
+```js
 FIRSTNONBLANK(<column>,<expression>)  
 ```
   

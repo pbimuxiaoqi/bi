@@ -18,7 +18,7 @@ Returns the yield for a Treasury bill.
 
 ## Syntax
 
-```dax
+```js
 TBILLYIELD(<settlement>, <maturity>, <pr>)
 ```
 
@@ -65,7 +65,7 @@ The following DAX query:
 | 6/1/2008  | Maturity date             |
 | \\$98.45    | Price per \\$100 face value |
 
-```dax
+```js
 EVALUATE
 {
   TBILLYIELD(DATE(2008,3,31), DATE(2008,6,1), 98.45)

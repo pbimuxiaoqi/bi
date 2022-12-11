@@ -17,7 +17,7 @@ Joins two text strings into one text string.
   
 ## Syntax  
   
-```dax
+```js
 CONCATENATE(<text1>, <text2>)  
 ```
   
@@ -46,7 +46,7 @@ A concatenated string.
   
 The sample formula creates a new string value by combining two string values that you provide as arguments.  
 
-```dax
+```js
 = CONCATENATE("Hello ", "World") 
 ```
   
@@ -54,7 +54,7 @@ The sample formula creates a new string value by combining two string values tha
 
 The sample formula returns the customer's full name as listed in a phone book. Note how a nested function is used as the second argument. This is one way to concatenate multiple strings when you have more than two values that you want to use as arguments.  
 
-```dax
+```js
 = CONCATENATE(Customer[LastName], CONCATENATE(", ", Customer[FirstName]))
 ```
   
@@ -62,7 +62,7 @@ The sample formula returns the customer's full name as listed in a phone book. N
   
 The sample formula creates a new calculated column in the Customer table with the full customer name as a combination of first name, middle initial, and last name. If there is no middle name, the last name comes directly after the first name. If there is a middle name, only the first letter of the middle name is used and the initial letter is followed by a period.  
 
-```dax
+```js
 = CONCATENATE( [FirstName]&" ", CONCATENATE( IF( LEN([MiddleName])>1, LEFT([MiddleName],1)&" ", ""), [LastName]))
 ```
   
@@ -77,13 +77,13 @@ The following example demonstrates how to concatenate values in columns that hav
 |Mountain bike|MTN|40|MTN40|  
 |Mountain bike|MTN|42|MTN42|  
 
-```dax
+```js
 = CONCATENATE('Products'[Product abbreviation],'Products'[Product number])  
 ```
   
 The CONCATENATE function in DAX accepts only two arguments, whereas the Excel CONCATENATE function accepts up to 255 arguments. If you need to add more arguments, you can use the ampersand (&amp;) operator. For example, the following formula produces the results, MTN-40 and MTN-42.  
   
-```dax
+```js
 = [Product abbreviation] & "-" & [Product number]  
 ```
   

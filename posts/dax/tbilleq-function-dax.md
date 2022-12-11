@@ -18,7 +18,7 @@ Returns the bond-equivalent yield for a Treasury bill.
 
 ## Syntax
 
-```dax
+```js
 TBILLEQ(<settlement>, <maturity>, <discount>)
 ```
 
@@ -65,7 +65,7 @@ The Treasury Bill's bond-equivalent yield.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   TBILLEQ(DATE(2008,3,31), DATE(2008,6,1), 0.0914)

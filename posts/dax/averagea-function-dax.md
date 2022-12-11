@@ -17,7 +17,7 @@ Returns the average (arithmetic mean) of the values in a column. Handles text an
   
 ## Syntax  
   
-```dax
+```js
 AVERAGEA(<column>)  
 ```
   
@@ -58,7 +58,7 @@ The following example returns the average of non-blank cells in the referenced c
 |0000126||Counts as 0|  
 |0000126|TRUE|Counts as 1|  
   
-```dax
+```js
 = AVERAGEA([Amount])  
 ```
   

@@ -17,7 +17,7 @@ Checks if a value is not text (blank cells are not text), and returns TRUE or FA
   
 ## Syntax  
   
-```dax
+```js
 ISNONTEXT(<value>)  
 ```
   
@@ -41,7 +41,7 @@ TRUE if the value is not text or blank; FALSE if the value is text.
 
 The following examples show the behavior of the ISNONTEXT function.  
   
-```dax
+```js
 //RETURNS: Is Non-Text  
 = IF(ISNONTEXT(1), "Is Non-Text", "Is Text")  
   

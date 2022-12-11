@@ -17,7 +17,7 @@ Returns the exponential distribution. Use EXPON.DIST to model the time between e
   
 ## Syntax  
   
-```dax
+```js
 EXPON.DIST(x,lambda,cumulative)  
 ```
   

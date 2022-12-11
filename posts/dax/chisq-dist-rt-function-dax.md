@@ -18,7 +18,7 @@ The chi-squared distribution is associated with a chi-squared test. Use the chi-
   
 ## Syntax  
   
-```dax
+```js
 CHISQ.DIST.RT(<x>, <deg_freedom>)
 ```
   
@@ -49,7 +49,7 @@ The right-tailed probability of the chi-squared distribution.
   
 The following DAX query,
   
-```dax
+```js
 EVALUATE { CHISQ.DIST.RT(2, 5) }
 ```
 

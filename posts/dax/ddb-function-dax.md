@@ -18,7 +18,7 @@ Returns the depreciation of an asset for a specified period using the double-dec
 
 ## Syntax
 
-```dax
+```js
 DDB(<cost>, <salvage>, <life>, <period>[, <factor>])
 ```
 
@@ -63,7 +63,7 @@ The depreciation over the specified period.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   DDB(1000000, 0, 10, 5, 1.5)
@@ -80,7 +80,7 @@ Returns an asset's depreciation in the 5$^{th}$ year, assuming it will be worth 
 
 The following calculates the total depreciation of all assets in different years over their lifetimes. This calculation uses the default factor of 2 (the double-declining balance method).
 
-```dax
+```js
 DEFINE
 VAR NumDepreciationPeriods = MAX(Asset[LifeTimeYears])
 VAR DepreciationPeriods = GENERATESERIES(1, NumDepreciationPeriods)

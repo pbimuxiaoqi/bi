@@ -17,7 +17,7 @@ Returns a delimited text string with the identifiers of all the parents of the c
   
 ## Syntax  
   
-```dax
+```js
 PATH(<ID_columnName>, <parent_columnName>)  
 ```
   
@@ -51,6 +51,6 @@ A delimited text string containing the identifiers of all the parents to the cur
 
 The following example creates a calculated column that lists all the managers for each employee.  
   
-```dax
+```js
 = PATH(Employee[EmployeeKey], Employee[ParentEmployeeKey])  
 ```

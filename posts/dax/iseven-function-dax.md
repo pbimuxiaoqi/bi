@@ -17,7 +17,7 @@ Returns TRUE if number is even, or FALSE if number is odd.
   
 ## Syntax  
   
-```dax
+```js
 ISEVEN(number)  
 ```
   

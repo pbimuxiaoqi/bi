@@ -17,7 +17,7 @@ Rounds a number up, away from 0 (zero).
   
 ## Syntax  
   
-```dax
+```js
 ROUNDUP(<number>, <num_digits>)  
 ```
   
@@ -46,7 +46,7 @@ A decimal number.
 
 The following formula rounds Pi to four decimal places. The expected result is 3.1416.  
   
-```dax
+```js
 = ROUNDUP(PI(),4)  
 ```
   
@@ -54,7 +54,7 @@ The following formula rounds Pi to four decimal places. The expected result is 3
 
 The following formula rounds 1.3 to the nearest multiple of 0.2. The expected result is 2.  
 
-```dax
+```js
 = ROUNDUP(1.3,0.2)  
 ```
   
@@ -62,7 +62,7 @@ The following formula rounds 1.3 to the nearest multiple of 0.2. The expected re
   
 The following formula rounds the value in the column, **FreightCost**, with the expected results shown in the following table:  
   
-```dax
+```js
 = ROUNDUP([Values],-1)  
 ```
 

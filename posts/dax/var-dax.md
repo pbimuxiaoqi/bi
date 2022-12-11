@@ -17,7 +17,7 @@ Stores the result of an expression as a named variable, which can then be passed
 
 ## Syntax  
   
-```dax
+```js
 VAR <name> = <expression>  
 ```
   
@@ -50,13 +50,13 @@ A named variable containing the result of the expression argument.
 
 To calculate a percentage of year-over-year growth without using a variable, you could create three separate measures. This first measure calculates Sum of Sales Amount:  
   
-```dax
+```js
 Sum of SalesAmount = SUM(SalesTable[SalesAmount])  
 ```
 
 A second measure calculates the sales amount for the previous year:  
   
-```dax
+```js
 SalesAmount PreviousYear =
     CALCULATE([Sum of SalesAmount],
     SAMEPERIODLASTYEAR(Calendar[Date])
@@ -65,7 +65,7 @@ SalesAmount PreviousYear =
 
 You can then create a third measure that combines the other two measures to calculate a growth percentage. Notice the Sum of SalesAmount measure is used in two places; first to determine if there is a sale, then again to calculate a percentage.  
   
-```dax
+```js
 Sum of SalesAmount YoY%: = 
     IF([Sum of SalesAmount] ,  
         DIVIDE(([Sum of SalesAmount] – [SalesAmount PreviousYear]), [Sum of SalesAmount])
@@ -74,7 +74,7 @@ Sum of SalesAmount YoY%: =
 
 By using a variable, you can create a single measure that calculates the same result:  
   
-```dax
+```js
 YoY% = VAR Sales = SUM(SalesTable[SalesAmount])  
 
 VAR SalesLastYear =

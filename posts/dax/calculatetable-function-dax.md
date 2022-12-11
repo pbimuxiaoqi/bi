@@ -22,7 +22,7 @@ Evaluates a table expression in a modified filter context.
 
 ## Syntax  
 
-```dax
+```js
 CALCULATETABLE(<expression>[, <filter1> [, <filter2> [, …]]])
 ```
 
@@ -92,7 +92,7 @@ The following example uses the CALCULATETABLE function to get the sum of Interne
 
 The following formula:
 
-```dax
+```js
 = SUMX(
     CALCULATETABLE(
         'InternetSales_USD',

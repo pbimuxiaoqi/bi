@@ -16,7 +16,7 @@ Evaluates an expression filtered by the sorted values of a column and returns th
   
 ## Syntax  
   
-```dax
+```js
 FIRSTNONBLANKVALUE(<column>, <expression>)
 ```
   
@@ -45,7 +45,7 @@ The first non-blank value of \<expression> corresponding to the sorted values of
 
 The following DAX query,
 
-```dax
+```js
 EVALUATE 
 SUMMARIZECOLUMNS(
   DimProduct[Class],

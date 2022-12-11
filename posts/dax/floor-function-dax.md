@@ -17,7 +17,7 @@ Rounds a number down, toward zero, to the nearest multiple of significance.
   
 ## Syntax  
   
-```dax
+```js
 FLOOR(<number>, <significance>)  
 ```
   
@@ -46,7 +46,7 @@ A decimal number.
 
 The following formula takes the values in the [Total Product Cost] column from the table, InternetSales, and rounds down to the nearest multiple of .1.  
   
-```dax
+```js
 = FLOOR(InternetSales[Total Product Cost],.1)  
 ```
 

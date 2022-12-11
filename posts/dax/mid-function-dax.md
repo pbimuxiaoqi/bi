@@ -17,7 +17,7 @@ Returns a string of characters from the middle of a text string, given a startin
   
 ## Syntax  
   
-```dax
+```js
 MID(<text>, <start_num>, <num_chars>)  
 ```
   
@@ -40,7 +40,7 @@ Whereas Microsoft Excel has different functions for working with single-byte and
 
 The following expression,
 
-```dax
+```js
 MID("abcde",2,3))
 ```
 
@@ -48,7 +48,7 @@ Returns **"bcd"**.
 
 The following expression,
 
-```dax
+```js
 MID('Reseller'[ResellerName],1,5))
 ```
 

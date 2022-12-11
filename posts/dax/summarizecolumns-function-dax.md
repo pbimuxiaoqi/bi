@@ -17,7 +17,7 @@ Returns a summary table over a set of groups.
   
 ## Syntax  
   
-```dax
+```js
 SUMMARIZECOLUMNS( <groupBy_columnName> [, < groupBy_columnName >]…, [<filterTable>]…[, <name>, <expression>]…)  
 ```
   
@@ -48,7 +48,7 @@ A table which includes combinations of values from the supplied columns based on
   
 Consider the following query:  
   
-```dax
+```js
 SUMMARIZECOLUMNS ( 
     'Sales Territory'[Category], 
     FILTER('Customer', 'Customer' [First Name] = "Alicia") 
@@ -59,7 +59,7 @@ In this query, without a measure the groupBy columns do not contain any columns 
   
 However, with this query:  
   
-```dax
+```js
 SUMMARIZECOLUMNS ( 
     'Sales Territory'[Category], 'Customer' [Education], 
     FILTER('Customer', 'Customer'[First Name] = "Alicia") 
@@ -74,7 +74,7 @@ The [IGNORE](ignore-function-dax.md) syntax can be used to modify the behavior o
 
 ### Example
 
-```dax
+```js
 SUMMARIZECOLUMNS( 
     Sales[CustomerId], "Total Qty", 
     IGNORE( SUM( Sales[Qty] ) ), 
@@ -99,7 +99,7 @@ With [IGNORE](ignore-function-dax.md),
   
 All expression ignored,
   
-```dax
+```js
 SUMMARIZECOLUMNS( 
     Sales[CustomerId], "Blank", 
     IGNORE( Blank() ), "BlankIfTotalQtyIsNot5", 
@@ -121,7 +121,7 @@ The [NONVISUAL](nonvisual-function-dax.md) function marks a value filter in SUMM
 
 ### Example
 
-```dax
+```js
 DEFINE
 MEASURE FactInternetSales[Sales] = SUM(FactInternetSales[Sales Amount])
 EVALUATE
@@ -144,7 +144,7 @@ Returns the result where [Visual Total Sales] is the total across all years:
 
 In contrast, the same query *without* the NONVISUAL function:
 
-```dax
+```js
 DEFINE
 MEASURE FactInternetSales[Sales] = SUM(FactInternetSales[Sales Amount])
 EVALUATE
@@ -171,7 +171,7 @@ The addition of the [ROLLUPADDISSUBTOTAL](rollupaddissubtotal-function-dax.md) s
   
 ### Example with single subtotal
   
-```dax
+```js
 DEFINE
 VAR vCategoryFilter =
   TREATAS({"Accessories", "Clothing"}, Product[Category])
@@ -205,7 +205,7 @@ Returns the following table,
   
 ### Example with multiple subtotals
   
-```dax
+```js
 SUMMARIZECOUMNS ( 
     Regions[State], ROLLUPADDISSUBTOTAL ( Sales[CustomerId], "IsCustomerSubtotal" ), 
     ROLLUPADDISSUBTOTAL ( Sales[Date], "IsDateSubtotal"), "Total Qty", SUM( Sales[Qty] ) 
@@ -239,7 +239,7 @@ Like with the [SUMMARIZE](summarize-function-dax.md) function, [ROLLUPGROUP](rol
   
 ### Example with multiple subtotals
   
-```dax
+```js
 SUMMARIZECOLUMNS( 
     ROLLUPADDISSUBTOTAL( Sales[CustomerId], "IsCustomerSubtotal" ), 
     ROLLUPADDISSUBTOTAL(ROLLUPGROUP(Regions[City], Regions[State]), "IsCityStateSubtotal"),"Total Qty", SUM( Sales[Qty] ) 

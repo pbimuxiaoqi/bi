@@ -20,7 +20,7 @@ Returns a one-column table that contains the distinct values from the specified 
   
 ## Syntax  
   
-```dax
+```js
 DISTINCT(<column>)  
 ```
   
@@ -50,7 +50,7 @@ The VALUES function is similar to DISTINCT; it can also be used to return a list
 
 The following formula counts the number of unique customers who have generated orders over the internet channel. The table that follows illustrates the possible results when the formula is added to a report.  
   
-```dax
+```js
 = COUNTROWS(DISTINCT(InternetSales_USD[CustomerKey]))  
 ```
 

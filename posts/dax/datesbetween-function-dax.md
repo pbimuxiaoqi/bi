@@ -22,7 +22,7 @@ This function is suited to pass as a filter to the [CALCULATE](calculate-functio
 
 ## Syntax
 
-```dax
+```js
 DATESBETWEEN(<Dates>, <StartDate>, <EndDate>)
 ```
 
@@ -60,7 +60,7 @@ Notice that the formula uses the [MAX](max-function-dax.md) function. This funct
 
 [!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
 
-```dax
+```js
 Customers LTD =
 CALCULATE(
     DISTINCTCOUNT(Sales[CustomerKey]),

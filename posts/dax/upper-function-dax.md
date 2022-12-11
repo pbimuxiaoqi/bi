@@ -17,7 +17,7 @@ Converts a text string to all uppercase letters.
   
 ## Syntax  
   
-```dax
+```js
 UPPER (<text>)  
 ```
   
@@ -35,7 +35,7 @@ Same text, in uppercase.
 
 The following formula converts the string in the column, [ProductCode], to all uppercase. Non-alphabetic characters are not affected.  
   
-```dax
+```js
 = UPPER(['New Products'[Product Code])  
 ```
   

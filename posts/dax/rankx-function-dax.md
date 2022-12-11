@@ -17,7 +17,7 @@ Returns the ranking of a number in a list of numbers for each row in the *table*
   
 ## Syntax  
   
-```dax
+```js
 RANKX(<table>, <expression>[, <value>[, <order>[, <ties>]]])  
 ```
   
@@ -70,6 +70,6 @@ The rank number of *value* among all possible values of *expression* evaluated f
 
 The following calculated column in the Products table calculates the sales ranking for each product in the Internet channel.  
   
-```dax
+```js
 = RANKX(ALL(Products), SUMX(RELATEDTABLE(InternetSales), [SalesAmount]))  
 ```

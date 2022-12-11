@@ -17,7 +17,7 @@ Returns the current user's Object ID from Azure AD or security identifier (SID).
   
 ## Syntax  
   
-```dax
+```js
 USEROBJECTID()  
 ```
   

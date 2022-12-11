@@ -17,7 +17,7 @@ Returns the hyperbolic tangent of a number.
   
 ## Syntax  
   
-```dax
+```js
 TANH(number)  
 ```
   

@@ -19,7 +19,7 @@ To return the median of numbers in a column, use [MEDIAN function](median-functi
   
 ## Syntax  
   
-```dax
+```js
 MEDIANX(<table>, <expression>)  
 ```
   
@@ -50,7 +50,7 @@ A decimal number.
 
 The following computes the median age of customers who live in the USA.  
   
-```dax
+```js
 = MEDIANX( FILTER(Customers, RELATED( Geography[Country]="USA" ) ), Customers[Age] )  
 ```
   

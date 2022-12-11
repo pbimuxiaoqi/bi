@@ -17,7 +17,7 @@ Converts a text string that represents a number to a number.
   
 ## Syntax  
   
-```dax
+```js
 VALUE(<text>)  
 ```
   
@@ -43,7 +43,7 @@ The converted number in decimal data type.
 
 The following formula converts the typed string, "3", into the numeric value 3.  
   
-```dax
+```js
 = VALUE("3")  
 ```
   

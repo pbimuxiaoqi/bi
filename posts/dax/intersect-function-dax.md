@@ -17,7 +17,7 @@ Returns the row intersection of two tables, retaining duplicates.
   
 ## Syntax  
   
-```dax
+```js
 INTERSECT(<table_expression1>, <table_expression2>)  
 ```
   

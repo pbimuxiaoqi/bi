@@ -17,7 +17,7 @@ Returns e raised to the power of a given number. The constant e equals 2.7182818
   
 ## Syntax  
   
-```dax
+```js
 EXP(<number>)  
 ```
   
@@ -43,7 +43,7 @@ A decimal number.
 
 The following formula calculates e raised to the power of the number contained in the column, `[Power]`.  
   
-```dax
+```js
 = EXP([Power])  
 ```
   

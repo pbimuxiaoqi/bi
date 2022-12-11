@@ -18,7 +18,7 @@ Returns the depreciation of an asset for a specified period using the fixed-decl
 
 ## Syntax
 
-```dax
+```js
 DB(<cost>, <salvage>, <life>, <period>[, <month>])
 ```
 
@@ -72,7 +72,7 @@ The depreciation over the specified period.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   DB(1000000, 0, 6, 1, 2)
@@ -89,7 +89,7 @@ Returns an asset's depreciation in the last two months of the first year, assumi
 
 The following calculates the total depreciation of all assets in different years over their lifetimes. Here, the first year only includes 7 months of depreciation, and the last year only includes 5 months.
 
-```dax
+```js
 DEFINE
 VAR NumDepreciationPeriods = MAX(Asset[LifeTimeYears])+1
 VAR DepreciationPeriods = GENERATESERIES(1, NumDepreciationPeriods)

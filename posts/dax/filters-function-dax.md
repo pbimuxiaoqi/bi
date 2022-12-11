@@ -17,7 +17,7 @@ Returns the values that are directly applied as filters to *columnName*.
   
 ## Syntax
   
-```dax
+```js
 FILTERS(<columnName>)  
 ```
   
@@ -39,7 +39,7 @@ The values that are directly applied as filters to *columnName*.
 
 The following example shows how to determine the number of direct filters a column has.  
   
-```dax
+```js
 = COUNTROWS(FILTERS(ResellerSales_USD[ProductKey]))  
 ```
 

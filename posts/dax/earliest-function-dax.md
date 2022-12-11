@@ -17,7 +17,7 @@ Returns the current value of the specified column in an outer evaluation pass of
   
 ## Syntax  
   
-```dax
+```js
 EARLIEST(<column>)  
 ```
   
@@ -41,7 +41,7 @@ A column with filters removed.
 
 The current sample data does not support this scenario.  
   
-```dax
+```js
 = EARLIEST(<column>)  
 ```
   

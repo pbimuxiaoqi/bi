@@ -18,7 +18,7 @@ Returns the cumulative principal paid on a loan between start_period and end_per
 
 ## Syntax
 
-```dax
+```js
 CUMPRINC(<rate>, <nper>, <pv>, <start_period>, <end_period>, <type>)
 ```
 
@@ -72,7 +72,7 @@ The cumulative principal paid in the specified period.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   CUMPRINC(0.09/12, 30*12, 125000, 13, 24, 1)
@@ -89,7 +89,7 @@ Returns the total principal paid in the second year of payments, periods 13 thro
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   CUMPRINC(0.09/12, 30*12, 125000, 1, 1, 0)

@@ -18,7 +18,7 @@ Returns the accrued interest for a security that pays periodic interest.
 
 ## Syntax
 
-```dax
+```js
 ACCRINT(<issue>, <first_interest>, <settlement>, <rate>, <par>, <frequency>[, <basis>[, <calc_method>]])
 ```
 
@@ -93,7 +93,7 @@ The accrued interest.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   ACCRINT(DATE(2007,3,1), DATE(2008,8,31), DATE(2008,5,1), 0.1, 1000, 2, 0)
@@ -110,7 +110,7 @@ Returns the accrued interest from issue to settlement, for a security with the t
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   ACCRINT(DATE(2007,3,1), DATE(2008,8,31), DATE(2008,5,1), 0.1, 1000, 2, 0, FALSE)

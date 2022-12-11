@@ -17,7 +17,7 @@ Returns the square root of a number.
   
 ## Syntax  
   
-```dax
+```js
 SQRT(<number>)  
 ```
   
@@ -39,7 +39,7 @@ If the number is negative, the SQRT function returns an error.
 
 The following formula,  
   
-```dax
+```js
 = SQRT(25)  
 ```
   

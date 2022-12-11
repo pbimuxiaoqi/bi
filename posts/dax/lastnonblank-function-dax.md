@@ -17,7 +17,7 @@ Returns the last value in the column, **column**, filtered by the current contex
   
 ## Syntax  
   
-```dax
+```js
 LASTNONBLANK(<column>,<expression>)  
 ```
   

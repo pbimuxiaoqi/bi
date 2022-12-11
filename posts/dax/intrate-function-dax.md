@@ -18,7 +18,7 @@ Returns the interest rate for a fully invested security.
 
 ## Syntax
 
-```dax
+```js
 INTRATE(<settlement>, <maturity>, <investment>, <redemption>[, <basis>])
 ```
 
@@ -86,7 +86,7 @@ The interest rate.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   INTRATE(DATE(2008,2,15), DATE(2008,5,15), 1000000, 1014420, 2)

@@ -17,7 +17,7 @@ Returns the date in **datetime** format of the last day of the month, before or 
   
 ## Syntax  
   
-```dax
+```js
 EOMONTH(<start_date>, <months>)  
 ```
   
@@ -50,7 +50,7 @@ A date (**datetime**).
 
 The following expression returns May 31, 2008, because the **months** argument is rounded to 2.  
   
-```dax
+```js
 = EOMONTH("March 3, 2008",1.5)  
 ```
   

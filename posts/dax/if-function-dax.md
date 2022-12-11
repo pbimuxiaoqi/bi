@@ -17,7 +17,7 @@ Checks a condition, and returns one value when it's TRUE, otherwise it returns a
 
 ## Syntax
 
-```dax
+```js
 IF(<logical_test>, <value_if_true>[, <value_if_false>])
 ```
 
@@ -49,7 +49,7 @@ The first example tests whether the **List Price** column value is less than 500
 
 [!INCLUDE [power-bi-dax-sample-model](includes/power-bi-dax-sample-model.md)]
 
-```dax
+```js
 Price Group =
 IF(
     'Product'[List Price] < 500,
@@ -59,7 +59,7 @@ IF(
 
 The second example uses the same test, but this time includes a **value_if_false** value. So, the formula classifies each product as either **Low** or **High**.
 
-```dax
+```js
 Price Group =
 IF(
     'Product'[List Price] < 500,
@@ -70,7 +70,7 @@ IF(
 
 The third example uses the same test, but this time nests an IF function to perform an additional test. So, the formula classifies each product as either **Low**, **Medium**, or **High**.
 
-```dax
+```js
 Price Group =
 IF(
     'Product'[List Price] < 500,

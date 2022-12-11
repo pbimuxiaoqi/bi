@@ -17,7 +17,7 @@ Returns the inverse of the standard normal cumulative distribution. The distribu
 
 ## Syntax  
   
-```dax
+```js
 NORM.S.INV(Probability)
 ```
   
@@ -37,7 +37,7 @@ The inverse of the standard normal cumulative distribution. The distribution has
 
 ## Example  
   
-```dax
+```js
 EVALUATE { NORM.S.INV(0.908789) }
 ```
 

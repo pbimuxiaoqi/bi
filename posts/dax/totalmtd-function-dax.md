@@ -17,7 +17,7 @@ Evaluates the value of the **expression** for the month to date, in the current 
   
 ## Syntax  
   
-```dax
+```js
 TOTALMTD(<expression>,<dates>[,<filter>])  
 ```
   
@@ -50,7 +50,7 @@ A scalar value that represents the **expression** evaluated for the dates in the
 
 The following sample formula creates a measure that calculates the 'month running total' or 'month running sum' for Internet sales.
 
-```dax
+```js
 = TOTALMTD(SUM(InternetSales_USD[SalesAmount_USD]),DateTime[DateKey])  
 ```
   

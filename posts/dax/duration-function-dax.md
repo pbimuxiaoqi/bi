@@ -18,7 +18,7 @@ Returns the Macauley duration for an assumed par value of \\$100. Duration is de
 
 ## Syntax
 
-```dax
+```js
 DURATION(<settlement>, <maturity>, <coupon>, <yld>, <frequency>[, <basis>])
 ```
 
@@ -80,7 +80,7 @@ The Macauley duration.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   DURATION(DATE(2018,7,1), DATE(2048,1,1), 0.08, 0.09, 2, 1)

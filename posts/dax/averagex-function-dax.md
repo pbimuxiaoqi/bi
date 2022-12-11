@@ -17,7 +17,7 @@ Calculates the average (arithmetic mean) of a set of expressions evaluated over 
   
 ## Syntax  
   
-```dax
+```js
 AVERAGEX(<table>,<expression>)  
 ```
   
@@ -46,7 +46,7 @@ A decimal number.
 
 The following example calculates the average freight and tax on each order in the InternetSales table, by first summing Freight plus TaxAmt in each row, and then averaging those sums.  
   
-```dax
+```js
 = AVERAGEX(InternetSales, InternetSales[Freight]+ InternetSales[TaxAmt])  
 ```
 

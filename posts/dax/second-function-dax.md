@@ -17,7 +17,7 @@ Returns the seconds of a time value, as a number from 0 to 59.
   
 ## Syntax  
   
-```dax
+```js
 SECOND(<time>)  
 ```
   
@@ -45,7 +45,7 @@ An integer number from 0 to 59.
 
 The following formula returns the number of seconds in the time contained in the **TransactionTime** column of a table named **Orders**.  
   
-```dax
+```js
 = SECOND('Orders'[TransactionTime])  
 ```
   
@@ -53,7 +53,7 @@ The following formula returns the number of seconds in the time contained in the
 
 The following formula returns 3, which is the number of seconds in the time represented by the value, **March 3, 2008 12:00:03**.  
   
-```dax
+```js
 = SECOND("March 3, 2008 12:00:03")  
 ```
   

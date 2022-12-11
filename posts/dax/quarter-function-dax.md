@@ -18,7 +18,7 @@ Returns the quarter as a number from 1 (January – March) to 4 (October – Dec
   
 ## Syntax  
   
-```dax
+```js
 QUARTER(<date>)
 ```
   
@@ -40,7 +40,7 @@ If the input value is BLANK, the output value is also BLANK.
 
 The following DAX query:
   
-```dax
+```js
 EVALUATE { QUARTER(DATE(2019, 2, 1)), QUARTER(DATE(2018, 12, 31)) } 
 ```
 
@@ -55,7 +55,7 @@ Returns:
 
 The following DAX query:
   
-```dax
+```js
 EVALUATE
 ADDCOLUMNS(
     FILTER(

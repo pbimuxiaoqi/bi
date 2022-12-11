@@ -17,7 +17,7 @@ Evaluates the **expression** at the last date of the month in the current contex
   
 ## Syntax  
   
-```dax
+```js
 CLOSINGBALANCEMONTH(<expression>,<dates>[,<filter>])  
 ```
   
@@ -55,7 +55,7 @@ A scalar value that represents the **expression** evaluated at the last date of 
 
 The following sample formula creates a measure that calculates the 'Month End Inventory Value' of the product inventory.  
   
-```dax
+```js
 = CLOSINGBALANCEMONTH(SUMX(ProductInventory,ProductInventory[UnitCost]*ProductInventory[UnitsBalance]),DateTime[DateKey])  
 ```
   

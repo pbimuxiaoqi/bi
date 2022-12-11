@@ -17,7 +17,7 @@ Rounds a number to the specified number of digits.
   
 ## Syntax  
   
-```dax
+```js
 ROUND(<number>, <num_digits>)  
 ```
   
@@ -50,7 +50,7 @@ A decimal number.
 
 The following formula rounds 2.15 up, to one decimal place. The expected result is 2.2.  
   
-```dax
+```js
 = ROUND(2.15,1)  
 ```
   
@@ -58,7 +58,7 @@ The following formula rounds 2.15 up, to one decimal place. The expected result 
 
 The following formula rounds 21.5 to one decimal place to the left of the decimal point. The expected result is 20.  
   
-```dax
+```js
 = ROUND(21.5,-1)  
 ```
   

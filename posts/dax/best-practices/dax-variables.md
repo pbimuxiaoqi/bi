@@ -21,7 +21,7 @@ In this article, we'll demonstrate the first three benefits by using an example 
 
 Let's start with the following measure definition.
 
-```dax
+```js
 Sales YoY Growth % =
 DIVIDE(
     ([Sales] - CALCULATE([Sales], PARALLELPERIOD('Date'[Date], -12, MONTH))),
@@ -37,7 +37,7 @@ Notice that the formula repeats the expression that calculates "same period last
 
 The following measure definition represents an improvement. It uses an expression to assign the "same period last year" result to a variable named **SalesPriorYear**. The variable is then used twice in the RETURN expression.
 
-```dax
+```js
 Sales YoY Growth % =
 VAR SalesPriorYear =
     CALCULATE([Sales], PARALLELPERIOD('Date'[Date], -12, MONTH))
@@ -57,7 +57,7 @@ Variables can also help you debug a formula. To test an expression assigned to a
 
 The following measure definition returns only the **SalesPriorYear** variable. Notice how it comments-out the intended RETURN expression. This technique allows you to easily revert it back once your debugging is complete.
 
-```dax
+```js
 Sales YoY Growth % =
 VAR SalesPriorYear =
     CALCULATE([Sales], PARALLELPERIOD('Date'[Date], -12, MONTH))
@@ -74,7 +74,7 @@ Variables are always evaluated outside the filters your RETURN expression applie
 
 Consider the following calculated column definition added to the **Subcategory** table. It evaluates a rank for each product subcategory based on the **Subcategory Sales** column values.
 
-```dax
+```js
 Subcategory Sales Rank =
 COUNTROWS(
     FILTER(
@@ -88,7 +88,7 @@ The EARLIER function is used to refer to the **Subcategory Sales** column value 
 
 The calculated column definition can be improved by using a variable instead of the EARLIER function. The **CurrentSubcategorySales** variable stores the **Subcategory Sales** column value *in the current row context*, and the RETURN expression uses it within a modified filter context.
 
-```dax
+```js
 Subcategory Sales Rank =
 VAR CurrentSubcategorySales = Subcategory[Subcategory Sales]
 RETURN

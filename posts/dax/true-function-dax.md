@@ -17,7 +17,7 @@ Returns the logical value TRUE.
   
 ## Syntax  
   
-```dax
+```js
 TRUE()  
 ```
   
@@ -33,7 +33,7 @@ The word TRUE is also interpreted as the logical value TRUE.
 
 The formula returns the logical value TRUE when the value in the column, 'InternetSales_USD'[SalesAmount_USD], is greater than 200000.  
   
-```dax
+```js
 = IF(SUM('InternetSales_USD'[SalesAmount_USD]) >200000, TRUE(), false())  
 ```
 

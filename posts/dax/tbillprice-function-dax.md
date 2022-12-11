@@ -18,7 +18,7 @@ Returns the price per \\$100 face value for a Treasury bill.
 
 ## Syntax
 
-```dax
+```js
 TBILLPRICE(<settlement>, <maturity>, <discount>)
 ```
 
@@ -65,7 +65,7 @@ The Treasury Bill's price per \\$100 face value.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   TBILLPRICE(DATE(2008,3,31), DATE(2008,6,1), 0.09)

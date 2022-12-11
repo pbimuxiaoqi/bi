@@ -17,7 +17,7 @@ Returns the date that is the indicated number of months before or after the star
   
 ## Syntax  
   
-```dax
+```js
 EDATE(<start_date>, <months>)  
 ```
   
@@ -50,7 +50,7 @@ A date (**datetime**).
 
 The following example returns the date three months after the order date, which is stored in the column [TransactionDate].  
   
-```dax
+```js
 = EDATE([TransactionDate],3)  
 ```
   

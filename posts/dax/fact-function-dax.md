@@ -17,7 +17,7 @@ Returns the factorial of a number, equal to the series 1*2\*3\*...\* , ending in
   
 ## Syntax  
   
-```dax
+```js
 FACT(<number>)  
 ```
   
@@ -41,7 +41,7 @@ A decimal number.
 
 The following formula returns the factorial for the series of integers in the column, `[Values]`.  
   
-```dax
+```js
 = FACT([Values])  
 ```
 

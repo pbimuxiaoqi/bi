@@ -17,7 +17,7 @@ Returns the day of the month, a number from 1 to 31.
   
 ## Syntax  
   
-```dax
+```js
 DAY(<date>)  
 ```
   
@@ -43,7 +43,7 @@ An integer number indicating the day of the month.
 
 The following formula returns the day from the date in the column, [Birthdate].  
   
-```dax
+```js
 = DAY([Birthdate])  
 ```
   
@@ -51,7 +51,7 @@ The following formula returns the day from the date in the column, [Birthdate].
 
 The following formulas return the day, 4, using dates that have been supplied as strings in an accepted text format.  
   
-```dax
+```js
 = DAY("3-4-1007")  
 = DAY("March 4 2007")  
 ```
@@ -60,7 +60,7 @@ The following formulas return the day, 4, using dates that have been supplied as
 
 The following expression returns the day that each sales order was placed, and flags the row as a promotional sale item if the order was placed on the 10th of the month.  
   
-```dax
+```js
 = IF( DAY([SalesDate])=10,"promotion","")  
 ```
   

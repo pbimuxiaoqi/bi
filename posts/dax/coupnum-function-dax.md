@@ -18,7 +18,7 @@ Returns the number of coupons payable between the settlement date and maturity d
 
 ## Syntax
 
-```dax
+```js
 COUPNUM(<settlement>, <maturity>, <frequency>[, <basis>])
 ```
 
@@ -74,7 +74,7 @@ The number of coupons payable between the settlement date and maturity date.
 
 The following DAX query:
 
-```dax
+```js
 EVALUATE
 {
   COUPNUM(DATE(2007,1,25), DATE(2008,11,15), 2, 1)

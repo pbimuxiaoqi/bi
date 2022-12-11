@@ -17,7 +17,7 @@ RIGHT returns the last character or characters in a text string, based on the nu
   
 ## Syntax  
   
-```dax
+```js
 RIGHT(<text>, <num_chars>)  
 ```
   
@@ -44,7 +44,7 @@ A text string containing the specified right-most characters.
 
 The following formula returns the last two digits of the product code in the New Products table.  
   
-```dax
+```js
 = RIGHT('New Products'[ProductCode],2)  
 ```
   
@@ -52,7 +52,7 @@ The following formula returns the last two digits of the product code in the New
 
 The following formula returns a variable number of digits from the product code in the New Products table, depending on the number in the column, MyCount. If there is no value in the column, MyCount, or the value is a blank, RIGHT also returns a blank.  
   
-```dax
+```js
 = RIGHT('New Products'[ProductCode],[MyCount])  
 ```
   

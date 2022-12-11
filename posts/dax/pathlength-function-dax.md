@@ -16,7 +16,7 @@ Returns the number of parents to the specified item in a given PATH result, incl
   
 ## Syntax  
   
-```dax
+```js
 PATHLENGTH(<path>)  
 ```
 
@@ -38,6 +38,6 @@ The number of items that are parents to the specified item in a given PATH resul
 
 The following example takes an employee ID as input to a PATH function and returns a list of the managers above that employee in the hierarchy, The PATHLENGTH function takes that result and counts the different levels of employees and managers, including the employee you started with.  
   
-```dax
+```js
 = PATHLENGTH(PATH(Employee[EmployeeKey], Employee[ParentEmployeeKey]))  
 ```

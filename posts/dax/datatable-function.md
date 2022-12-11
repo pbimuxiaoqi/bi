@@ -17,7 +17,7 @@ Provides a mechanism for declaring an inline set of data values.
   
 ## Syntax  
   
-```dax
+```js
 DATATABLE (ColumnName1, DataType1, ColumnName2, DataType2..., {{Value1, Value2...}, {ValueN, ValueN+1...}...})  
 ```
   
@@ -41,7 +41,7 @@ A table declaring an inline set of values.
   
 ## Example  
   
-```dax
+```js
 = DataTable("Name", STRING,  
                "Region", STRING  
                ,{  

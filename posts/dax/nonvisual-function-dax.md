@@ -17,7 +17,7 @@ Marks a value filter in a [SUMMARIZECOLUMNS](summarizecolumns-function-dax.md) e
 
 ## Syntax  
   
-```dax
+```js
 NONVISUAL(<expression>)
 ```
   

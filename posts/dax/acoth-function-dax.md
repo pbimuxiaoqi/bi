@@ -17,7 +17,7 @@ Returns the inverse hyperbolic cotangent of a number.
   
 ## Syntax  
   
-```dax
+```js
 ACOTH(number)  
 ```
   

@@ -17,7 +17,7 @@ Returns a table that contains a column of the dates for the year to date, in the
   
 ## Syntax  
   
-```dax
+```js
 DATESYTD(<dates> [,<year_end_date>])  
 ```
   
@@ -53,7 +53,7 @@ The **dates** argument can be any of the following:
 
 The following sample formula creates a measure that calculates the 'Running Total' for Internet sales.  
   
-```dax
+```js
 = CALCULATE(SUM(InternetSales_USD[SalesAmount_USD]), DATESYTD(DateTime[DateKey]))  
 ```
   

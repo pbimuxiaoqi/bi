@@ -19,7 +19,7 @@ The NOW function is useful when you need to display the current date and time on
   
 ## Syntax  
   
-```dax
+```js
 NOW()  
 ```
   
@@ -39,7 +39,7 @@ A date (**datetime)**.
 
 The following example returns the current date and time plus 3.5 days:  
   
-```dax
+```js
 = NOW()+3.5  
 ```
   
