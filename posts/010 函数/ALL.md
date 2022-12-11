@@ -1,4 +1,5 @@
 ---
+alias: alias, aliases
 tags: 
 - 筛选 
 - 调节器 
