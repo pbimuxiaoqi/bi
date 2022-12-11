@@ -1,16 +1,4 @@
----
-created: 2022-05-21
-tags: 
-- 功能函数 
-- 标量
-subject: dax
-importance: 5
-skilled: 4
-status:
-author:
-url: https://dax.guide/blank/
-cover: 
----
+
 
 返回空白
 
