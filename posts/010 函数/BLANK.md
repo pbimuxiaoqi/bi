@@ -4,7 +4,7 @@
 
 ## 语法
 
-```DAX
+```js
 BLANK ( )
 ```
 
@@ -53,7 +53,7 @@ ORDER BY 'Date'[Date]
 
 
 
-```DAX
+```js
 --  BLANK returns the BLANK value
 --
 --  It is mostly useful to blank out the result of a calculation
