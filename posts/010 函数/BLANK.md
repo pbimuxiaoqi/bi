@@ -22,7 +22,7 @@ BLANK ( )
 
 ## 示例
 
-```DAX
+```js
 --  BLANK is equal to 0 and to an empty string in DAX.
 --  You need to use == to check for "strictly equal to"
 EVALUATE
@@ -37,7 +37,7 @@ EVALUATE
 ![](https://s2.loli.net/2022/05/21/3fgU6xb7BeQa9Vc.png)
 
 
-```DAX
+```js
 --  BLANK is useful also to provide BLANK arguments to some functions
 --  like DATESBETWEEN.
 EVALUATE
